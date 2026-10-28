@@ -1,0 +1,271 @@
+Python has a very large vocabulary, so there is no single “complete” list that fits in one message, but I can give you a strong foundational reference covering the most important terminology, symbols, keywords, and concepts beginners encounter most often.
+
+1. Basic Python Terminology
+Term	Meaning
+Python	A programming language
+Script	A Python file containing code
+Program	A complete set of instructions
+Interpreter	Software that runs Python code
+Syntax	The rules of writing code
+Statement	A line of code
+Expression	Code that produces a value
+Variable	A named storage container
+Value	Data stored in memory
+Data Type	The kind of data
+Function	Reusable block of code
+Class	Blueprint for objects
+Object	Instance of a class
+Method	Function inside a class
+Module	A Python file you import
+Library	Collection of modules
+Package	Folder of modules
+Argument	Value passed into a function
+Parameter	Variable inside function definition
+Return Value	Data sent back from a function
+Loop	Repeats code
+Condition	Decision-making logic
+Exception	Runtime error
+Debugging	Finding and fixing errors
+Compile	Convert code into executable form
+Runtime	When the program is running
+2. Python Keywords
+
+These are reserved words.
+
+Keyword	Meaning
+def	Define a function
+class	Define a class
+if	Conditional check
+elif	Else-if condition
+else	Default condition
+for	Loop through items
+while	Repeat while true
+break	Exit loop
+continue	Skip current loop cycle
+return	Send value back
+import	Load module
+from	Import specific item
+as	Rename import
+try	Start exception handling
+except	Catch errors
+finally	Always runs
+raise	Trigger error
+pass	Do nothing
+lambda	Small anonymous function
+yield	Return generator value
+with	Context manager
+global	Use global variable
+nonlocal	Use outer variable
+True	Boolean true
+False	Boolean false
+None	Empty/null value
+and	Logical AND
+or	Logical OR
+not	Logical NOT
+in	Membership check
+is	Identity comparison
+3. Assignment & Math Symbols
+Symbol	Meaning
+=	Assign value
++	Add
+-	Subtract
+*	Multiply
+/	Divide
+//	Integer division
+%	Modulus/remainder
+**	Power/exponent
++=	Add and assign
+-=	Subtract and assign
+*=	Multiply and assign
+/=	Divide and assign
+
+Example:
+
+x = 5
+x += 2
+
+Result:
+
+x = 7
+4. Comparison Operators
+Symbol	Meaning
+==	Equal to
+!=	Not equal
+>	Greater than
+<	Less than
+>=	Greater or equal
+<=	Less or equal
+
+Example:
+
+if x == 5:
+5. Logical Operators
+Symbol	Meaning
+and	Both conditions true
+or	One condition true
+not	Reverse true/false
+
+Example:
+
+if x > 1 and x < 10:
+6. String Symbols
+Symbol	Meaning
+" "	String text
+' '	String text
+""" """	Multi-line string
+f""	Formatted string
+\n	New line
+\t	Tab
+\\	Backslash
+\"	Quote inside string
+
+Example:
+
+name = "David"
+print(f"Hello {name}")
+7. List Symbols
+Symbol	Meaning
+[]	List
+[0]	Index access
+.append()	Add item
+.remove()	Remove item
+len()	Count items
+
+Example:
+
+numbers = [1, 2, 3]
+8. Dictionary Symbols
+Symbol	Meaning
+{}	Dictionary
+:	Key/value separator
+
+Example:
+
+person = {
+    "name": "David",
+    "age": 30
+}
+9. Function Symbols
+Symbol	Meaning
+def	Define function
+()	Function parameters/call
+return	Send result back
+
+Example:
+
+def greet():
+    print("Hello")
+10. Class Symbols
+Symbol	Meaning
+class	Create class
+self	Current object
+__init__	Constructor
+.	Access attributes
+
+Example:
+
+class Person:
+
+    def __init__(self):
+        self.name = "David"
+11. Indentation
+
+Python uses spaces instead of braces.
+
+Example:
+
+if True:
+    print("Hello")
+
+The indentation defines code blocks.
+
+12. Common Built-In Functions
+Function	Meaning
+print()	Display text
+input()	Get user input
+len()	Length
+type()	Data type
+int()	Convert to integer
+str()	Convert to string
+float()	Convert decimal
+range()	Number sequence
+open()	Open file
+sum()	Add values
+max()	Largest value
+min()	Smallest value
+13. Common Tkinter Terms
+
+Since you're studying GUI code:
+
+Term	Meaning
+tk.Tk()	Main window
+Frame	Container
+Label	Text display
+Button	Clickable button
+Entry	Text box
+Text	Multi-line text
+.pack()	Auto layout
+.grid()	Grid layout
+.place()	Exact positioning
+.get()	Read widget value
+.insert()	Add text
+.delete()	Remove text
+.mainloop()	Run GUI
+14. Common Error Types
+Error	Meaning
+SyntaxError	Invalid Python syntax
+NameError	Variable not found
+TypeError	Wrong data type
+AttributeError	Missing object property
+IndexError	List index invalid
+KeyError	Dictionary key missing
+ImportError	Module failed
+IndentationError	Bad spacing
+ValueError	Invalid value
+FileNotFoundError	File missing
+15. Special Symbols
+Symbol	Meaning
+#	Comment
+:	Start code block
+.	Access method/property
+,	Separator
+()	Function call
+[]	List/index
+{}	Dictionary/set
+_	Naming separator
+__name__	Script name variable
+__main__	Main running file
+
+Example:
+
+if __name__ == "__main__":
+
+means:
+
+“Only run this code if this file is started directly.”
+
+16. File Types
+Extension	Meaning
+.py	Python script
+.pyw	GUI Python file
+.pyc	Compiled Python
+.exe	Windows executable
+17. Beginner Concepts To Study Next
+
+A strong learning order is:
+
+Variables
+Data types
+Strings
+Math operators
+Conditions
+Loops
+Functions
+Lists
+Dictionaries
+Classes
+File handling
+Tkinter GUIs
+APIs
+Databases
+Networking

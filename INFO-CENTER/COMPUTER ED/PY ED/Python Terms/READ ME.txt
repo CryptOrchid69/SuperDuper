@@ -1,0 +1,35 @@
+THE FOLLOWING INFO WAS PROVIDED BY ii.chat (Russian Chat AI)
+
+PYTHON KEYWORDS & BUILT-IN FUNCTIONS REFERENCE
+Save this as: Python_Keywords_and_Functions.txt in your Learn Python folder
+PART 1: PYTHON KEYWORDS (35 Reserved Words)
+These are special words that Python uses to control the program. You CANNOT use these as variable names.
+
+QUICK REFERENCE: MOST USED
+When Learning Python, Focus on These FIRST:
+Output: print()
+Input: input()
+Numbers: int(), float(), str(), len()
+Lists: len(), range(), sorted()
+Logic: if, else, elif, and, or, not
+Loops: for, while, break, continue
+Functions: def, return
+Math: abs(), round(), pow(), min(), max(), sum()
+KEYWORDS vs FUNCTIONS
+KEYWORDS (35 total):
+
+Reserved words you CANNOT use as variable names
+Control program flow (if, for, while, etc.)
+Define structures (def, class, etc.)
+FUNCTIONS (100+ total):
+
+Ready-to-use tools/commands
+Perform specific tasks
+You can create your own too
+HOW TO USE THIS REFERENCE
+Print this document and keep it handy
+Study the "Most Used" section first - don't memorize all at once
+Test each function in PyCharm as we learn them
+Highlight functions you use frequently
+Reference it whenever you encounter an unfamiliar keyword or function
+This is your complete Python vocabulary guide! Bookmark it, study it, and come back to it whenever you need to look up a word or function.

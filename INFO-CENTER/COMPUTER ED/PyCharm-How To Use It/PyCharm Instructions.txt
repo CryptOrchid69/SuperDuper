@@ -1,0 +1,118 @@
+                                                                                                                                                                                                // WELCOME // 
+											   
+											                                                                  // THE FIRST THING YOU MUST DO IS INSTALL PyCharm: GO HERE: https://www.jetbrains.com/pycharm/download/?section=windows // 
+																	
+				                                                                               // IT MAY ALSO BE ADVISABLE TO DOWNLOAD NOTEPAD++ SOMETIMES THIS CAN COME IN VERY HANDY-GO HERE: https://notepad-plus-plus.org/downloads/ //
+														   
+														                                                                   // IF YOU ARE UNFAMILIAR WITH WRITING SCRIPT AND ARE A TOTAL NOOB, THEN THIS WILL HELP A LOT //
+																				                                                                                                               https://ii.chat/new
+																													                                                                           https://chatgpt.com
+																													                                                                           https://app.base44.com/app-templates
+																													                                                                           https://app.codeconvert.ai/home
+																													                                                                           https://chatgpt.com/codex/
+																																															   
+																			                                                                                   // THE LAST TWO ABOVE URLS ARE VERY STRONGLY RECOMMENDED //
+																																							   
+																						                                                           // IF YOU WANT TO CONVERT .png PICS INTO ICONS FOR PYTHON APPS, GO HERE: //
+																									                                                             https://convertico.com/?utm_source=chatgpt.com#google_vignette 
+														   
+			                                                   // BELOW ARE CAREFULLY ASSEMBLED INSTRUCTIONS ON HOW EXACTLY TO USE THE PyCharm APP TO BUILD A STANDALONE DESKTOP APP-THESE INSTRUCTIONS ARE VERY SIMPLE AND EASY TO FOLLOW //
+
+THESE ARE EASY TO UNDERSTAND INSTRUCTIONS FOR USING PyCharm.
+
+Click File
+Click Open
+Go to:
+C:\Users\clust\Desktop\YourProject
+Click the YourProject folder one time.
+Click OK or Open.
+Click the script/program to be processed.
+
+[If PyCharm asks whether to open in the current window or a new window, choose This Window.
+Step 2: Open The PyCharm Terminal]
+
+Look at the bottom of PyCharm.
+Find the tab called Terminal.
+Click Terminal.
+If you do not see it:
+
+Click View at the top.
+Click Tool Windows.
+Click Terminal.
+You should now see a command area at the bottom of PyCharm.
+
+Step 3: Go Into Your Terminal
+
+In the Terminal, click after the blinking cursor and type this exactly: Your Project is the name of the folder on your desktop.
+
+cd "$env:USERPROFILE\Desktop\YourProject"
+
+If the above command doesn't work, then use this one:
+
+cd C:\Users\clust\Desktop\Your Project Name
+
+Then press Enter.
+
+This tells PyCharm to work inside your app folder.
+
+Step 4: Confirm PyInstaller Works
+
+Type this exactly:
+py -3.14 -m PyInstaller --noconfirm --clean --onefile --windowed --name "whatever" --icon "whatever.ico" whatever.py
+
+If the above command doesn't work, then use this one:
+
+python -m PyInstaller --onefile --windowed --name "WHATEVER" --icon "WHATEVER.ico" "WHATEVER.py"
+
+Now wait. This may take a minute or two.
+
+You will see a lot of text appear in the Terminal. That is normal.
+
+========================================================================================================================================================================
+[If you are using PyQt6 instead of Tkinter, then make sure that you use these Terminal commands instead]
+
+cd "$env:USERPROFILE\Desktop\project folder"
+
+
+pyinstaller --noconsole --onefile --name whatever.py
+
+(Use the below terminal command in Pycharm if you are using an icon)
+
+pyinstaller --noconsole --onefile --name whatever --icon=Tools.ico whatever.py
+=========================================================================
+cd "$env:USERPROFILE\Desktop\whatever"
+
+python -m PyInstaller --noconsole --onefile --name whatever --icon "whatever.ico" whatever.py
+========================================================================================================================================================================
+
+Step 6: Find The Finished App
+
+When the command finishes, look inside your project folder.
+
+In PyCharm’s left sidebar, you should now see new folders:
+
+build
+dist
+Click the arrow next to dist.
+Inside dist, you should see:
+YourProject.exe
+That is your standalone desktop app.
+
+Step 7: Run The App
+
+You can run it two ways.
+
+Option 1, from PyCharm:
+
+In the left sidebar, open the dist folder.
+Right-click YourProject.exe
+Click Open In.
+Click Explorer.
+Double-click YourProject.exe
+Option 2, from Windows:
+
+Open File Explorer.
+Go to:
+C:\Users\clust\Desktop\Your Project Folder\dist
+Double-click:
+HWID Viewer.exe

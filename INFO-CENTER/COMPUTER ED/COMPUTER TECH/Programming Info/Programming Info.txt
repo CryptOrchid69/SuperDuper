@@ -1,0 +1,30 @@
+FOUR OF THE MOST COMMONLY USED TYPES OF SCRIPTS/PROGRAMMING AND WHAT THEIR PURPOSE IS:
+
+
+1. Batch Script What it is: 
+-----------------------------------
+A simple list of built-in Windows commands saved in a text file ending with the .bat extension.How it works: It automates basic tasks by doing exactly what you would normally type into the old Windows Command Prompt.
+Best used for: Simple, everyday Windows tasks like copying or deleting a bunch of files, emptying folders, or opening multiple programs at the same time.
+
+2. PowerShell Script What it is:
+-----------------------------------
+A powerful, modern automation tool and programming language built by Microsoft, saved with the .ps1 extension.How it works: 
+It goes way beyond simple commands by letting you directly control deep parts of your Windows computer. It can look at your hardware, manage user accounts, and change system settings.
+Best used for: Advanced Windows system administration. IT workers and system administrators use it to set up new computers, manage networks, and automate complex tasks across many machines.
+
+3. Python Script What it is: 
+-----------------------------------
+A very popular, easy-to-read programming language saved with the .py extension.How it works: 
+It reads almost like English, making it the easiest programming language for beginners. Python can run on Windows, Mac, or Linux and has millions of "add-ons" (libraries) that let you do almost 
+anything without having to build it from scratch.
+Best used for: Almost everything! People use Python scripts to build websites, scrape data off the internet, perform math and science tasks, create AI (like chatbots), and automate boring office work.
+
+4. C++ Script (Compiled Code)What it is:
+------------------------------------------
+A heavy-duty, highly powerful programming language.
+How it works:
+Unlike the other three scripts, C++ is not a "script" in the traditional sense. It is a full 
+programming language that must be translated into pure machine code (a .exe file on Windows) by a special tool called a "compiler" before the computer can read it.Best used for: Things that require 
+a massive amount of speed and computer power. C++ is used to make high-performance video games, internet browsers, operating systems (like Windows itself), and heavy design software.Summary ComparisonBatch 
+is like a shortcut button for simple chores.PowerShell is your computer's advanced control panel.Python is a highly capable, versatile tool for almost any digital task.C++ is heavy industry—used to build the 
+complex programs, games, and systems that other scripts run on.

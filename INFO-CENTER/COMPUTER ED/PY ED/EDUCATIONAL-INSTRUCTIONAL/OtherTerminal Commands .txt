@@ -1,0 +1,41 @@
+THESE FOLLOWING COMMANDS MUST BE PLACED INTO THE PyCharm TERMINAL: PLACE THEM IN SEQUENCE.
+
+pip install pyinstaller pyqt6
+
+pyinstaller --noconsole --onefile --icon=my_icon.ico main.py (USE THIS COMMAND IF YOU USE WINDOWS)
+
+pyinstaller --noconsole --onefile --icon=my_icon.icns main.py (USE THIS COMMAND IF YOU USE macOS)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADDITIONAL INFORMATION ABOUT THESE COMMANDS:
+
+These Terminal commands are used when you are completely finished writing your Python code and want to turn it into a 
+regular desktop application that anyone can double-click and run.Here is exactly when and why you use each part of those 
+commands. 
+
+Command 1: pip install pyinstaller pyqt6When to use it:You run this one time before you start packaging your application. You 
+do not need to run it every time you update your code. Why you use it: Python does not automatically know how to turn scripts 
+into standalone apps, nor does it include your visual interface tools by default. This command downloads two essential building 
+blocks from the internet into PyCharm:pyqt6: The visual layout framework that draws the windows, text boxes, buttons, and 
+sidebars on your screen.pyinstaller: The translator tool that packages everything together into a standalone file.
+
+Command 2: pyinstaller --noconsole --onefile --icon=my_icon.ico main.pyWhen to use it:You run this command at the very end 
+of your project when you are ready to distribute your app. You will also rerun this command if you change your code later and 
+want to generate a new, updated version of your app.Why you use it:Normally, to run a Python script, a person must have 
+PyCharm installed, download Python, and know how to use a terminal.
+
+This command removes those requirements completely by packaging your script.Here is why each specific piece (or "flag") is 
+used:
+
+pyinstaller: Tells the computer to start the packagingengine.--noconsole: Prevents a black, ugly command-prompt terminal box 
+from popping up behind your app when a user opens it. It ensures only your clean graphical interface is visible.--onefile: Sifts 
+through your computer to find every necessary file, graphic setting, and Python tool, and crushes them down into a single 
+standalone executable file (.exe or .app). 
+
+The user only gets one neat file instead of a messy folder full of code.--icon=my_icon.ico: Tells the system to replace the default
+, generic white window logo with your own custom graphic asset file so it looks like a professional product on the 
+desktop.main.py: Tells the engine exactly which file is the "brain" or entry point of your program. 
+
+Summary- You use these commands to transition your project from a piece of text code that only programmers can use into a 
+polished desktop application that anyone can use.
+

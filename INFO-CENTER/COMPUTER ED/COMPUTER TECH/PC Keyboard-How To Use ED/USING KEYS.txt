@@ -1,0 +1,368 @@
+COMPLETE WINDOWS PC KEYBOARD GUIDE - SIMPLE STEP-BY-STEP
+
+This guide explains every key on your keyboard and how to use them, including combination keys. I'll break it down into sections so it's easy to understand.
+======================================================================================================================================
+
+SECTION 1: THE MAIN LETTER AND NUMBER KEYS
+These are the basic keys in the middle of your keyboard (A-Z, 0-9).
+
+
+
+
+Key	What It Does
+A-Z Keys	Type letters of the alphabet
+0-9 Keys	Type numbers (above the letter keys)
+Spacebar	Add a space between words
+How to use: Simply press any letter or number key to type it. Press and hold Shift while pressing a letter to make it CAPITAL.
+
+SECTION 2: SPECIAL CHARACTER KEYS
+These keys make symbols and special characters:
+
+
+
+
+Key	Regular	With Shift	Example
+` (Backtick)	`	~	Used in programming
+- (Minus/Dash)	-	_ (Underscore)	hyphen-ated or under_score
+= (Equals)	=	+ (Plus)	math symbols
+[ (Bracket)	[	{ (Curly brace)	programming
+] (Bracket)	]	} (Curly brace)	programming
+\ (Backslash)	\	| (Pipe)	file paths
+; (Semicolon)	;	: (Colon)	punctuation
+' (Apostrophe)	'	" (Quote mark)	text
+, (Comma)	,	< (Less than)	lists
+. (Period)	.	> (Greater than)	sentences
+/ (Slash)	/	? (Question mark)	paths and questions
+SECTION 3: THE MODIFIER KEYS (IMPORTANT!)
+These keys work WITH other keys to do special things. They don't do anything by themselves.
+
+CTRL (Control)
+Location: Bottom left corner of keyboard
+What it does: Combines with other keys for shortcuts
+Examples:
+Ctrl + C = Copy selected text
+Ctrl + X = Cut selected text (remove it)
+Ctrl + V = Paste (put back what you copied)
+Ctrl + Z = Undo (go back one step)
+Ctrl + Y = Redo (go forward one step)
+Ctrl + A = Select all text on the page
+Ctrl + S = Save your work
+Ctrl + F = Find text (search)
+Ctrl + H = Find and replace text
+Ctrl + P = Print
+ALT (Alternate)
+Location: Next to the spacebar
+What it does: Combines with other keys for special functions
+Examples:
+Alt + Tab = Switch between open programs (hold Alt, press Tab, then release)
+Alt + F4 = Close current window
+Alt + Enter = Make program full-screen (in some programs)
+SHIFT
+Location: Left and right sides (two keys)
+What it does: Makes capital letters and changes symbols
+Examples:
+Shift + A = Type capital A
+Shift + 1 = Type ! (exclamation mark)
+Shift + Click = Select multiple items
+Shift + Arrow Keys = Select text while moving
+WINDOWS KEY (also called Super key)
+Location: Bottom left, has Windows logo
+What it does: Opens Windows menu and special shortcuts
+Examples:
+Windows Key alone = Open Windows Start Menu
+Windows + D = Show/hide desktop
+Windows + E = Open File Explorer
+Windows + I = Open Settings
+Windows + V = Open clipboard history
+Windows + X = Open quick menu
+Windows + Shift + S = Take a screenshot
+Windows + T = Cycle through taskbar apps
+Windows + M = Minimize all windows
+Windows + L = Lock your computer
+SECTION 4: THE ARROW KEYS
+Located at the bottom right of the main keyboard area.
+
+
+
+
+Key	What It Does
+↑ Up Arrow	Move cursor up one line
+↓ Down Arrow	Move cursor down one line
+← Left Arrow	Move cursor left one character
+→ Right Arrow	Move cursor right one character
+Combinations:
+
+Ctrl + Up/Down = Jump to next paragraph
+Ctrl + Left/Right = Jump to next word
+Shift + Arrows = Select text while moving
+Home = Jump to beginning of line
+End = Jump to end of line
+SECTION 5: THE DELETE AND BACKSPACE KEYS
+
+
+
+Key	What It Does
+Backspace	Delete character to the LEFT of cursor
+Delete (Del)	Delete character to the RIGHT of cursor
+Combinations:
+
+Ctrl + Backspace = Delete whole word to the left
+Ctrl + Delete = Delete whole word to the right
+SECTION 6: THE PAGE UP AND PAGE DOWN KEYS
+
+
+
+Key	What It Does
+Page Up (PgUp)	Scroll up one full page
+Page Down (PgDn)	Scroll down one full page
+Combinations:
+
+Shift + Page Up = Select text going up
+Shift + Page Down = Select text going down
+SECTION 7: THE HOME AND END KEYS
+
+
+
+Key	What It Does
+Home	Jump to beginning of current line
+End	Jump to end of current line
+Combinations:
+
+Ctrl + Home = Jump to beginning of entire document
+Ctrl + End = Jump to end of entire document
+Shift + Home = Select from cursor to beginning of line
+Shift + End = Select from cursor to end of line
+SECTION 8: THE FUNCTION KEYS (F1-F12)
+Located at the very top of your keyboard.
+
+
+
+
+Key	Default Function	In Browsers	In Office
+F1	Open Help menu	Open Help	Open Help
+F2	Rename file	Edit cell	Edit in Excel
+F3	Open Search	Open Search	Find text
+F4	Alt+F4 closes window	Repeat last action	Repeat last action
+F5	Refresh page	Refresh	Start slideshow (PowerPoint)
+F6	Move to address bar	Jump between sections	Jump between sections
+F7	Spell check	Spell check	Spell check in Word
+F8	Safe Mode (older Windows)	Toggle caret browsing	Expand selection in Word
+F9	Refresh (Word)	Send/receive email (Outlook)	Send/receive email
+F10	Activate menu bar	Activate menu	Activate menu
+F11	Enter/exit full-screen	Enter/exit full-screen	Enter/exit full-screen
+F12	Open "Save As" (Word)	Open Developer Tools	Open "Save As"
+SECTION 9: THE NUMERIC KEYPAD (NUMBER PAD)
+Located on the right side of your keyboard (only on full-size keyboards).
+
+Basic Number Pad Keys:
+
+
+┌───┬───┬───┬───┐
+│ 7 │ 8 │ 9 │ / │
+├───┼───┼───┼───┤
+│ 4 │ 5 │ 6 │ * │
+├───┼───┼───┼───┤
+│ 1 │ 2 │ 3 │ - │
+├───┼───┴───┼───┤
+│ 0     │ . │ + │
+└───────┴───┴───┘
+When Num Lock is ON (light is lit):
+
+0-9 = Type numbers
++ = Add
+- = Subtract
+* = Multiply
+/ = Divide
+. = Decimal point
+When Num Lock is OFF:
+
+7 = Home
+8 = Up Arrow
+9 = Page Up
+4 = Left Arrow
+5 = (does nothing)
+6 = Right Arrow
+1 = End
+2 = Down Arrow
+3 = Page Down
+0 = Insert
+. = Delete
+How to toggle Num Lock:
+
+Press the Num Lock key (usually at top-left of numeric pad)
+A light will turn on/off to show if it's active
+SECTION 10: ENTER/RETURN KEY
+
+
+
+Key	Location	What It Does
+Enter (or Return)	Right side of main keyboard	Confirms action or creates new line
+Uses:
+
+Press to go to next line when typing
+Press to confirm choices in dialog boxes
+Press to submit forms
+SECTION 11: TAB KEY
+
+
+
+Key	What It Does
+Tab	Move to next field (like in forms)
+Combinations:
+
+Tab = Move forward to next field
+Shift + Tab = Move backward to previous field
+SECTION 12: CAPS LOCK KEY
+
+
+
+Key	What It Does
+Caps Lock	Make ALL letters capital (toggle on/off)
+How to use:
+
+Press once to turn ON (light appears)
+All letters will be CAPITALS
+Press again to turn OFF
+Numbers and symbols are not affected
+SECTION 13: ESCAPE KEY (ESC)
+
+
+
+Key	What It Does
+Esc	Cancel current action or close menu
+Uses:
+
+Close pop-up windows
+Exit full-screen mode
+Cancel an operation
+Exit menus
+SECTION 14: PRINT SCREEN AND SCREENSHOT
+
+
+
+Key	What It Does
+Print Screen (PrtSc)	Take screenshot of entire screen
+How to use:
+
+Print Screen = Copy entire screen to clipboard (you can paste it)
+Alt + Print Screen = Copy just the current window
+Windows + Shift + S = Open Snipping Tool (modern way)
+Then paste with Ctrl + V
+
+SECTION 15: SCROLL LOCK AND PAUSE KEYS
+
+
+
+Key	What It Does
+Scroll Lock	Lock scrolling (rarely used today)
+Pause/Break	Pause program (rarely used)
+Note: These are mostly old keys that don't do much anymore.
+
+SECTION 16: INSERT KEY
+
+
+
+Key	What It Does
+Insert (Ins)	Toggle between insert and overwrite mode in text
+How to use:
+
+In text editors, toggle between:
+Insert mode = Type new text without deleting
+Overwrite mode = Type replaces existing text
+SECTION 17: TEXT FORMATTING SHORTCUTS
+These combine Ctrl with letter keys:
+
+
+
+
+Shortcut	What It Does
+Ctrl + B	Make text bold
+Ctrl + I	Make text italic
+Ctrl + U	Make text underlined
+Ctrl + Shift + V	Paste as plain text (no formatting)
+SECTION 18: MOST USEFUL EVERYDAY SHORTCUTS
+
+
+
+Shortcut	What It Does	Use Case
+Ctrl + C	Copy	Copy text/files
+Ctrl + X	Cut	Move text/files
+Ctrl + V	Paste	Put back copied items
+Ctrl + Z	Undo	Fix mistakes
+Ctrl + A	Select All	Choose everything on page
+Ctrl + S	Save	Save your work
+Ctrl + F	Find	Search for text
+Ctrl + P	Print	Print document
+Alt + Tab	Switch Programs	Jump between open apps
+Alt + F4	Close Window	Close current program
+Windows + D	Show Desktop	Minimize everything
+Windows + E	File Explorer	Open file manager
+SECTION 19: COMBINATION KEY GUIDE
+Here's how to press combination keys:
+
+Hold down the first key (like Ctrl)
+While holding, press the second key (like C)
+Release both keys
+Example: Ctrl + C
+
+Hold Ctrl button down
+Press C (while Ctrl is still held)
+Release both
+For triple combinations like Ctrl + Shift + V:
+
+Hold Ctrl
+Hold Shift (while still holding Ctrl)
+Press V
+Release all
+SECTION 20: SPECIAL WINDOWS 11/10 SHORTCUTS
+
+
+
+Shortcut	What It Does
+Windows + V	Open clipboard history
+Windows + Shift + S	Take screenshot with snipping tool
+Windows + I	Open Settings
+Windows + E	Open File Explorer
+Windows + D	Show/hide desktop
+Windows + M	Minimize all windows
+Windows + L	Lock computer
+Windows + X	Open quick menu
+Windows + T	Cycle through taskbar items
+SECTION 21: QUICK REFERENCE CHART
+For Selecting Text:
+
+Shift + Arrows = Select character by character
+Shift + Ctrl + Arrows = Select word by word
+Shift + Home/End = Select to beginning/end of line
+Shift + Page Up/Down = Select page by page
+Ctrl + A = Select everything
+For Navigating Text:
+
+Home = Beginning of line
+End = End of line
+Ctrl + Home = Beginning of document
+Ctrl + End = End of document
+Page Up/Down = Scroll up/down
+Ctrl + F = Find text
+For Working with Files:
+
+Ctrl + S = Save
+Ctrl + O = Open
+Ctrl + N = New
+Ctrl + P = Print
+Ctrl + W = Close current file
+SECTION 22: HOW TO KNOW IF A KEY WORKED
+Text appears = Key typed something
+Something changed on screen = Command worked
+Nothing happened = Key might need combination or might not apply to current program
+Sound/Light = Key activated a system function
+SUMMARY
+Your keyboard has these main sections:
+
+Letter/Number Keys - Type text
+Special Keys (Ctrl, Alt, Shift, Windows) - Combine with others
+Function Keys (F1-F12) - Special program commands
+Arrow Keys - Move cursor
+Number Pad - Quick number entry (right side)
+System Keys - Print Screen, Insert, Delete, etc.
+Golden Rule: Keyboard shortcuts save time. The more you practice them, the faster you'll work!

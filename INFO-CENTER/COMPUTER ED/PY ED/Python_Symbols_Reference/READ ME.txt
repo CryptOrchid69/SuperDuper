@@ -1,0 +1,8 @@
+THE FOLLOWING INFO WAS PROVIDED BY ii.chat (Russian Chat AI)
+
+HOW TO USE THIS GUIDE
+Print it out and keep it by your desk
+Study one section at a time (don't memorize all at once!)
+Test each symbol in PyCharm as we use it
+Highlight symbols you use frequently
+Reference it whenever you see a symbol you don't recognize

@@ -1,0 +1,12 @@
+Welcome to the SuperDuper INFO-CENTER.
+
+Use the arrow beside a folder to reveal its contents.
+
+Right click a folder to create a new folder, paste copied folders or text
+documents, rename an ordinary folder, refresh the view, or open the selected
+location in Windows File Explorer.
+
+Double click any visible text document to have APP Voice read it aloud.
+
+The main INFO-CENTER folder is protected and cannot be renamed or deleted.
+Folders and text documents placed inside it remain editable.

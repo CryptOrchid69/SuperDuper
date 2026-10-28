@@ -1,0 +1,898 @@
+SUPERDUPER
+Network Condition Studio for Windows
+=====================================
+
+WHAT SUPERDUPER DOES
+--------------------
+
+SuperDuper is a Windows desktop application for testing how software behaves
+when its network connection is slow or unreliable. It uses the official
+WinDivert 2.2.2 driver to intercept only the network packets that match the
+selected filter.
+
+Matching packets can be delayed, given varying delay (jitter), or dropped.
+Packets that are not selected by the filter continue normally.
+=================================================
+
+HOW SUPERDUPER STANDS OUT FROM CLUMSY
+-------------------------------------
+
+SuperDuper was inspired by the general purpose of Clumsy, but it is not merely
+a visual copy. It has a different interface and adds several safeguards and
+workflow features.
+
+1. Modern, compact interface
+
+   SuperDuper uses PyQt6 and provides a polished 8-by-7-inch interface. Its
+   controls are divided into Conditions, Targeting, Advanced Effects, Safety,
+   Profiles, and Dupe tabs so the larger feature set remains organized
+   and readable.
+
+2. Global Numpad * control
+
+   The dedicated Multiply (*) key located above Numpad 9 can start or stop the active
+   network condition from anywhere in Windows. SuperDuper does not confuse this
+   key with Shift+8. Key-repeat suppression prevents holding the key down from
+   rapidly switching the engine on and off.
+
+3. Stronger input validation
+
+   SuperDuper checks IP addresses, CIDR network ranges, individual ports, port
+   lists, and port ranges before accepting them. Invalid or reversed values are
+   rejected instead of being passed silently to the packet driver.
+
+4. Filter preview
+
+   The Targeting tab presents a readable summary of the selected direction,
+   protocol, IP scope, ports, and process choice before interception begins.
+   This reduces the chance of unintentionally affecting the wrong traffic.
+
+5. Persistent settings
+
+   Apply Settings saves the current profile through Windows application
+   settings. SuperDuper can restore the selected conditions the next time it
+   starts.
+
+6. Live process discovery
+
+   SuperDuper can display currently running programs and their process IDs. The
+   list can be refreshed without restarting the application. Specific-process
+   interception is deliberately blocked in the current release because dynamic
+   process-to-network-endpoint tracking is not finished. This prevents the menu
+   from pretending to provide filtering that is not yet reliable.
+
+7. Authenticated package discovery
+
+   SuperDuper can locate its genuine package folder beneath the user's actual
+   Windows-configured Desktop, including redirected Desktop locations. It does
+   not trust a folder merely because it is named SuperDuper. It checks an
+   application identity marker, expected package versions, required application
+   files, and SHA-256 hashes for both the official WinDivert components and the
+   real SuperDuper application markers.
+
+   A standalone SuperDuper.exe may be placed directly on the configured Desktop,
+   separate from the package folder. At launch it searches beneath that Desktop
+   and selects only a package that passes every identity and integrity check.
+
+8. Tamper detection
+
+   If a required WinDivert or application-marker file is missing or altered,
+   the package is rejected. A modified package manifest cannot remove trusted
+   files, substitute hashes, or redefine the application markers SuperDuper
+   requires.
+
+9. Safe threaded processing
+
+   Packet capture and delayed packet sending run on separate synchronized
+   worker threads. This allows packets to wait for their scheduled release time
+   without freezing the interface.
+
+10. Fail-open stopping behavior
+
+   When Stop is pressed or the application closes, SuperDuper first stops new
+   packet reception, waits for its workers, releases packets still waiting in
+   its delay queue, and then closes WinDivert. This is designed to avoid leaving
+   packets unnecessarily stranded during an ordinary shutdown.
+
+11. Defensive configuration checks
+
+   Limits are enforced both by the interface and again by the backend. A caller
+   cannot bypass the interface and provide negative latency, excessive jitter,
+   an invalid loss percentage, or an unsupported direction or protocol.
+
+12. Live activity counters
+
+   While active, the status area reports how many matching packets were
+   captured, sent again, or deliberately dropped.
+
+13. Bounded packet queue
+
+   A configurable hard limit prevents the delay queue from growing without
+   bound. Reaching the limit triggers a safety stop, immediately returns the
+   packet that could not be queued, and releases every packet already waiting.
+
+14. Automatic session timeout
+
+   A maximum running time can be selected from one minute through 24 hours.
+   When the limit expires, SuperDuper stops capture and safely releases queued
+   traffic. Selecting No time limit disables this watchdog.
+
+15. Named complete profiles
+
+   Any valid combination of conditions, targeting, and safety limits can be
+   saved under a user-defined name, loaded later, or deleted. Loading a profile
+   never starts interception by itself.
+
+16. Stop-only emergency hotkey
+
+   Ctrl + Numpad * is a separate global emergency command. Unlike the ordinary
+   toggle, it can only stop the engine and therefore cannot accidentally start
+   interception when the engine is already inactive.
+
+17. Calibrated Dupe sequence
+
+   Numpad + starts a calibrated private-lab DayZ sequence. SuperDuper performs
+   three Exit-and-Cancel cycles, completes a fourth logout, waits for the lobby,
+   and clicks the saved Play position. The sequence checks that DayZ remains
+   the foreground window before each automatic action.
+
+18. Voice-ready spoken assistant
+
+   The lips icon in the upper-right corner controls a Windows spoken-assistant
+   service. Voice starts enabled so CONDITIONS help works immediately.
+   SuperDuper selects an installed female voice that matches the computer
+   language when possible. Click the lips to mute or enable it.
+   Speech runs on a separate worker so it does not freeze the controls. The
+   mute button also stops an explanation already in progress.
+
+19. CONDITIONS spoken guidance
+
+   When voice is enabled, every click on CONDITIONS asks the user to double
+   click a control to learn about it, or single click it for ordinary use.
+   A single click on either selection bar never starts control narration.
+   Double clicking the DIRECTION text label explains Both, Inbound, and
+   Outbound. Double clicking the PROTOCOL text label explains All traffic,
+   TCP, UDP, IPv4, and IPv6. Double clicking the LATENCY, JITTER, or PACKET LOSS
+   text label explains that condition in simple detail. Clicking or editing the
+   sliders and value boxes remains silent.
+
+20. TARGETING spoken guidance
+
+   Clicking TARGETING speaks a short prompt. Single clicks on the targeting
+   controls remain silent and operate normally. Double clicking the PRESET,
+   IP / CIDR, PORTS, or PROCESS text label speaks a simple detailed explanation
+   of that field. The IP and port guides clearly explain that SuperDuper does
+   not discover or fill a server address automatically. The PROCESS guide also
+   explains that specific-process interception is not implemented yet.
+
+21. High-visibility CONDITIONS labels
+
+   DIRECTION, PROTOCOL, LATENCY, JITTER, and PACKET LOSS are displayed in
+   bright white with a slightly stronger weight for easier reading.
+
+22. High-visibility TARGETING labels
+
+   PRESET, IP / CIDR, PORTS, and PROCESS are also displayed in bright white
+   with a slightly stronger weight for easier reading.
+
+23. High-visibility remaining control labels
+
+   The six ADVANCED EFFECTS labels, two SAFETY labels, SAVED PROFILE label, and
+   four DUPE calibration/timing labels are displayed in bright white with a
+   slightly stronger weight for easier reading.
+
+24. ADVANCED EFFECTS spoken guidance
+
+   Clicking ADVANCED EFFECTS speaks a short prompt. Double clicking any of its
+   six white control labels explains that feature and how to use it. Ordinary
+   control clicks remain silent.
+
+25. SAFETY spoken guidance
+
+   Clicking SAFETY speaks its prompt. Double clicking MAXIMUM DELAY QUEUE or
+   MAXIMUM SESSION explains the selected safeguard in simple detail.
+
+26. PROFILES spoken guidance
+
+   Clicking PROFILES speaks its prompt. Double clicking SAVED PROFILE explains
+   saving, loading, deleting, and reviewing profiles.
+
+27. Ordered Numpad-minus DUPE calibration
+
+   While DayZ is in front, every press of Numpad - immediately records the
+   pointer's exact screen coordinates and appends them to the saved order.
+   Repeated positions are preserved. CLEAR deletes the entire ordered sequence.
+   INFO displays the complete guide and reads it aloud when voice is enabled.
+
+28. Clear DayZ pronunciation
+
+   Spoken guidance uses the phonetic wording "Day Zee" so the Windows voice
+   pronounces the game name correctly. Visible text continues to use "DayZ."
+
+29. Global Numpad 0 / INS voice hotkey
+
+   Press the physical Numpad 0 / INS key to mute or enable the APP Voice from
+   DayZ or any other foreground window. The hotkey supports Numpad 0 when Num
+   Lock is on and Insert when Num Lock is off. The lips button remains
+   synchronized with the hotkey state.
+
+30. Numpad * activation confirmation
+
+   After Numpad * successfully starts SuperDuper, APP Voice says,
+   "Activated." After the next Numpad * press successfully stops SuperDuper,
+   APP Voice says, "Deactivated." Failed state changes remain silent.
+
+31. Editable INFO-CENTER
+
+   The INFO-CENTER button between the SuperDuper logo and lips opens a centered,
+   scrollable folder tree. The protected INFO-CENTER folder cannot be renamed or
+   deleted from the app. Folder arrows reveal folders nested to any depth.
+   Users can create, rename, paste, and open folders, paste .txt documents, and
+   move ordinary folders to the Windows Recycle Bin after confirmation.
+   Double clicking any visible .txt document replaces the folder tree with its
+   text while APP Voice reads it aloud. The glowing left arrow restores the
+   folder tree and immediately stops the narration.
+
+
+AN HONEST COMPARISON WITH CLUMSY
+-------------------------------------------------
+
+SuperDuper is currently more advanced in its modern interface, global keyboard
+control, validation, settings persistence, package discovery, integrity checks,
+and controlled shutdown design.
+
+SuperDuper now implements latency, jitter, packet loss, packet duplication,
+controlled out-of-order delivery, and bandwidth throttling. It also combines
+these effects with queue limits, a session watchdog, named profiles, integrity
+checks, live counters, and a Stop-only emergency hotkey.
+
+SuperDuper provides constrained payload corruption rather than unrestricted
+packet-content editing. It protects network and transport headers, supports
+only direct TCP/UDP payloads, recalculates checksums, requires narrow targeting,
+and asks for confirmation. Specific-process filtering is visible for discovery
+and profile planning but cannot be activated until reliable live endpoint
+tracking is completed. This document does not claim superiority in every
+possible use case.
+
+
+STARTING SUPERDUPER
+-----------------------------
+
+1. Open the dist folder.
+2. Run SuperDuper.exe. The interface opens without administrator permission.
+3. Select the desired conditions and targeting rules.
+4. Press START or use the dedicated Numpad * key.
+5. Approve the Windows administrator prompt when SuperDuper offers to restart
+   with the permission required for live interception.
+
+Administrator permission is requested only when live interception is started,
+because WinDivert operates through a Windows network driver. This keeps the
+Windows UAC shield overlay off the normal executable icon while retaining the
+required Windows security boundary.
+
+
+USING INFO-CENTER
+-----------------
+
+1. Click INFO-CENTER at the top of the main window.
+
+2. The information window opens in the center of SuperDuper. It includes
+   vertical and horizontal scroll bars when its contents need more room.
+
+3. Click the arrow beside INFO-CENTER to reveal its contents. Every folder
+   placed inside another folder receives its own expansion arrow when it has
+   contents. The included Welcome text makes the protected folder expandable
+   immediately.
+
+4. Right click INFO-CENTER or another folder and select New Folder to create a
+   folder inside the selected location.
+
+5. To paste content, copy a folder or .txt document in Windows File Explorer.
+   Select the destination folder in INFO-CENTER, right click, and select Paste.
+   With no folder selected, Paste places the item beside INFO-CENTER.
+
+6. Double click a .txt document. The folders clear from the INFO-CENTER window
+   and the document appears there while APP Voice reads its contents. Click the
+   glowing left arrow in the upper-left corner to return to the folders and stop
+   the narration immediately. Empty or unreadable files produce a clear message.
+   Narration respects the lips and Numpad 0 / INS mute setting. External edits
+   and newly placed folders appear automatically or after selecting Refresh.
+   In capitalized passages, APP Voice distinguishes the ordinary word "it" from
+   genuine information-technology abbreviations. The displayed text is never
+   rewritten.
+   Repeated equals signs used as dividers become a brief narration pause instead
+   of being spoken repeatedly. A single equals sign is spoken once as "equals."
+
+7. Right click an ordinary folder and select Delete Folder, or right click a
+   visible .txt document and select Delete Text File. The selected item moves
+   to the Windows Recycle Bin after a confirmation question.
+
+8. INFO-CENTER itself is protected. It has no Rename or Delete Folder command,
+   and SuperDuper recreates it if it is missing when the window opens.
+
+Package-level instruction and license .txt files, internal application folders,
+build output, cache folders, and backup folders are hidden from this information
+view so they cannot be removed accidentally. User .txt files inside visible
+information folders remain visible and manageable.
+
+
+CONDITIONS TAB
+---------------------
+
+DIRECTION
+
+Both
+    Applies the selected conditions to matching incoming and outgoing traffic.
+
+Outbound
+    Applies the conditions only to packets leaving this computer.
+
+Inbound
+    Applies the conditions only to packets arriving at this computer.
+
+
+PROTOCOL
+
+All traffic
+    Allows all supported IP traffic to match unless another filter narrows it.
+
+TCP
+    Selects TCP traffic, commonly used by websites, downloads, and many games.
+
+UDP
+    Selects UDP traffic, commonly used by real-time games, voice, streaming,
+    and DNS.
+
+IPv4
+    Selects only Internet Protocol version 4 traffic.
+
+IPv6
+    Selects only Internet Protocol version 6 traffic.
+
+
+LATENCY
+
+Latency holds matching packets for the selected number of milliseconds before
+sending them again. A larger value creates a slower response. For example,
+120 ms means a matching packet is held for approximately 120 milliseconds.
+
+The large white value beside the title is also an exact-value field. Click it,
+type the desired number of milliseconds, and press Enter. Arrow keys and slider
+groove clicks change the value by one millisecond. Dragging the slider is useful
+for broad changes; use the value field for exact settings.
+
+
+JITTER
+
+Jitter varies the delay from packet to packet. If latency is 120 ms and jitter
+is 20 ms, an individual packet may receive a delay between approximately
+100 ms and 140 ms. SuperDuper never converts a negative result into a negative
+delay; the minimum actual delay is zero.
+
+Use Jitter's large white value field to type an exact millisecond amount when
+mouse dragging is too coarse.
+
+
+PACKET LOSS
+
+Packet Loss is the percentage chance that a matching packet will be discarded.
+A setting of 0% drops no packets deliberately. A setting of 2% drops about two
+out of every one hundred matching packets over time. A setting of 100% drops
+every matching packet and will normally break the selected connection.
+
+
+TARGETING TAB
+-------------
+
+PRESET
+
+Custom
+    Uses values selected manually by the user.
+
+All Traffic
+    Selects both directions and all traffic without an IP or port restriction.
+    Use this carefully because it can affect the entire computer's connection.
+
+Localhost
+    Selects traffic associated with 127.0.0.1. This is useful for controlled
+    local testing when software communicates with another service on the same
+    computer.
+
+Web Traffic
+    Selects TCP ports 80 and 443, which are commonly used for web traffic.
+
+DNS Traffic
+    Selects UDP port 53, which is commonly used for DNS name lookups.
+
+If a preset value is manually changed, SuperDuper changes the preset label to
+Custom so the displayed name cannot misrepresent the actual filter.
+
+
+IP / CIDR
+
+Leave this field empty to allow any IP address.
+
+Examples:
+
+192.168.1.50
+    Selects traffic to or from one IPv4 address.
+
+192.168.1.0/24
+    Selects traffic to or from that IPv4 network range.
+
+2001:db8::1
+    Demonstrates the accepted format for one IPv6 address.
+
+SuperDuper rejects malformed addresses and incompatible IPv4/IPv6 choices.
+
+
+PORTS
+
+Leave this field empty to allow any port.
+
+Examples:
+
+443
+    Selects one port.
+
+80, 443
+    Selects a comma-separated list of ports.
+
+8000-8100
+    Selects every port from 8000 through 8100.
+
+53, 443, 8000-8100
+    Combines individual ports and a range.
+
+Only ports from 1 through 65535 are accepted. Empty list entries and reversed
+ranges such as 9000-8000 are rejected.
+
+
+PROCESS
+
+The Process menu displays running executable names and process IDs. Select
+Any process for the functioning WinDivert network-layer backend.
+
+Choosing one specific process currently prevents Start and displays an
+explanation. Reliable process filtering requires SuperDuper to monitor the
+selected process's changing network endpoints continuously; that feature is
+not yet enabled.
+
+
+REFRESH BUTTON
+
+REFRESH performs a new read-only query of the running Windows processes. It
+updates executable names and process IDs in the Process menu. It does not start
+interception and does not open or modify the listed processes.
+
+
+FILTER SUMMARY
+
+The dark summary box displays the effective direction, protocol, IP scope,
+ports, and process selection. If an IP or port entry is invalid, the summary
+changes to an INVALID FILTER message explaining the problem.
+
+
+ADVANCED EFFECTS TAB
+--------------------
+
+DUPLICATION
+
+This is the percentage chance that a matching, non-dropped packet is queued a
+second time. At 0%, no deliberate duplicate is created. At 100%, every matching
+packet is sent twice. The duplicate consumes queue capacity and bandwidth just
+like the original packet.
+
+
+OUT-OF-ORDER CHANCE
+
+This controls the percentage of matching packets selected for an additional
+variable hold. Later packets can pass selected packets, producing controlled
+out-of-order delivery. TCP may react with retransmissions, reduced throughput,
+stuttering, timeouts, or disconnection; the precise reaction belongs to the
+tested application and its operating-system network stack.
+
+
+REORDER HOLD (MAXIMUM)
+
+Selected packets receive a random additional hold between zero and this value.
+A larger maximum increases the opportunity for later packets to pass them. A
+zero-millisecond maximum disables the practical reordering effect even if the
+chance is above zero.
+
+Use the large white value field to enter the exact millisecond hold. This is
+more precise than dragging across the complete 0-10,000 ms range.
+
+
+BANDWIDTH LIMIT
+
+This limits matching traffic to the selected rate in kilobits per second by
+scheduling packet release according to packet size. Unlimited disables the
+throttle. The limit applies only to traffic matching the active WinDivert
+filter; it is not a promise of exact application throughput because protocol
+headers, retransmissions, duplication, and other traffic consume capacity.
+
+
+PAYLOAD CORRUPTION
+
+This is the percentage chance, from 0% through a deliberately capped 25%, that
+a matching non-dropped TCP or UDP packet with a payload will have payload bits
+flipped. A value of 0% disables corruption. Network headers, TCP/UDP headers,
+header-only packets, and unsupported protocols are never modified.
+
+Corruption cannot start with an unrestricted filter. An IP/CIDR or port target
+must be entered, and the user must confirm the risk for every session. After
+mutation, SuperDuper calls the official WinDivert checksum helper before the
+packet is queued. If checksum recalculation fails, the engine stops safely.
+
+
+BIT FLIPS PER SELECTED PACKET
+
+This chooses 1 through 8 unique payload bits to flip in each packet selected for
+corruption. Unique selection prevents two flips from accidentally cancelling
+each other. Small values are recommended because even one changed bit may break
+a protocol message, invalidate encrypted traffic, damage an active transfer, or
+disconnect an application.
+
+
+SAFETY TAB
+----------
+
+MAXIMUM DELAY QUEUE
+
+This is the largest number of delayed packets SuperDuper permits in memory at
+once. The accepted range is 100 through 100,000 packets. If the queue reaches
+this limit, the engine performs a fail-open safety stop and returns all queued
+packets instead of allowing memory use to grow indefinitely.
+
+
+MAXIMUM SESSION
+
+This optional timer limits how long one interception session may remain active.
+Choose No time limit for no automatic timeout, or choose 1 through 1,440
+minutes. The Stop control and emergency hotkey remain available while the timer
+is active.
+
+
+PROFILES TAB
+------------
+
+SAVE PROFILE
+
+SAVE PROFILE asks for a name and stores the current Conditions, Targeting,
+Advanced Effects, and Safety values. Names must contain 1 through 40 printable
+characters. Saving a profile does not start interception.
+
+
+LOAD
+
+LOAD applies the selected saved profile to the visible controls after checking
+and safely bounding its values. It does not start interception; press START
+after reviewing the loaded filter summary.
+
+
+DELETE
+
+DELETE asks for confirmation and then removes the selected named profile. It
+does not alter the currently visible controls.
+
+
+DUPE TAB
+--------
+
+The DUPE tab controls the automatic DayZ logout and login sequence. It is
+intended only for an authorized private DayZ LAN server.
+
+Before using the DUPE tab, DayZ should use the same screen resolution and display
+mode that will be used during the test. Moving the DayZ window or changing its
+resolution after calibration can make SuperDuper click the wrong location.
+
+
+RECORD THE ORDERED CALIBRATION
+
+Numpad - is the global capture hotkey. It works immediately while DayZ is in
+front. Each press saves the exact pointer coordinates as the next ordered step.
+
+For the standard three-cycle sequence, record these eight positions:
+
+1. Press Escape, hover over EXIT, and press Numpad -.
+2. Hover over CANCEL and press Numpad -.
+3. Repeat EXIT and CANCEL two more times, pressing Numpad - over each button.
+4. Record EXIT one final time. Do not record CANCEL after this final EXIT.
+5. In the lobby, hover over REJOIN or PLAY and press Numpad -.
+
+The saved order is:
+
+    EXIT, CANCEL, EXIT, CANCEL, EXIT, CANCEL, FINAL EXIT, REJOIN
+
+The DUPE tab shows the number of saved positions, the expected next standard
+step, and every recorded coordinate in order. Repeated coordinates are retained.
+Click CLEAR to delete the complete list and begin again.
+
+INFO clears the text inside the DUPE information box, displays the full setup
+and calibration guide, and reads that guide aloud when APP Voice is enabled.
+
+
+SET THE FINAL LOGOUT TIME
+
+1. Find the FINAL LOGOUT COMPLETION control in the DUPE tab.
+
+2. Set it to the normal number of seconds DayZ needs to finish a real logout
+   and reach the lobby.
+
+3. SuperDuper automatically adds another eight-second wait after this time.
+   The PLAY button is clicked after both waits have finished.
+
+Example:
+
+    Final Logout Completion: 15 seconds
+    Automatic Lobby Wait: 8 seconds
+    PLAY is clicked about 23 seconds after the final EXIT click.
+
+
+START THE DUPE SEQUENCE
+
+1. Confirm that the complete ordered calibration sequence is displayed.
+
+2. Configure the Conditions and Targeting tabs for the authorized private LAN
+   server.
+
+3. Press START in SuperDuper, or press Numpad *.
+
+4. Approve the administrator request if Windows displays one.
+
+5. Confirm that SuperDuper says ACTIVE.
+
+6. Return to DayZ and continue into active gameplay.
+
+7. Make sure DayZ is the active window in front of all other windows.
+
+8. Press the dedicated Plus (+) key on the numeric keypad one time.
+
+9. Do not press Numpad + again. Do not move the DayZ window, change resolution,
+   open another menu, or switch to another program while the sequence runs.
+
+
+WHAT HAPPENS AFTER NUMPAD + IS PRESSED
+
+SuperDuper performs these actions in this exact order:
+
+1. It presses Escape to open the DayZ Exit menu.
+
+2. It clicks the saved EXIT position.
+
+3. It waits two seconds.
+
+4. It clicks the saved CONTINUE or CANCEL position.
+
+5. It repeats that same Exit, two-second wait, and Cancel process until it has
+   been completed exactly three times.
+
+6. It presses Escape and clicks EXIT a fourth time.
+
+7. It does not cancel the fourth logout.
+
+8. It waits for the number of seconds selected in FINAL LOGOUT COMPLETION.
+
+9. It waits another eight seconds for the DayZ lobby.
+
+10. It clicks the final saved REJOIN or PLAY position to rejoin the game.
+
+11. The status line reports that the Dupe sequence is complete.
+
+
+HOW TO STOP THE DUPE SEQUENCE
+
+Press Ctrl + Numpad * if the wrong menu appears, DayZ loses focus, the mouse
+moves to an unexpected place, or the sequence must stop for any reason.
+
+Ctrl + Numpad * cancels the automatic Dupe sequence and stops SuperDuper's
+packet engine. Closing SuperDuper also cancels pending automatic actions.
+
+The ordinary Numpad * key is the normal Start/Stop toggle. Use
+Ctrl + Numpad * for an emergency stop while the DUPE sequence is running.
+
+
+IMPORTANT DUPE TAB NOTES
+
+1. Numpad + works only while SuperDuper is ACTIVE.
+
+2. DayZ must be the foreground window before an automatic keyboard or mouse
+   action is sent.
+
+3. SuperDuper will not start a second DUPE sequence while one is already
+   running.
+
+4. The Plus key above the letter keys is not the DUPE hotkey. Use the
+   dedicated Plus (+) key on the numeric keypad.
+
+5. The Minus key above the letter keys is not the calibration hotkey. Use the
+   dedicated Minus (-) key on the numeric keypad.
+
+6. The saved locations are screen coordinates. Recalibrate after changing the
+   DayZ resolution, display mode, monitor, window size, or menu layout.
+
+7. The automatic sequence uses saved positions and timers. Watch the first
+   test carefully and use Ctrl + Numpad * immediately if DayZ does not display
+   the expected screen.
+
+
+BOTTOM BUTTONS
+--------------
+
+RESET
+
+RESET restores the controls to SuperDuper's documented defaults:
+
+    Direction: Both
+    Protocol: All traffic
+    Latency: 120 ms
+    Jitter: 20 ms
+    Packet Loss: 2%
+    Duplication: 0%
+    Out-of-order Chance: 0%
+    Reorder Hold Maximum: 250 ms
+    Bandwidth Limit: Unlimited
+    Payload Corruption: 0%
+    Bit Flips per Selected Packet: 1
+    Preset: Custom
+    IP: Any
+    Port: Any
+    Process: Any process
+    Maximum Delay Queue: 10,000 packets
+    Maximum Session: No time limit
+
+RESET changes the visible controls but does not save them automatically. Press
+APPLY SETTINGS if the restored defaults should be used the next time the app
+starts.
+
+
+APPLY SETTINGS
+
+APPLY SETTINGS validates the targeting entries and saves the complete profile.
+If a value is invalid, SuperDuper switches to the Targeting tab and explains
+what must be corrected. Applying settings does not start interception.
+
+
+START / STOP
+
+START performs the final safety checks, creates the WinDivert filter, opens the
+packet engine, and begins processing matching live traffic. While active, the
+configuration controls are locked so they cannot change underneath the running
+engine. The button changes to STOP.
+
+STOP ends reception, releases delayed packets, closes WinDivert, unlocks the
+configuration controls, and changes the button back to START.
+
+
+GLOBAL NUMPAD * HOTKEY
+----------------------
+
+The dedicated Multiply (*) key above Numpad 9 performs the same Start/Stop
+action as the on-screen button.
+
+    First press: START
+    Second press: STOP
+
+It is a Windows global hotkey, so it works while another application has focus.
+It is not the asterisk produced by pressing Shift+8. SuperDuper uses Windows
+virtual key VK_MULTIPLY specifically.
+
+If another program has already reserved Numpad *, SuperDuper reports that the
+hotkey is unavailable. The on-screen START/STOP button remains usable.
+
+Ctrl + Numpad * is the separate emergency Stop-only command. If interception
+is running, it stops reception and releases queued packets. If interception is
+already inactive, it reports that state and does nothing else. It never starts
+the engine.
+
+
+STATUS AREA
+-----------
+
+The status line reports important information, including:
+
+    Whether the Numpad * hotkey registered successfully
+    Whether the Numpad + Dupe hotkey registered successfully
+    Whether the required DUPE positions are calibrated
+    Whether settings were saved
+    Why a filter cannot start
+    Whether SuperDuper is active
+    Captured, sent, dropped, duplicated, reordered, bandwidth-shaped, and
+    payload-corrupted packet totals
+    Whether queued packets were released after Stop
+    Whether voice is muted, ready, or unavailable
+    Which installed Windows voice was selected
+
+
+SAFETY NOTES
+------------
+
+1. Begin with Localhost or a narrow IP/port filter.
+2. Avoid All Traffic until the intended settings have been verified.
+3. Remember that 100% packet loss blocks all matching packets.
+4. Keep the on-screen STOP button available during initial testing.
+5. Closing SuperDuper safely stops an active engine.
+6. Do not delete or replace the WinDivert files in the package folder.
+7. Use the application only on systems and traffic you are authorized to test.
+8. Keep payload corruption at a low percentage and use a narrow IP/CIDR or port
+   filter. SuperDuper refuses to start corruption without one of these targets.
+9. Do not run corruption during an important download, upload, software update,
+   database transaction, cloud synchronization, or other valuable transfer.
+10. SuperDuper protects IP/TCP/UDP headers, but payload changes can still cause
+    application errors, rejected encrypted traffic, or disconnected sessions.
+
+
+FILES USED BY SUPERDUPER
+------------------------
+
+SuperDuper.exe
+    The packaged Windows desktop application in the dist folder.
+
+SuperDuper.py
+    The PyQt6 interface and application controller source.
+
+windivert_backend.py
+    The native WinDivert interface, packet queue, impairment scheduler, guarded
+    payload mutation, checksum recalculation, statistics, and lifecycle logic.
+
+package_locator.py
+    Configured-Desktop discovery and package-integrity validation.
+
+voice_backend.py
+    The queued Windows speech service, female-voice selection, mute state,
+    error reporting, and clean shutdown logic.
+
+superduper.package.json
+    The package identity, version information, required hashes, and application
+    markers.
+
+lips.png
+    The transparent image displayed by the upper-right voice mute button.
+
+WinDivert.dll
+    The official WinDivert 2.2.2 user-mode library.
+
+WinDivert64.sys
+    The official signed 64-bit WinDivert driver.
+
+WinDivert-LICENSE.txt
+    The official WinDivert license text.
+
+
+CURRENT LIMITATIONS
+-------------------
+
+The current release does not yet implement:
+
+    Specific-process interception
+    Unrestricted header or arbitrary command rewriting
+    PCAP export
+
+The voice system is operational. It speaks the CONDITIONS prompt and separate
+DIRECTION and PROTOCOL guides. More event-specific phrases can use the prepared
+speech service in later releases. The interface does not claim the limitations
+above are operational. They should be added only when their real backend
+implementation and safety tests are ready.
+
+
+BUILD AND AUDIT VERIFICATION
+----------------------------
+
+The current executable was rebuilt in the dist folder on July 27, 2026. Its
+SHA-256 digest is:
+
+    DA3F07920225F5A908C51A4AABAE3E8425AEE59B8D8464A4D24BEC4CF608F380
+
+The corresponding Python source was parsed successfully with Python 3.14 and
+passed Ruff static analysis. All 32 automated tests passed during the
+current rebuild. The Dupe mouse sequence must be calibrated and verified
+carefully in the authorized private DayZ LAN environment because its result
+depends on the active DayZ screen, saved coordinates, and configured timing.
+
+The WinDivertHelperCalcChecksums binding uses the official unsigned return type
+and treats a returned checksum count of zero as failure. A real call through the
+official WinDivert 2.2.2 library was tested with a synthetic mutated TCP packet.
+The packaged executable uses an asInvoker manifest, requests elevation only
+when live interception is started, and contains the required WinDivert library,
+signed 64-bit driver, license, and authenticated package marker.

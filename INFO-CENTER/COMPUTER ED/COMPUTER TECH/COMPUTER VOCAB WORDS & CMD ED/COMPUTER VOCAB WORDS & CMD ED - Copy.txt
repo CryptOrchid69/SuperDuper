@@ -1,0 +1,1162 @@
+// THE FOLLOWING INFORMATION WAS PROVIDED BY ii.chat AI WHICH IS THE RUSSIAN EQUIVALENT OF ChatGPT AI. ii.chat AI IS 100% FREE AND COSTS NOTHING //
+https://ii.chat/new
+
+
+Hardware Basics - 14 terms
+Essential Peripherals - 7 terms
+Software Essentials - 13 terms
+Common Computer Actions - 18 terms
+Storage & File Management - 22 terms
+File Formats - 19 terms
+Internet & Web - 17 terms
+Networking - 20 terms
+Security - 23 terms
+Multimedia - 11 terms
+User Accounts & Permissions - 5 terms
+Programming & Development - 15 terms
+Data & Databases - 11 terms
+Miscellaneous Important Terms - 44 terms
+
+
+// Total: 239 vocabulary words //
+
+
+COMPREHENSIVE COMPUTER VOCABULARY LIST-HARDWARE BASICS
+
+Motherboard – The main circuit board everything else connects to; the backbone of your computer system.
+
+CPU (Central Processing Unit) – The "brain" that processes instructions and controls all computer operations. Faster CPUs mean better performance.
+
+RAM (Random Access Memory) – Temporary storage where active programs and data are kept for quick access. More RAM enables better multitasking.
+
+Hard Drive – Long-term storage for files, programs, and the operating system. Data persists even when powered off.
+
+SSD (Solid State Drive) – Faster storage than traditional hard drives with no moving parts; makes computers boot up and load programs much quicker.
+
+NVMe (Non-Volatile Memory Express) – An extremely fast SSD interface that provides the quickest response times.
+
+GPU (Graphics Processing Unit) – A specialized processor optimized for graphics; critical for gaming, 3D work, and video editing.
+
+PSU (Power Supply Unit) – Converts AC power from wall outlets to DC power that computer components need.
+
+PCIe (PCI Express) – A versatile high-speed connector for add-in cards like GPUs, SSDs, and capture cards.
+
+Form Factor – Refers to a computer's physical size and shape (e.g., laptop vs. desktop tower).
+
+CMOS (Complementary Metal-Oxide Semiconductor) – A chip that stores key settings like system time and hardware configuration, powered by a coin battery.
+
+BIOS/UEFI – Low-level software that runs when you first start your computer; handles booting the OS.
+
+POST (Power-On Self Test) – A series of quick checks the computer runs at startup to verify hardware is working.
+
+Heatsink – A block of metal fins that draws heat away from the CPU or GPU, usually topped with a fan.
+
+
+ESSENTIAL PERIPHERALS
+
+Monitor – The display screen showing computer output; comes in different sizes, resolutions, and panel types (LCD, LED, OLED).
+
+Keyboard – Input device for typing and giving your computer commands.
+
+Mouse – Pointing device that lets you precisely interact with items on the screen.
+
+Speakers/Headphones – Audio output devices for listening to sound and music.
+
+Microphone – Input device for voice commands, calls, and audio recording.
+
+Webcam – Small video camera used for video calls and conferences; some have infrared for facial recognition.
+
+Printer – Device for producing physical copies of documents and photos.
+
+
+SOFTWARE ESSENTIALS
+
+OS (Operating System) – Main software that manages your computer's hardware and other software (Windows, macOS, Linux).
+
+Application – A program designed for a specific task, like a web browser, photo editor, or game.
+
+Web Browser – Software that allows you to access and view websites on the internet (Chrome, Firefox, Edge, Safari).
+
+File – A discrete package of data, such as a document, photo, or program.
+
+Folder/Directory – A virtual container for organizing files; folders can contain other folders.
+
+Icon – A small graphic that represents a file, folder, or program.
+
+Antivirus – Software that detects and removes malware like viruses, spyware, and ransomware.
+
+Firewall – Monitors incoming and outgoing network traffic to protect your system and data.
+
+Drivers – Software that lets your OS communicate with a particular piece of hardware.
+
+Firmware – Permanent software programmed into read-only memory on devices like routers and IoT gadgets.
+
+GUI (Graphical User Interface) – How most modern operating systems and apps present themselves using windows, icons, and menus.
+
+CLI (Command Line Interface) – Text-based interface for controlling a computer by typing commands (also called Terminal or Command Prompt).
+
+System Tray – Small area (usually bottom-right on Windows) that holds status icons and background applications.
+
+Control Panel – Collection of tools and settings for configuring your Windows system.
+
+Terminal – Text-based interface for running commands; called Command Prompt on Windows and Terminal on Mac/Linux.
+
+Package Manager – Tool for easily installing, updating, and managing software; essential for Linux users.
+
+Task Manager – Shows information about running processes and resource usage; helps identify unresponsive programs.
+
+
+COMMON COMPUTER ACTIONS
+
+Cut – Removes selected data and copies it to the clipboard.
+
+Copy – Copies selected data to the clipboard without removing the original.
+
+Paste – Inserts data from the clipboard at the current cursor position.
+
+Undo – Reverses the last action performed.
+
+Redo – Reverses an undo to restore a change.
+
+Find – Searches for a specific piece of data, like a word in a document.
+
+Print Screen – Captures an image of your screen and copies it to the clipboard.
+
+Boot – The process of powering on the computer and loading the operating system.
+
+Reboot/Restart – Shuts down and immediately starts the computer back up.
+
+Shut Down – Properly powers down the computer, saving data and closing programs.
+
+Sleep/Standby – Low-power state that quickly resumes where you left off.
+
+Hibernate – Saves system state to disk and shuts down; uses zero power but is slower to resume.
+
+Install – Process of setting up a new program or hardware device on your computer.
+
+Uninstall – Removes a program and its associated files from your computer.
+
+Update – Patches a program with fixes and improvements.
+
+Upgrade – Installing a newer version of a program or swapping in better hardware.
+
+Dual Boot – Having two separate operating systems installed with the ability to choose between them at startup.
+
+
+STORAGE & FILE MANAGEMENT
+
+File Extension – The part after the dot in a filename (like .jpg or .mp3) that indicates the file format.
+
+Hidden Files – Files configured not to show up in regular file browsers; usually system files.
+
+Shortcut – A small file that points to another file, folder, or program for quick access.
+
+Permissions – Settings that control whether a user can view, edit, or execute a particular file.
+
+Compression – Encoding data to take up less space (ZIP and RAR are common compressed formats).
+
+System Files – Program files your OS needs to function; best not to modify these.
+
+Temp Files – Temporary files programs generate in the background; can usually be safely deleted.
+
+File Sharing – Making files accessible to other computers on a network or the internet.
+
+Read-Only – A file that can be viewed but not edited; helps protect important data.
+
+Archive – A collection of files bundled into a single file for storage or sharing, often compressed.
+
+Folder Hierarchy – The nested tree-like structure of folders within folders on a drive.
+
+Root Directory – The top-level folder containing all other folders on a drive (referred to as C:\ on Windows).
+
+Path – The complete location of a file or folder (e.g., C:\Users\YourName\Documents\Report.docx).
+
+Partitioning – Dividing a physical drive into separate logical drives, each with its own filesystem.
+
+File System – The method an OS uses to organize data on a drive (NTFS, exFAT, FAT32).
+
+Formatting – Erasing and preparing a drive to work with a particular file system.
+
+Fragmentation – When files get scattered around a drive, slowing performance (defragging fixes this).
+
+Cloud Storage – Storing files on remote servers accessible from anywhere over the internet.
+
+Redundant Storage – Having multiple copies of data to prevent loss if one drive fails.
+
+NAS (Network Attached Storage) – A dedicated file server providing storage over a network.
+
+RAID – Combining multiple drives to improve performance and/or fault tolerance.
+
+USB Flash Drive – Small, portable storage device that plugs into a USB port.
+
+External Drive – Hard drive or SSD in a case that connects to a computer, usually via USB.
+
+
+FILE FORMATS
+
+TXT – Plain, unformatted text file format.
+
+JPG/JPEG – Compressed image format commonly used for photos.
+
+PNG – Image format that supports transparency.
+
+GIF – Image format that supports animation.
+
+MP3 – Compressed audio format.
+
+WAV – Uncompressed audio format.
+
+MP4 – Common video format.
+
+AVI – Older video format.
+
+MKV (Matroska Video) – Versatile multimedia container holding video, audio, subtitles, and metadata.
+
+XLSX – Microsoft Excel spreadsheet format.
+
+PPTX – Microsoft PowerPoint presentation format.
+
+CSV (Comma-Separated Values) – Format for tabular data like spreadsheets.
+
+JSON – Lightweight data interchange format that's easy for humans to read.
+
+XML – Markup language for encoding documents readable by both humans and computers.
+
+YAML – Data format similar to JSON but more human-friendly; great for configuration files.
+
+Markdown – Lightweight markup language for formatting plain text.
+
+SVG (Scalable Vector Graphics) – XML-based image format that scales to any size without pixelation.
+
+WebP – Modern image format offering better compression than JPG or PNG.
+
+EPUB – Standard ebook format supporting flowable text with images and formatting.
+
+ZIP/RAR – Compressed file formats.
+
+
+INTERNET & WEB
+
+Web – Short for World Wide Web; the collective network of public websites linked via hyperlinks.
+
+HTTP – Hypertext Transfer Protocol that powers the web.
+
+HTTPS – Secure version of HTTP with encryption.
+
+SSL (Secure Sockets Layer) – Encryption protocol used to secure data sent over the internet.
+
+URL (Uniform Resource Locator) – Web address specifying the location of a resource (e.g., www.google.com).
+
+ISP (Internet Service Provider) – Company you pay to get internet access (Comcast, AT&T, etc.).
+
+Bandwidth – Maximum amount of data you can send over a connection in a given time, measured in Mbps.
+
+Domain Name – The part of a URL identifying a website (google.com, wikipedia.org).
+
+Email – Electronic mail; the most essential internet communication tool.
+
+Search Engine – Website that finds other websites based on keywords (Google, Bing, etc.).
+
+Download – Receiving data from a remote system.
+
+Upload – Sending data to a remote system.
+
+Streaming – Watching video or listening to audio in real-time as it's sent, rather than downloading first.
+
+Cloud – Services provided over the internet rather than locally on your device.
+
+Hosting – Paying a company to store your website's files and data on a server.
+
+Client – Your web browser; the program that requests resources from a web server.
+
+Server – Powerful computer that stores websites and apps, serving them to client devices.
+
+
+NETWORKING
+
+IP Address – Unique string of numbers identifying each device on a network (like a virtual return address).
+
+MAC Address – Permanent ID number assigned to a device's network card.
+
+LAN (Local Area Network) – Small network confined to one area, like a home or office.
+
+Ethernet – Wired networking technology for connecting devices in a LAN using cables.
+
+Wi-Fi – Wireless networking based on 802.11 standards.
+
+Router – Device that routes data between networks.
+
+Modem – Converts signals between analog (cable/phone lines) and digital (Ethernet).
+
+Switch – Connects multiple wired devices on a network so they can communicate.
+
+Port – Virtual endpoint for network communication; different services use specific port numbers.
+
+DNS (Domain Name System) – Translates human-friendly domain names into IP addresses.
+
+DHCP (Dynamic Host Configuration Protocol) – Automatically assigns IP addresses to devices on a network.
+
+Subnet Mask – Defines which part of an IP address identifies the network vs. the device.
+
+NAT (Network Address Translation) – Lets multiple devices share one public IP address.
+
+VLAN (Virtual LAN) – Partitions a physical network into separate virtual networks.
+
+QoS (Quality of Service) – Prioritizes certain types of network traffic for smoother performance.
+
+Throughput – Actual amount of data sent over a connection in a given time.
+
+Latency – Time it takes data to travel from source to destination; lower is better.
+
+Jitter – Variation in latency that can cause choppy audio and laggy video.
+
+Packet Loss – Percentage of data packets lost in transit; can degrade voice and video quality.
+
+Redundancy – Multiple paths for data to travel; helps maintain connectivity if one path fails.
+
+
+SECURITY
+
+Encryption – Scrambling data so it can only be read with a special key.
+
+Authentication – Proving a user's or device's identity, usually with username and password.
+
+2FA (Two-Factor Authentication) – Extra login step beyond password, like a code from an app.
+
+Password Manager – Encrypted vault for storing and generating strong passwords.
+
+Privacy Settings – Options to control how your data is collected and used.
+
+VPN (Virtual Private Network) – Encrypts your internet traffic and masks your IP address.
+
+Backup – Spare copy of important data in case the original is lost or damaged.
+
+Phishing – Tricking people into revealing sensitive info by posing as a trusted entity.
+
+Spam – Unsolicited bulk messages, usually email.
+
+Malware – Catch-all term for malicious software like viruses, spyware, and ransomware.
+
+Trojan – Malware disguised as legitimate software.
+
+Virus – Malware that spreads by copying itself like a biological virus.
+
+Worm – Self-replicating virus that spreads over networks without needing another program.
+
+Spyware – Malware that spies on computer activity and collects personal data.
+
+Ransomware – Malware that encrypts your files and demands payment for the decryption key.
+
+Adware – Malware that bombards you with unwanted ads.
+
+Rootkit – Malware that burrows deep into your system to hide itself.
+
+Bot – Automated malware letting hackers remotely control your computer.
+
+DDoS (Distributed Denial of Service) – Attack where botnets flood a target system to overwhelm it.
+
+Zero-Day – Vulnerability exploited before the software maker can fix it.
+
+Social Engineering – Exploiting human psychology rather than technical vulnerabilities.
+
+Brute-Force Attack – Attempting to guess a password by trying every possible combination.
+
+Hash – Digital fingerprint of data used to verify files haven't been tampered with.
+
+Salting – Adding random data to a hash to make it harder to crack.
+
+
+MULTIMEDIA
+
+Codec – Compresses and decompresses media data (MP3 for audio, MPEG for video).
+
+Container – File format storing compressed media with metadata like subtitles (MP4, MKV).
+
+Ripping – Copying audio or video data from one format to another.
+
+Aspect Ratio – Width-to-height ratio of a video or image (4:3 for old TVs, 16:9 for modern ones).
+
+Resolution – Number of pixels in an image or video frame; higher means more detail.
+
+Refresh Rate – How many times per second a screen completely redraws itself.
+
+Frame Rate – Number of individual images making up one second of video (films use 24fps).
+
+Bit Rate – Number of bits (data) processed per second; higher means better quality but larger files.
+
+HDR (High Dynamic Range) – Heightens a picture's dynamic range (contrast) for richer images.
+
+Surround Sound – Audio from multiple speakers positioned around you (5.1, 7.1, Dolby Atmos).
+
+
+USER ACCOUNTS & PERMISSIONS
+
+User Account – Profile for logging into a system; can be administrator or standard user.
+
+Administrator – Super user account with full control; can install programs and change system settings.
+
+Standard User – Normal account for day-to-day use with limited permissions.
+
+Guest Account – Temporary account with minimal permissions for temporary users.
+
+UAC (User Account Control) – Security feature that asks for confirmation before making system changes.
+
+
+PROGRAMMING & DEVELOPMENT
+
+Algorithm – Step-by-step procedure for solving a problem or accomplishing a task.
+
+Code/Coding – Writing instructions in a programming language that tells computers what to do.
+
+Programming Language – System of rules and syntax for writing computer programs (Java, Python, C++, etc.).
+
+Compile – Converting source code into machine code that computers can execute.
+
+Debug – Finding and fixing errors (bugs) in code.
+
+Variable – Named storage location that holds a value in a program.
+
+Function – Reusable block of code that performs a specific task.
+
+Loop – Code that repeats a block of instructions multiple times.
+
+Conditional – Code that executes different instructions based on whether a condition is true or false.
+
+Array – Data structure holding multiple values of the same type.
+
+Object – Instance of a class in object-oriented programming.
+
+Class – Blueprint for creating objects in object-oriented programming.
+
+Framework – Pre-written code and tools that provide a foundation for building applications.
+
+Library – Collection of pre-written code modules that can be reused.
+
+API (Application Programming Interface) – Set of rules for how software components should interact.
+
+Repository – Central storage location for code files, often on platforms like GitHub.
+
+Version Control – System for tracking changes to code over time (Git is popular).
+
+Plugin – Software add-on that extends the functionality of an application.
+
+
+DATA & DATABASES
+
+Data – Raw information or facts.
+
+Database – Structured collection of data, often with multiple tables.
+
+Query – Request for specific data from a database.
+
+Table – Organized data arranged in rows and columns.
+
+Row – Horizontal line of data in a table.
+
+Column – Vertical line of data in a table.
+
+Field – Individual cell in a database table.
+
+Record – Complete set of data for one entry (a row in a table).
+
+Key – Field used to uniquely identify records in a table.
+
+Index – Data structure that speeds up searching and sorting in a database.
+
+Data Mining – Process of discovering patterns in large datasets.
+
+
+MISCELLANEOUS IMPORTANT TERMS
+
+Bug – Error or flaw in a program causing it to behave unexpectedly.
+
+Cache – Fast, temporary storage used to speed up access to frequently used data.
+
+Command – Instruction given to a computer to perform a specific action.
+
+Configuration – Settings that determine how a program or system operates.
+
+Cookie – Small file stored on your computer by websites to remember your preferences.
+
+Defrag – Process of reorganizing fragmented files on a hard drive (not needed for SSDs).
+
+Digital – Represented using numbers or computer-based systems.
+
+Download – Receiving data from a remote system to your computer.
+
+FAQ (Frequently Asked Questions) – Common questions and their answers about a topic.
+
+Gigabyte (GB) – Unit of digital storage equal to 1 billion bytes.
+
+Hacker – Person who gains unauthorized access to computer systems.
+
+Hyperlink – Clickable link that navigates to another webpage or file.
+
+Iteration – Repetition of a process or cycle in programming.
+
+Kernel – Core component of an operating system.
+
+Megabyte (MB) – Unit of digital storage equal to 1 million bytes.
+
+Metadata – Data about data; information describing other data.
+
+Network – Connected computers able to share data and resources.
+
+Node – Individual device connected to a network.
+
+Offline – Not connected to the internet or network.
+
+Online – Connected to the internet or network.
+
+Open Source – Software with source code available for anyone to view and modify.
+
+Optimization – Process of making a system or program work more efficiently.
+
+Output – Data or information produced by a computer.
+
+Podcast – Digital audio or video file available for download or streaming.
+
+Portal – Website serving as an entry point to a collection of other websites.
+
+Protocol – Set of rules governing data transmission over a network.
+
+Runtime – Period during which a program is executing.
+
+Script – Simple program or set of commands for automating tasks.
+
+Search Engine – Website that finds other websites based on keywords.
+
+Snapshot – Capture of a system's state at a particular moment in time.
+
+Syntax – Rules governing the structure of statements in a programming language.
+
+Terabyte (TB) – Unit of digital storage equal to 1 trillion bytes.
+
+Thread – Single sequence of instructions that can be executed independently.
+
+Toggle – Switch between two states (on/off or true/false).
+
+Utility – Program designed to perform a specific maintenance or support function.
+
+Virtual – Simulated or existing only in computer memory (not physical).
+
+Widget – Small application or tool that performs a specific function.
+
+Wiki – Website that allows collaborative editing by multiple users.
+
+Zip – To compress files into a smaller file for easier storage or sharing.
+
+
+// THE NEXT FOLLOWING INFORMATION IS BASED UPON CMD (command prompt) COMMANDS AND THEIR FUNCTIONS //
+
+
+YOU CAN ACCESS THE COMMAND PROMPT WINDOW BY PRESSING THE WINDOWS AND X KEY ON THE PC KEYBOARD, THEN CLICK -RUN-. IN THE RUN WINDDOW TYPE BAR, TYPE CMD THEN CLICK OK.
+
+COMPREHENSIVE WINDOWS COMMAND PROMPT (CMD) COMMANDS LIST-FILE AND DIRECTORY COMMANDS
+
+APPEND – Allows programs to open files in a different directory as if they're in the current one. Available in MS-DOS and 32-bit Windows versions.
+
+ASSOC – Displays or changes file type associations for specific file extensions.
+
+ATTRIB – Changes the attributes of a single file or a directory (such as read-only, hidden, archive, system).
+
+CD (CHDIR) – Changes the current working directory or displays the drive letter and folder you're currently in.
+
+COMPACT – Shows or changes the compression state of files and directories on NTFS partitions.
+
+COPY – Copies one or more files from one location to another.
+
+DEL (ERASE) – Deletes one or more files.
+
+DELTREE – Deletes a directory and all the files and subdirectories within it.
+
+DIR – Displays a list of files and folders contained inside the folder you're currently working in, including file size and other information.
+
+DIRQUOTA – Manages File Server Resource Manager disk quotas.
+
+DISKPART – Creates, manages, and deletes hard drive partitions.
+
+EXPAND – Uncompresses CAB files.
+
+FC – Compares two files and displays the differences between them.
+
+FIND – Searches for a text string in a file.
+
+FINDSTR – Searches for strings in files using regular expressions.
+
+FORMAT – Formats a disk for use with Windows.
+
+FTYPE – Displays or modifies file extension file type associations.
+
+LABEL – Edits a disk label or volume name.
+
+MAKECAB – Creates .CAB (cabinet) files for file compression and archiving.
+
+MD (MKDIR) – Creates a new directory or folder.
+
+MKLINK – Creates a symbolic link to a file or directory.
+
+MOVE – Moves files from one folder to another, or renames files and directories.
+
+RD (RMDIR) – Deletes a directory or folder.
+
+REN (RENAME) – Renames a file or files.
+
+REPLACE – Replaces or updates one file with another.
+
+ROBOCOPY – Provides robust file and folder copying with advanced options for backups and synchronization.
+
+SUBST – Associates a path with a drive letter.
+
+TAR – Stores, lists, or extracts files in an archive.
+
+TREE – Displays a graphical representation of the folder structure of a drive or path.
+
+TYPE – Displays the contents of a text file.
+
+XCOPY – Copies files and folders, offering more powerful options than the basic COPY command.
+
+
+SYSTEM INFORMATION COMMANDS
+
+AUDITPOL – Displays or changes audit policies on the system.
+
+CHKDSK – Identifies and corrects certain hard drive errors; often referred to as "check disk."
+
+CHKNTFS – Configures or displays the checking of the disk drive during the Windows boot process.
+
+DISM – Starts the Deployment Image Servicing and Management tool used to manage features in Windows images.
+
+DISPDIAG – Outputs a log of information about the display system.
+
+DRIVERQUERY – Shows a list of all installed device drivers on the system.
+
+HOSTNAME – Displays the host name (computer name) of the computer.
+
+IPCONFIG – Configures and displays IP address configuration for network interfaces.
+
+MSINFO32 – Displays comprehensive system information about your computer.
+
+NETSTAT – Displays networking statistics including active connections and port usage.
+
+NSLOOKUP – Performs name server lookup to resolve domain names to IP addresses.
+
+PATHPING – Traces the route to a remote host while measuring network latency and packet loss.
+
+PING – Tests network connectivity by sending echo requests to a specified host.
+
+SYSTEMINFO – Lists detailed system configuration information including OS, hardware, and network settings.
+
+TASKLIST – Lists all running applications and services with their process IDs.
+
+TASKKILL – Ends a running process or application by name or process ID.
+
+VER – Displays version information about the operating system.
+
+WINMGMT – Manages the WMI (Windows Management Instrumentation) service and repository.
+
+
+DISPLAY AND OUTPUT COMMANDS
+
+CLS – Clears the screen of all previously entered commands and other text.
+
+COLOR – Changes the colors of the text and background within the Command Prompt window.
+
+ECHO – Displays messages, typically within script or batch files; can also turn echoing on or off.
+
+MORE – Displays output one screen at a time, allowing you to pause and view large amounts of text.
+
+PROMPT – Changes the appearance of the command prompt itself.
+
+TITLE – Sets the window title for a CMD.EXE session.
+
+
+BATCH AND SCRIPTING COMMANDS
+
+CALL – Runs a script or batch program from within another script or batch program.
+
+CHOICE – Provides a list of choices and returns the value of that choice to a batch program.
+
+ENDLOCAL – Ends the localization of environment changes within a batch or script file.
+
+FOR – Loops through a set of files or executes commands multiple times based on conditions.
+
+GOTO – Directs a batch program to jump to a labeled line within the script.
+
+IF – Conditionally performs a command based on whether a condition is true or false.
+
+PAUSE – Suspends processing of a batch file and displays a message to press a key to continue.
+
+REM – Records comments (remarks) in a batch file without executing them.
+
+SETLOCAL – Controls the visibility of environment variables within a batch or script file.
+
+SHIFT – Changes the position of batch file parameters, allowing access to more than nine parameters.
+
+
+ENVIRONMENT AND CONFIGURATION COMMANDS
+
+CHCP – Displays or sets the active code page number for character encoding.
+
+DATE – Shows or changes the current date.
+
+DOSKEY – Edits command lines, creates macros, and recalls previously entered commands.
+
+SET – Displays, sets, or removes session environment variables.
+
+SETX – Sets environment variables permanently, available to future command sessions.
+
+TIME – Displays or sets the system time.
+
+
+NETWORK COMMANDS
+
+ARP – Views or modifies entries in the ARP (Address Resolution Protocol) cache.
+
+DNSCMD – Manages DNS servers and their configurations.
+
+GETMAC – Displays the Media Access Control (MAC) address of network adapters.
+
+IFMEMBER – Determines if the current user is a member of a specified group.
+
+IPCONFIG – Configures IP settings and displays network adapter information.
+
+NBTSTAT – Displays networking statistics using NetBIOS over TCP/IP.
+
+NET – Manages network resources including shares, user accounts, and services.
+
+NETDOM – Manages network domains and domain accounts.
+
+NETSH – Configures network interfaces, firewall settings, and remote access.
+
+NSLOOKUP – Performs DNS name resolution to find IP addresses for domain names.
+
+ROUTE – Manipulates network routing tables to control data packet paths.
+
+TRACERT – Traces the route packets take to reach a remote host.
+
+SECURITY AND PERMISSIONS COMMANDS
+
+CACLS – Displays or changes access control lists of files.
+
+CIPHER – Shows or changes the encryption status of files and folders on NTFS partitions.
+
+ICACLS – Changes file and folder permissions with more advanced options than CACLS.
+
+NTRIGHTS – Edits user account rights and permissions.
+
+RUNAS – Executes a program under a different user account with elevated privileges.
+
+TAKEOWN – Takes ownership of a file or folder.
+
+XCACLS – Changes file and folder permissions with extended capabilities.
+
+BACKUP AND STORAGE COMMANDS
+
+BCDBOOT – Copies boot files to the system partition and creates a new system BCD store.
+
+BCDEDIT – Views or makes changes to Boot Configuration Data.
+
+BITSADMIN – Manages download and upload jobs using Background Intelligent Transfer Service.
+
+BOOTCFG – Builds, modifies, or views the boot.ini file that identifies Windows' location.
+
+BOOTSECT – Configures the master boot code for BOOTMGR or NTLDR compatibility.
+
+DISKPERF – Manages disk performance counters remotely for monitoring.
+
+DISKRAID – Starts the DiskRAID tool for managing and configuring RAID arrays.
+
+FREEDISK – Checks the amount of free disk space available on a drive.
+
+FSUTIL – Provides file and volume utility functions for advanced disk management.
+
+NTBACKUP – Windows Backup utility for backing up folders to tape or other media.
+
+WBADMIN – Windows Backup Admin tool for managing backups from the command line.
+
+
+PROCESS AND SERVICE COMMANDS
+
+CHANGE – Changes various terminal server settings like install modes and logons.
+
+CHGLOGON – Enables, disables, or drains terminal server session logins.
+
+CHGPORT – Displays or changes COM port mappings for DOS compatibility.
+
+CHGUSR – Changes the install mode for the terminal server.
+
+MSIEXEC – Executes Windows Installer packages for installing or configuring software.
+
+MSTSC – Opens Terminal Server Connection/Remote Desktop Protocol (RDP) for remote connections.
+
+PNPUTIL – Plug and Play Utility for managing device drivers.
+
+POWERCFG – Configures power settings and power schemes.
+
+QPROCESS – Displays information about running processes.
+
+QUSER – Displays user sessions on terminal servers or remote desktops.
+
+SC – Service Control utility for managing Windows services.
+
+SCHTASKS – Schedules a command to run at a specific time or recurring interval.
+
+SHUTDOWN – Shuts down or restarts the computer locally or remotely.
+
+TASKKILL – Terminates a running process or application.
+
+TASKLIST – Lists all running applications and services.
+
+TSKILL – Ends a process by name or process ID.
+
+
+PRINTING COMMANDS
+
+PRINT – Prints a text file to a printer.
+
+PRINTBRM – Backs up and recovers printer queue configurations.
+
+PRNCNFG – Configures a printer's settings and properties.
+
+PRNDRVR – Adds, deletes, or lists print drivers.
+
+PRNJOBS – Pauses, resumes, cancels, or lists print jobs in a queue.
+
+PRNMNGR – Adds, deletes, or lists printer connections and configurations.
+
+PRNPORT – Manages printer ports and changes port configuration settings.
+
+PRNQCTL – Manages print queues and allows printing of test pages.
+
+CERTIFICATE AND AUTHENTICATION COMMANDS
+
+CERTREQ – Performs various certification authority (CA) certificate functions.
+
+CERTUTIL – Dumps and displays certification authority configuration information.
+
+CMDKEY – Shows, creates, and removes stored user names and passwords.
+
+KLIST – Lists cached Kerberos tickets for the current user.
+
+
+TEXT PROCESSING COMMANDS
+
+COMP – Compares the contents of two files or sets of files.
+
+EDIT – Starts the MS-DOS Editor for creating and modifying text files.
+
+EDLIN – Starts the Edlin tool for creating and modifying text files from the command line.
+
+FIND – Searches for a text string in a file and displays matching lines.
+
+FINDSTR – Searches for strings in files using patterns and regular expressions.
+
+SORT – Sorts input text in alphabetical or numerical order.
+
+
+SYSTEM UTILITY COMMANDS
+
+ATMADM – Displays information related to asynchronous transfer mode (ATM) connections.
+
+BDEHDCFG – Prepares a hard drive for BitLocker Drive Encryption.
+
+BREAK – Sets or clears extended CTRL+C checking on DOS systems.
+
+CHECKNETISOLATION – Tests apps that require network capabilities.
+
+CLIP – Redirects the output from any command to the clipboard in Windows.
+
+CMD – Starts a new instance of the cmd.exe command interpreter.
+
+CMSTP – Installs or uninstalls a Connection Manager service profile.
+
+CSCRIPT – Executes scripts via Microsoft Script Host for automation tasks.
+
+CTTY – Changes the default input and output devices for the system.
+
+DEBUG – Starts Debug, a command line application used to test and edit programs.
+
+DEFRAG – Defragments a drive you specify to optimize performance.
+
+DJOIN – Creates a new computer account in a domain.
+
+DOSSHELL – Starts DOS Shell, a graphical file management tool for MS-DOS.
+
+DOSX – Starts DOS Protected Mode Interface (DPMI) for older MS-DOS programs.
+
+ESENTUTL – Manages Extensible Storage Engine (ESE) databases.
+
+EVENTCREATE – Creates a custom event in an event log.
+
+EVENTTRIGGERS – Configures and displays event triggers (Windows XP only).
+
+EXE2BIN – Converts an executable EXE file to a binary file.
+
+EXIT – Ends the cmd.exe session in Windows or command.com session in MS-DOS.
+
+EXPLORER – Opens Windows Explorer file manager.
+
+FLTMC – Manages MiniFilter drivers for file system filtering.
+
+FONDUE – Features on Demand User Experience Tool for enabling Windows features.
+
+FORFILES – Batch processes multiple files based on criteria.
+
+GPRESULT – Displays Resultant Set of Policy information for users and computers.
+
+GPUPDATE – Updates Group Policy settings on the local computer.
+
+HELP – Provides online help and information about available commands.
+
+IEXPRESS – Creates a self-extracting ZIP file archive.
+
+INUSE – Replaces files that are in use by the operating system.
+
+LGPO – Local Group Policy Object utility for managing group policies.
+
+LODCTR – Loads Performance Monitor performance counters.
+
+LOGMAN – Manages Performance Monitor logs and data collection.
+
+LOGOFF – Logs out the current user from the system.
+
+MAKECAB – Creates .CAB (cabinet) files for compression.
+
+MANAGE-BDE – BitLocker Drive Encryption management tool.
+
+MBR2GPT – Converts a disk partition from Master Boot Record to GPT format.
+
+MODE – Configures a system device such as COM, LPT, or CON ports.
+
+MOUNTVOL – Manages a volume mount point for drive letters.
+
+MSG – Sends a message to other users on the network.
+
+NLSINFO – Displays locale information for different languages and regions.
+
+NLTEST – Network Location Test utility for Active Directory testing.
+
+NMBIND – Manages Hyper-V network bindings.
+
+OPENFILES – Queries or displays open files on the system.
+
+PATH – Displays or sets a search path for executable files.
+
+POPD – Returns to a previous directory saved by the PUSHD command.
+
+PORTQRY – Displays the status of ports and services.
+
+POWERCFG – Configures power settings and power schemes for energy management.
+
+PUSHD – Saves the current directory and then changes to another directory.
+
+QAPPSERV – Lists all terminal servers on the network.
+
+QPROCESS – Displays information about processes running on a terminal server.
+
+QWINSTA – Displays all sessions on a terminal server or remote desktop.
+
+RASDIAL – Manages Remote Access Service (RAS) connections.
+
+RASPHONE – Manages RAS connections and phonebook entries.
+
+REAGENTC – Configures Windows Recovery Environment (RE) and System Reset.
+
+RECOVER – Recovers a damaged file from a defective disk.
+
+REG – Reads, sets, exports, and deletes registry keys and values.
+
+REGEDIT – Imports or exports registry settings to and from files.
+
+REGINI – Changes registry permissions for advanced configuration.
+
+REGSVR32 – Registers or unregisters a DLL (Dynamic Link Library) file.
+
+REPAIR-BDE – Repairs a damaged BitLocker drive and salvages recoverable data.
+
+RESET SESSION – Deletes a Remote Desktop Session.
+
+RMTSHARE – Shares a folder or a printer on a remote computer.
+
+RUN – Executes a program or command from the Start | Run dialog.
+
+SECEDIT – Security Editor for configuring and analyzing system security.
+
+SCHTASKS – Schedules a command or program to run at a specific time or interval.
+
+SCRIPTRUNNER – Runs one or more scripts in sequence for automation.
+
+SETOBJECTSECURITY – Sets security for an object like a file, directory, or registry key.
+
+SETSPN – Edits Service Principal Names in Active Directory.
+
+SFC – System File Checker for scanning and repairing system files.
+
+SHARE – Lists or edits a file share or print share on the network.
+
+SHELLRUNAS – Runs a command under a different user account.
+
+SHORTCUT – Creates a Windows shortcut (.LNK file).
+
+SIGCHECK – Displays file version information and VirusTotal status.
+
+SLMGR – Software Licensing Management tool for Windows activation.
+
+SSH – OpenSSH remote login client for secure remote connections.
+
+START – Starts a program, command, or batch file in a new window.
+
+STREAMS – Lists any Alternate Data Streams (ADS) within a file or directory.
+
+STRINGS – Searches for ANSI and UNICODE strings in binary files.
+
+SUBINACL – Edits file and folder permissions, ownership, and domain assignments.
+
+SXSTRACE – Diagnoses side-by-side (SxS) assembly problems.
+
+SYSMON – Monitors and logs system activity to the Windows event log.
+
+TAR – Stores, lists, or extracts files in a tar archive format.
+
+TELNET – Communicates with another host using the TELNET protocol.
+
+TIMEOUT – Delays processing of a batch file or command for a specified duration.
+
+TLIST – Displays a task list with full path information for each process.
+
+TOUCH – Changes file timestamps to current date and time.
+
+TRACERT – Traces the route packets take to reach a remote host.
+
+TSDISCON – Disconnects a Remote Desktop Session.
+
+TYPE – Displays the contents of a text file on the screen.
+
+TYPEPERF – Writes Performance Monitor data to a log file for analysis.
+
+TZUTIL – Time Zone Utility for managing system time zones.
+
+VBC – Visual Basic compiler for compiling VB programs.
+
+VERIFY – Verifies that files have been saved correctly to disk.
+
+VMCONNECT – Connects to a Hyper-V Virtual Machine for management.
+
+VOL – Displays a disk label and volume information.
+
+VSSADMIN – Displays volume shadow copy backups, writers, and providers.
+
+W32TM – Windows Time Service utility for time synchronization.
+
+WAITFOR – Waits for or sends a signal between computers on a network.
+
+WECUTIL – Windows Event Collector Utility for managing event subscriptions.
+
+WEVTUTIL – Clears event logs, enables/disables logs, and queries event log information.
+
+WHERE – Locates and displays files in a directory tree based on a search pattern.
+
+WHOAMI – Outputs the current user name and domain information.
+
+WHOIS – Looks up the registration record for a domain name.
+
+WINDIFF – Compares the contents of two files or sets of files.
+
+WINGET – Windows Package Manager for installing and managing software packages.
+
+WINRM – Windows Remote Management tool for remote system management.
+
+WINRS – Windows Remote Shell for executing commands on remote computers.
+
+WMIC – WMI Command-line interface for system management and automation.
+
+WPEUTIL – Runs Preinstallation Environment (WinPE) commands.
+
+WPR – Windows Performance Recorder for capturing system performance data.
+
+WT – Windows Terminal for advanced command-line interface functionality.
+
+WUSA – Windows Update Standalone Installer for applying individual updates.
+
+
+ACTIVE DIRECTORY COMMANDS
+
+ADDUSERS – Adds or lists users to/from a CSV file for bulk user management.
+
+CSVDE – Imports or exports Active Directory data using comma-separated values.
+
+DSACLSO – Active Directory ACLs (Access Control Lists) management tool.
+
+DSADD – Adds items (users, groups, computers) to Active Directory.
+
+DSGET – Views items in Active Directory including users, groups, and computers.
+
+DSMOVE – Moves an Active Directory object to a different location in the directory.
+
+DSQUERY – Searches Active Directory for users, groups, computers, and other objects.
+
+DSMOD – Modifies items in Active Directory including user properties and group membership.
+
+DSREGCMD – Directory Service Registration command for device management.
+
+DSRM – Removes items from Active Directory permanently.
+
+NTSUTIL – Active Directory Domain Services management tool for advanced operations.
+
+
+DIRECTORY AND DISK UTILITIES
+
+DU – Displays directory sizes and usage information for storage analysis.
+
+DISKCOMP – Compares the contents of two floppy disks.
+
+DISKCOPY – Copies the entire contents of one floppy disk to another.
+
+DISKSHADOW – Volume Shadow Copy Service management tool for backup operations.
+
+DISPLAYSWITCH – Specifies which display to use and how to use it in multi-monitor setups.
+
+DBLSPACE – Creates or configures DoubleSpace compressed drives (older systems).
+
+DRVSPACE – Creates or configures DriveSpace compressed drives (updated version of DoubleSpace).
+
+EMM386 – Gives MS-DOS access to more than 640 KB of memory (RAM).
+
+FSUTIL – File and Volume utilities for advanced disk and file system management.
+
+
+FTP AND DATA TRANSFER COMMANDS
+
+FTP – File Transfer Protocol utility for transferring files to and from remote computers.
+
+CURL – Transfers data from or to a server using various protocols (HTTP, FTP, etc.).
+
+ADVANCED SYSTEM TOOLS
+
+BDEHDCFG – Prepares a hard drive with partitions for BitLocker Encryption.
+
+COREINFO – Shows the mapping between logical and physical processors on the system.
+
+CSCCMD – Client-side caching (Offline Files) management utility.
+
+PKTMON – Monitors internal packet propagation and reports packet drops.
+
+PROCDUMP – Monitors an application for CPU spikes and creates dump files for analysis.
+
+
+TIPS FOR USING CMD COMMANDS
+
+Get Help - Type HELP or HELP [command] to see available commands and their usage
+
+Use /? Flag - Most commands support /? to display detailed help information
+
+Use Pipes - Combine commands with | to send output from one command to another
+
+Use Redirection - Use > to redirect output to a file or >> to append
+
+Batch Files - Create .bat or .cmd files to automate multiple commands
+
+Run as Administrator - Right-click Command Prompt and select "Run as Administrator" for elevated privileges
+
+Tab Completion - Press Tab to auto-complete file and folder names

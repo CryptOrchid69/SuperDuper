@@ -1,0 +1,446 @@
+1. Windows Settings
+
+Open it: Press Windows key + I.
+
+This is the modern main control center for Windows 11. Microsoft describes it as the central place for device preferences, including System, Bluetooth & devices, Network & internet, Personalization, Apps, Accounts, Accessibility, Privacy & security, Gaming, and Windows Update.
+
+Use it for:
+
+System — display, sound, notifications, storage, power, recovery.
+Bluetooth & devices — mouse, keyboard, printers, cameras, Bluetooth.
+Network & internet — Wi-Fi, Ethernet, VPN, hotspot, proxy.
+Personalization — wallpaper, colors, lock screen, taskbar.
+Apps — installed apps, default apps, startup apps.
+Accounts — sign-in options, passwords, family users.
+Time & language — date, time zone, typing, speech.
+Gaming — Game Bar, captures, game mode.
+Accessibility — text size, narrator, magnifier, contrast themes.
+Privacy & security — permissions, Windows Security, location, camera, microphone.
+Windows Update — updates, update history, optional drivers.
+
+Basic use:
+
+Press Windows + I.
+Type what you need in the search box, such as display, sound, wifi, or update.
+Click the result.
+Change one setting at a time.
+Restart only if Windows asks.
+2. Classic Control Panel
+
+Open it: Press Start, type Control Panel, press Enter.
+
+This is the older Windows control center. Some old tools still live here.
+
+Use it for:
+
+Programs and Features — uninstall older desktop programs.
+Network and Sharing Center — older network settings.
+Power Options — advanced power plans.
+Devices and Printers — printers, controllers, some hardware.
+User Accounts — older account tools.
+File Explorer Options — show hidden files, file extensions.
+Sound — old speaker/microphone control panel.
+Mouse — pointer speed, buttons, wheel settings.
+
+Beginner warning: Do not randomly change advanced network, power, or user settings unless you know why.
+
+3. Quick Settings Panel
+
+Open it: Click the Wi-Fi / speaker / battery area on the bottom-right taskbar, or press Windows + A.
+
+Use it for quick controls:
+
+Wi-Fi, Bluetooth, Airplane mode, volume, brightness, battery saver, accessibility, night light, cast, mobile hotspot.
+
+Basic use:
+
+Press Windows + A.
+Click a button once to turn it on or off.
+Use sliders for brightness or volume.
+Right-click a button for more settings.
+4. Task Manager
+
+Open it: Press Ctrl + Shift + Esc.
+
+Use it to control running apps and performance.
+
+Main areas:
+
+Processes — shows open apps and background programs.
+Performance — CPU, memory, disk, Wi-Fi, GPU usage.
+Startup apps — controls what opens when Windows starts.
+Users — shows active user sessions.
+Details — advanced process list.
+Services — background Windows services.
+
+Safe beginner use:
+
+Open Task Manager.
+Click Processes.
+If an app is frozen, click it.
+Click End task.
+Do not end unknown Windows processes.
+
+Best useful feature: Go to Startup apps and disable unnecessary apps that slow startup.
+
+5. Device Manager
+
+Open it: Right-click Start → Device Manager.
+
+This controls hardware drivers.
+
+Use it for:
+
+Display adapters, network adapters, sound devices, Bluetooth, USB controllers, keyboards, mice, cameras, monitors, storage controllers.
+
+Safe use:
+
+Open Device Manager.
+Expand a category.
+Right-click a device.
+Use Properties to inspect it.
+Use Update driver if needed.
+
+Beginner warning: Avoid Uninstall device or Disable device unless you are sure. Disabling a network adapter can disconnect your internet.
+
+6. Disk Management
+
+Open it: Right-click Start → Disk Management.
+
+Microsoft says Disk Management manages disks and volumes, including initializing drives, creating/formatting volumes, changing drive letters, and extending or shrinking volumes.
+
+Use it for:
+
+Hard drives, SSDs, USB drives, partitions, drive letters, formatting, unallocated space.
+
+Beginner warning: Format, Delete Volume, and Clean can erase data.
+
+Safe use:
+
+Open Disk Management.
+Look at the drive list.
+Confirm the drive letter, size, and label.
+Right-click only the correct drive.
+Avoid deleting or formatting unless backed up.
+7. Computer Management
+
+Open it: Right-click Start → Computer Management.
+
+This is a larger admin console containing several tools.
+
+Includes:
+
+Task Scheduler — automatic tasks.
+Event Viewer — system error logs.
+Shared Folders — network shares.
+Local Users and Groups — user management, on supported editions.
+Device Manager — hardware.
+Disk Management — drives.
+Services — background services.
+
+Use it mainly for inspection unless you know what you are changing.
+
+8. Services Panel
+
+Open it: Press Windows + R, type services.msc, press Enter.
+
+Controls background services.
+
+Examples:
+
+Windows Update, Print Spooler, Bluetooth Support Service, Windows Defender services, network services.
+
+Safe use:
+
+Open Services.
+Click a service.
+Read its description.
+Right-click → Restart only when troubleshooting.
+Avoid changing Startup type unless instructed.
+9. Event Viewer
+
+Open it: Press Start, type Event Viewer.
+
+Use it to read Windows logs.
+
+Useful sections:
+
+Windows Logs → System — hardware, drivers, startup, shutdown.
+Windows Logs → Application — app crashes.
+Security — sign-in and security events.
+
+Beginner use:
+
+Open Event Viewer.
+Go to Windows Logs → System.
+Look for Error or Critical.
+Click the event.
+Read the bottom details.
+
+Warning: Event Viewer always shows many warnings. Not every warning means your PC is broken.
+
+10. Windows Security
+
+Open it: Start → type Windows Security.
+
+This controls built-in protection. Microsoft lists areas for security providers, notifications, antivirus, firewall, and web protection management.
+
+Main controls:
+
+Virus & threat protection — scans and antivirus status.
+Firewall & network protection — firewall status.
+App & browser control — SmartScreen protection.
+Device security — core isolation, TPM-related features.
+Account protection — sign-in security.
+Protection history — blocked threats and warnings.
+
+Basic safe use:
+
+Open Windows Security.
+Click Virus & threat protection.
+Click Quick scan.
+Check Protection history if something was blocked.
+Keep real-time protection on.
+11. Windows Update
+
+Open it: Settings → Windows Update.
+
+Use it for:
+
+Installing updates, optional driver updates, update history, restart scheduling, pause updates.
+
+Safe use:
+
+Open Settings.
+Click Windows Update.
+Click Check for updates.
+Install important updates.
+Restart when ready.
+12. Power & Battery Controls
+
+Open it: Settings → System → Power & battery.
+
+Microsoft says Windows 11 power settings include power mode, energy saver, screen/sleep timers, and related options.
+
+Use it for:
+
+Sleep time, screen-off time, battery saver, performance mode, energy use.
+
+Basic use:
+
+Open Settings.
+Go to System → Power & battery.
+Choose a Power mode.
+Set when the screen turns off.
+Set when the PC sleeps.
+
+For desktop PCs, focus on sleep and screen settings. For laptops, also use battery saver.
+
+13. Network Controls
+
+Main places:
+
+Settings → Network & internet
+Control Panel → Network and Sharing Center
+Device Manager → Network adapters
+Quick Settings → Wi-Fi
+
+Use it for:
+
+Wi-Fi, Ethernet, VPN, proxy, DNS, adapter properties, hotspot.
+
+Safe beginner rule: Use Settings first. Avoid disabling adapters unless necessary.
+
+14. Sound Control Panels
+
+Modern:
+
+Settings → System → Sound
+
+Classic:
+
+Control Panel → Sound
+
+Use it for:
+
+Speakers, headphones, microphones, volume, input device, output device, troubleshooting.
+
+Basic use:
+
+Right-click speaker icon.
+Choose Sound settings.
+Pick your output device.
+Pick your input microphone.
+Test volume.
+15. Display Controls
+
+Open:
+
+Settings → System → Display
+
+Use it for:
+
+Resolution, scale, brightness, night light, multiple monitors, refresh rate, HDR.
+
+Safe use:
+
+Open Display settings.
+Change Scale if text is too small.
+Change Display resolution only to the recommended value.
+Use Advanced display for refresh rate.
+16. App Settings
+
+Open:
+
+Settings → Apps
+
+Use it for:
+
+Uninstall apps, default apps, startup apps, optional features, installed apps.
+
+Basic use:
+
+Settings → Apps → Installed apps.
+Search the app name.
+Click the three dots.
+Choose Uninstall, Modify, or Advanced options.
+17. Startup App Controls
+
+Open:
+
+Settings → Apps → Startup
+or Task Manager → Startup apps
+
+Use it to stop apps from opening automatically.
+
+Safe beginner use:
+
+Disable things like game launchers, update helpers, chat apps, or apps you do not need immediately. Do not disable security software unless you know what you are doing.
+
+18. User Account Control
+
+Open:
+
+Control Panel → System and Security → Change User Account Control settings
+
+UAC warns you when apps try to make administrator-level changes. Microsoft says it helps prevent unauthorized changes and prompts you to approve or deny admin actions.
+
+Best setting for most users: Keep it on the default level.
+
+19. File Explorer Options
+
+Open:
+
+Control Panel → File Explorer Options
+
+Use it for:
+
+Showing hidden files, showing file extensions, changing folder behavior.
+
+Very useful setting:
+
+Open File Explorer.
+Click View.
+Click Show.
+Turn on File name extensions.
+
+This helps you see whether a file is .txt, .py, .exe, .bat, etc.
+
+20. Registry Editor
+
+Open:
+
+Press Windows + R, type regedit, press Enter.
+
+This controls deep Windows configuration.
+
+Beginner warning: Do not edit the registry unless you have exact instructions. Wrong changes can break Windows, apps, drivers, or login behavior.
+
+21. Local Group Policy Editor
+
+Open:
+
+Press Windows + R, type gpedit.msc.
+
+Usually available on Windows 11 Pro, Enterprise, and Education.
+
+Use it for advanced policy controls:
+
+Windows Update behavior, security rules, login options, system restrictions, network policies.
+
+Beginner warning: Do not change policies randomly.
+
+22. Task Scheduler
+
+Open:
+
+Start → type Task Scheduler
+
+Use it for:
+
+Automatic startup tasks, scheduled maintenance, update tasks, app background jobs.
+
+Beginner use:
+
+Use it mostly to inspect tasks. Disabling random tasks can break updates, apps, or drivers.
+
+23. Firewall Controls
+
+Open:
+
+Windows Security → Firewall & network protection
+
+Use it for:
+
+Private/public network firewall, allowed apps, advanced firewall rules.
+
+Safe use:
+
+Open Windows Security.
+Click Firewall & network protection.
+Make sure firewall is on.
+Use Allow an app through firewall only for apps you trust.
+24. Command-Line Control Panels
+
+These are text-based control tools.
+
+Main ones:
+
+Command Prompt — old command tool.
+PowerShell — more powerful Windows command tool.
+Windows Terminal — modern tabbed command app.
+
+Common safe commands:
+
+ipconfig — shows network info.
+ipconfig /flushdns — clears DNS cache.
+sfc /scannow — checks Windows system files.
+chkdsk — checks drives, but use carefully.
+winget — installs/updates apps.
+
+Beginner warning: Do not paste commands from unknown websites.
+
+25. BIOS / UEFI Firmware Controls
+
+Open:
+
+Settings → System → Recovery → Advanced startup → Restart now → Troubleshoot → Advanced options → UEFI Firmware Settings.
+
+This controls hardware before Windows loads.
+
+Use it for:
+
+Boot order, secure boot, TPM, virtualization, fan/performance settings, hardware-level options.
+
+Beginner warning: Do not change UEFI settings unless you know why.
+
+Simple rule for beginners
+
+Use controls in this order:
+
+Settings first.
+Control Panel second.
+Task Manager for frozen apps/startup apps.
+Device Manager only for hardware/driver issues.
+Disk Management only for drives/partitions.
+Registry, Services, Group Policy, BIOS only with exact instructions.

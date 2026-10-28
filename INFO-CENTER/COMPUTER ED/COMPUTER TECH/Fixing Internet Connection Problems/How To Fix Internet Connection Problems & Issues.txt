@@ -1,0 +1,1838 @@
+
+                    INTERNET CONNECTION TROUBLESHOOTING GUIDE
+                              Complete & Comprehensive
+
+
+VERSION: 1.0
+LAST UPDATED: June 2026
+CREATED FOR: Easy-to-follow step-by-step internet problem diagnosis and repair
+
+
+                                 TABLE OF CONTENTS
+
+
+1. INTRODUCTION & HOW TO USE THIS GUIDE
+2. QUICK DIAGNOSIS: IDENTIFY YOUR PROBLEM TYPE
+3. BASIC TROUBLESHOOTING (START HERE)
+4. INTERMEDIATE TROUBLESHOOTING
+5. ADVANCED TROUBLESHOOTING
+6. DEVICE-SPECIFIC FIXES
+7. WIFI-SPECIFIC ISSUES
+8. ETHERNET-SPECIFIC ISSUES
+9. COMMAND LINE TOOLS & TESTS
+10. WHEN TO CONTACT YOUR ISP
+11. GLOSSARY OF TERMS
+
+SECTION 1: INTRODUCTION & HOW TO USE THIS GUIDE
+
+
+Welcome! This guide will help you diagnose and fix virtually any internet 
+connection problem you encounter. Whether you're experiencing complete loss of 
+internet, slow speeds, or intermittent disconnections, you'll find solutions here.
+
+HOW TO USE THIS GUIDE:
+- Start with Section 2 to identify your specific problem type
+- Follow the troubleshooting steps in order (they progress from simplest to most complex)
+- Read carefully and follow each step completely before moving to the next
+- Keep notes of what you try and the results
+- If you reach a point where you need to contact your ISP, you'll have useful 
+  information to provide them
+
+IMPORTANT NOTES:
+- Do NOT skip steps - many issues are resolved by basic troubleshooting
+- Some steps require a restart - make sure to save your work first
+- When unplugging equipment, wait the FULL time specified
+- If a step doesn't work, simply move to the next one
+
+
+SECTION 2: QUICK DIAGNOSIS - IDENTIFY YOUR PROBLEM TYPE
+
+
+Before you start troubleshooting, identify which category describes your problem:
+
+PROBLEM TYPE A: COMPLETE LOSS OF INTERNET
+Symptoms:
+  • No devices can connect to the internet
+  • Modem shows no internet signal
+  • Router has no internet access
+  • All lights are off or showing errors
+
+ACTION: Go to SECTION 3 (Basic Troubleshooting)
+
+
+
+PROBLEM TYPE B: INTERMITTENT CONNECTION
+Symptoms:
+  • Internet drops randomly throughout the day
+  • Connection works sometimes but not always
+  • Frequent disconnects and reconnects
+  • Connection drops during specific activities
+
+ACTION: Go to SECTION 4 (Intermediate Troubleshooting)
+
+
+
+PROBLEM TYPE C: SLOW INTERNET SPEED
+Symptoms:
+  • Pages load slowly
+  • Videos buffer frequently
+  • Downloads take longer than expected
+  • Speed is much slower than your plan
+
+ACTION: Go to SECTION 4 (Intermediate Troubleshooting) + Run Speed Tests
+
+
+
+PROBLEM TYPE D: DEVICE-SPECIFIC ISSUES
+Symptoms:
+  • Only certain devices can't connect
+  • WiFi works on some devices but not others
+  • Device is connected but has no internet access
+  • Only specific applications have problems
+
+ACTION: Go to SECTION 6 (Device-Specific Fixes)
+
+
+
+PROBLEM TYPE E: WIFI-ONLY ISSUES
+Symptoms:
+  • WiFi shows as available but won't connect
+  • WiFi is very slow compared to wired connection
+  • WiFi drops frequently
+  • Can't find your network
+
+ACTION: Go to SECTION 7 (WiFi-Specific Issues)
+
+
+
+PROBLEM TYPE F: ETHERNET-ONLY ISSUES
+Symptoms:
+  • Wired connection not working
+  • Ethernet cable connected but no internet
+  • "Cable unplugged" error message
+
+ACTION: Go to SECTION 8 (Ethernet-Specific Issues)
+
+
+SECTION 3: BASIC TROUBLESHOOTING (START HERE!)
+
+
+STEP 1: CHECK FOR SERVICE OUTAGES
+
+
+Why: If your ISP is experiencing an outage, troubleshooting won't help. You 
+need to know if the problem is on your end or theirs.
+
+How to Check:
+1. Use a smartphone with mobile data (not WiFi)
+2. Visit your internet provider's website
+3. Look for a "Status Page" or "Outage Map"
+4. Check if there are reported issues in your area
+5. Alternatively, visit ThousandEyes.com or DownDetector.com
+6. Search for your ISP name to see current status
+
+What to Do If There's an Outage:
+- Wait for your ISP to resolve the issue
+- There's nothing you can do on your end
+- Keep checking the status page for updates
+- Note: You may be entitled to service credits if outages are frequent
+
+If No Outage Found: Continue to Step 2
+
+
+
+STEP 2: POWER CYCLE YOUR EQUIPMENT (THE MOST IMPORTANT STEP!)
+
+
+Why: Power cycling resets your equipment and often fixes connection problems 
+instantly. This simple step resolves approximately 80% of internet issues.
+
+IMPORTANT: Follow this exact sequence and timing:
+
+STEP 2A: Power Down
+1. Unplug the power cable from your MODEM (the device from your ISP)
+2. Unplug the power cable from your ROUTER (the WiFi device)
+3. If your equipment has backup batteries, remove them
+4. Wait EXACTLY 60 seconds (count slowly: 1-1000, 2-1000... to 60-1000)
+   This allows the equipment to fully discharge
+
+STEP 2B: Power Up the Modem First
+1. Plug the modem's power cable back in
+2. Wait 2-3 minutes for the modem to fully start up
+3. Look at the lights on the modem:
+   - Power light should be solid green or white
+   - Internet light should be solid green or white
+   - If lights are flashing, wait another minute
+4. Do NOT plug in the router yet
+
+STEP 2C: Power Up the Router
+1. After the modem is fully ready, plug in the router
+2. Wait 2-3 minutes for the router to fully start up
+3. Look at the lights on the router:
+   - Power light should be solid
+   - WiFi light should be solid or flashing (this is normal)
+   - Internet/WAN light should be solid
+
+STEP 2D: Test Your Connection
+1. Try to open a website or send an email
+2. If internet works, you're done! Problem solved!
+3. If internet still doesn't work, continue to Step 3
+
+Expected Result: 
+✓ Internet connection restored and working normally
+
+
+
+STEP 3: CHECK PHYSICAL CONNECTIONS
+
+
+Why: Loose or damaged cables are one of the most common causes of internet 
+problems. A simple visual inspection can reveal the issue.
+
+STEP 3A: Check the Modem Connections
+1. Look at the cable coming from the wall (the thick coaxial cable)
+   - This is the connection from your ISP
+   - Make sure it's hand-tight (don't over-tighten)
+   - Look for any visible damage, kinks, or cuts
+   - Clean the connector ends with a dry cloth
+
+2. Check the power cable
+   - Make sure it's firmly plugged into the modem
+   - Make sure it's plugged into a working outlet
+   - Test the outlet by plugging in a lamp to confirm it works
+
+3. Check the cable from modem to router
+   - This is a thin network cable (Ethernet cable, looks like a phone cord)
+   - Make sure it's plugged into the modem's WAN or Internet port
+   - Make sure the other end is plugged into the router's WAN or Internet port
+   - The connection should click when fully seated
+
+STEP 3B: Check the Router Connections
+1. Check the power cable
+   - Make sure it's firmly plugged in
+   - Make sure it's plugged into a working outlet
+   - Test the outlet by plugging in another device
+
+2. Check Ethernet cables (if you have wired devices)
+   - Make sure cables are plugged into LAN ports (not WAN)
+   - Make sure cables are fully inserted and clicked in
+   - Look for visible damage
+
+3. Look for cable damage anywhere
+   - Check for cuts, frays, or exposed wires
+   - Look for kinks or severe bends
+   - Check if cables are pinched under furniture
+   - Look for signs of chewing (if you have pets)
+
+STEP 3C: Inspect Cable Connectors
+1. Look at the RJ45 connectors (the ends of network cables)
+   - They should look clean and undamaged
+   - All 8 pins should be visible
+   - No bent or missing pins
+   - No discoloration or corrosion
+
+2. If you find damaged cables:
+   - Replace them with new cables
+   - Try the new cables before continuing
+   - If new cables fix the problem, you're done!
+
+Expected Result:
+✓ All connections are secure and tight
+✓ No visible damage to cables
+✓ All lights should be on or blinking normally
+
+If Still Not Working: Continue to Step 4
+
+
+
+STEP 4: CHECK EQUIPMENT STATUS LIGHTS
+
+
+Why: The lights on your modem and router tell you the status of your 
+connection. Understanding them helps diagnose problems quickly.
+
+STEP 4A: Modem Light Indicators
+
+Typical modem lights include:
+- POWER: Should be solid green/white
+- INTERNET/WAN: Should be solid green/white (not red or off)
+- DOWNLOAD/UPLOAD: May flash (normal)
+- WiFi (if built-in): Should be on
+
+What Each Status Means:
+
+POWER Light:
+  ✓ Solid Green/White = Modem has power (GOOD)
+  ✗ Off = Modem not powered, check power cable
+  ✗ Red = Error, restart the modem
+
+INTERNET/WAN Light:
+  ✓ Solid Green/White = Connected to ISP (GOOD)
+  ✗ Flashing = Trying to connect, wait 2 minutes
+  ✗ Red = Connection error, check ISP status or restart
+  ✗ Off = Not connected, check cables from wall
+
+DOWNLOAD/UPLOAD Lights:
+  ✓ Flashing = Data transfer happening (NORMAL)
+  ✓ Off when idle = Normal
+  ✗ Constantly on = May indicate issue
+
+ACTION BASED ON LIGHT STATUS:
+
+If Internet light is RED or OFF:
+  1. Check the coaxial cable from the wall
+  2. Try restarting the modem (power cycle)
+  3. If still red after restart, call your ISP
+
+If Power light is OFF:
+  1. Check power cable connections
+  2. Try a different outlet
+  3. Try a different power cable
+  4. If still off, the modem may be broken
+
+STEP 4B: Router Light Indicators
+
+Typical router lights include:
+- POWER: Should be solid
+- INTERNET/WAN: Should be solid
+- WiFi 2.4G: Should be solid or flashing
+- WiFi 5G: Should be solid or flashing (if available)
+
+What Each Status Means:
+
+POWER Light:
+  ✓ Solid Green/Blue/White = Router is on (GOOD)
+  ✗ Off = Router not powered, check power cable
+  ✗ Red = Error, restart the router
+
+INTERNET/WAN Light:
+  ✓ Solid Green/Blue/White = Connected to modem (GOOD)
+  ✗ Flashing = Connecting, wait 1 minute
+  ✗ Red = Not connected, check cable from modem
+  ✗ Off = Not connected, check connections
+
+WiFi Lights (2.4G and/or 5G):
+  ✓ Solid or Flashing = WiFi is broadcasting (GOOD)
+  ✗ Off = WiFi is disabled, may need to enable in settings
+
+ACTION BASED ON LIGHT STATUS:
+
+If Internet light is RED or OFF:
+  1. Check the Ethernet cable between modem and router
+  2. Make sure it's plugged into the WAN/Internet port
+  3. Try a different Ethernet cable
+  4. Restart the router
+
+If Power light is OFF:
+  1. Check power cable
+  2. Try a different outlet
+  3. Try a different power cable
+
+If WiFi lights are OFF:
+  1. Look for a WiFi button on the router
+  2. Press and hold it for 3 seconds to turn WiFi on
+  3. If no button, restart the router
+  4. If still off, you may need to enable WiFi in router settings
+
+Expected Result:
+✓ All lights showing normal status (green/blue, not red)
+✓ Internet light is solid, not flashing
+✓ Power light is on
+
+If Still Not Working: Continue to Section 4 (Intermediate Troubleshooting)
+
+
+SECTION 4: INTERMEDIATE TROUBLESHOOTING
+
+
+STEP 5: TEST WITH A WIRED CONNECTION (ETHERNET)
+
+
+Why: Testing with an Ethernet cable helps you determine if the problem is with 
+your WiFi or with your internet connection itself. This narrows down the cause.
+
+How to Test:
+1. Get an Ethernet cable (the thin network cable)
+2. Plug one end into a LAN port on your router
+   - LAN ports are usually numbered 1, 2, 3, 4
+   - NOT the WAN/Internet port (usually different color)
+3. Plug the other end into your computer's Ethernet port
+4. Wait 10 seconds for the connection to establish
+5. Try to open a website or send an email
+
+Possible Results:
+
+RESULT A: Wired connection works fine
+  → The problem is with WiFi
+  → Go to SECTION 7 (WiFi-Specific Issues)
+
+RESULT B: Wired connection doesn't work either
+  → The problem is with your internet connection
+  → Continue to STEP 6
+
+RESULT C: Wired connection is very slow
+  → Go to STEP 8 (Speed Testing)
+
+
+
+STEP 6: CHECK FOR LOOSE OR DAMAGED WIRES (DETAILED)
+
+
+Why: Even if you checked this in Step 3, cables can be problematic in subtle 
+ways. This is a more detailed inspection.
+
+STEP 6A: Coaxial Cable (from wall to modem)
+This is the thick cable, usually with metal ends.
+
+Detailed Inspection:
+1. Follow the cable from the wall to the modem
+2. Look for any damage along the entire length:
+   - Cuts or frays in the outer covering
+   - Exposed copper wire inside
+   - Cracks in the insulation
+   - Kinks or sharp bends
+   - Signs of being stepped on or crushed
+
+3. Check the connectors:
+   - The connector should thread smoothly onto the modem
+   - Should feel snug and secure (hand-tight, not over-tight)
+   - No missing or bent pieces on the connector
+
+4. Test the connection:
+   - Gently wiggle the cable while watching the modem lights
+   - If lights flicker, the connection is loose
+   - Tighten the connector slightly
+
+5. If you suspect damage:
+   - Try replacing the cable
+   - Use a new coaxial cable from your ISP or a hardware store
+   - Test again to see if the problem is fixed
+
+STEP 6B: Network Cables (Ethernet)
+These are thin cables that look like oversized phone cords.
+
+Detailed Inspection:
+1. Check each Ethernet cable:
+   - Modem to router
+   - Router to computer (if wired)
+   - Any other wired connections
+
+2. For each cable, inspect:
+   - The entire length for cuts or damage
+   - Both ends for bent pins or corrosion
+   - The plastic clips (they should not be broken)
+
+3. Test connections:
+   - Unplug and replug each cable
+   - You should hear a small click when fully inserted
+   - If the cable doesn't click, it's not fully seated
+
+4. Swap cables:
+   - Try a different Ethernet cable in the same connection
+   - If the new cable works, the old one was bad
+   - Replace the damaged cable
+
+STEP 6C: Power Cables
+1. Check power cables for damage
+2. Make sure connections are tight
+3. Test outlets with another device
+4. If an outlet doesn't work, try a different outlet
+5. Never use damaged power cables
+
+Expected Result:
+✓ All cables are intact with no visible damage
+✓ All connections are secure and click into place
+✓ No loose connections
+
+If Still Not Working: Continue to STEP 7
+
+
+
+STEP 7: RESTART YOUR COMPUTER/DEVICE
+
+
+Why: Your computer's network settings can sometimes become confused. A restart 
+clears these issues and refreshes the connection.
+
+How to Restart:
+1. Save all your open work
+2. Close all applications
+3. Click the Start menu (Windows) or Apple menu (Mac)
+4. Select "Restart" or "Shut Down"
+5. Wait for the computer to fully shut down
+6. Wait 30 seconds
+7. Turn the computer back on
+8. Wait for it to fully load (you'll see the login screen)
+9. Log back in
+10. Test the internet connection
+
+Expected Result:
+✓ Computer connects to internet
+✓ Websites load normally
+✓ Internet speed is normal
+
+If Still Not Working: Continue to STEP 8
+
+
+
+STEP 8: RUN A SPEED TEST
+
+
+Why: A speed test tells you if you're getting the internet speed you're paying 
+for. This helps identify if the problem is slow internet or something else.
+
+How to Run a Speed Test:
+
+Method 1: Ookla Speedtest (Most Popular)
+1. Open your web browser
+2. Go to Speedtest.net
+3. Click the big blue "GO" button
+4. Wait for the test to complete (about 1-2 minutes)
+5. Note down these numbers:
+   - Download Speed (Mbps)
+   - Upload Speed (Mbps)
+   - Ping (ms)
+
+Method 2: Google Speed Test
+1. Open Google.com
+2. Type "speed test" in the search box
+3. Click "Run Speed Test"
+4. Wait for results
+
+How to Interpret Results:
+
+DOWNLOAD SPEED (Mbps):
+- Compare to your internet plan
+- You should get at least 80% of what you pay for
+- Example: If you pay for 100 Mbps, you should get 80+ Mbps
+
+UPLOAD SPEED (Mbps):
+- Usually much lower than download
+- Check your plan to see what you should expect
+
+PING (ms):
+- Should be below 50ms for normal use
+- Below 20ms is excellent
+- Above 100ms may cause lag
+
+What the Results Mean:
+
+✓ Speed matches your plan:
+  → You're getting the speed you pay for
+  → Problem may be with a specific application
+  → Continue to SECTION 6 (Device-Specific Issues)
+
+✗ Speed is much lower than your plan:
+  → You're experiencing slow internet
+  → Continue to STEP 9 (Optimize Your Connection)
+
+✗ Speed is very low or test won't complete:
+  → Possible connection problem
+  → Continue to SECTION 5 (Advanced Troubleshooting)
+
+
+
+STEP 9: OPTIMIZE YOUR CONNECTION
+
+
+Why: Your WiFi signal strength, router placement, and interference from other 
+devices can all affect internet speed.
+
+STEP 9A: Check WiFi Signal Strength
+1. Look at the WiFi icon on your device
+2. Count the bars:
+   - 4-5 bars = Excellent signal (GOOD)
+   - 3 bars = Good signal (ACCEPTABLE)
+   - 2 bars = Weak signal (POOR)
+   - 1 bar = Very weak signal (VERY POOR)
+
+If signal is weak:
+1. Move closer to the router
+2. Test speed again
+3. If speed improves, your router placement is the problem
+
+STEP 9B: Improve Router Placement
+Move your router to:
+- A central location in your home
+- High up (not on the floor)
+- Away from walls and metal objects
+- Away from the microwave or cordless phone
+- Away from large appliances
+
+Move away from:
+- Metal objects (filing cabinets, metal shelves)
+- Microwaves (they emit WiFi-interfering signals)
+- Cordless phones and baby monitors
+- Thick walls and doors
+- Water tanks or aquariums
+
+STEP 9C: Reduce Interference
+WiFi operates on 2.4 GHz and 5 GHz frequencies. Other devices use these:
+
+Devices causing 2.4 GHz interference:
+- Microwaves
+- Cordless phones
+- Baby monitors
+- Bluetooth devices
+- Old wireless devices
+
+How to reduce interference:
+1. Move interfering devices away from the router
+2. Switch to 5 GHz WiFi (faster, less interference)
+3. Change your WiFi channel in router settings
+   (See SECTION 5 for advanced WiFi configuration)
+
+STEP 9D: Check for Background Activity
+Sometimes other devices or applications use bandwidth:
+
+On your computer:
+1. Open Task Manager (Windows) or Activity Monitor (Mac)
+2. Look at Network or Network tab
+3. Identify applications using network
+4. Close unnecessary applications
+5. Run speed test again
+
+On your network:
+1. Check if other people are streaming video or downloading large files
+2. Ask them to pause their activities
+3. Run speed test again
+
+STEP 9E: Disable Power Saving Features
+Some devices reduce WiFi performance to save power:
+
+For Windows:
+1. Open Settings
+2. Go to Network & Internet > WiFi
+3. Click Manage known networks
+4. Select your WiFi network
+5. Click Properties
+6. Toggle "Metered connection" OFF
+
+For Mac:
+1. Open System Settings
+2. Go to WiFi
+3. Click Details
+4. Check your settings
+
+Expected Result:
+✓ Speed test shows improvement
+✓ Internet feels faster
+✓ No lag or buffering
+
+If Still Slow: Continue to SECTION 5 (Advanced Troubleshooting)
+
+
+SECTION 5: ADVANCED TROUBLESHOOTING
+
+
+STEP 10: CHECK YOUR IP ADDRESS AND NETWORK SETTINGS
+
+
+Why: Your device needs a valid IP address to connect to the internet. 
+If the IP address is invalid, you won't have internet access.
+
+FOR WINDOWS:
+
+Step 1: Open Command Prompt
+1. Click Start menu
+2. Type "cmd" or "Command Prompt"
+3. Click "Command Prompt" in the results
+4. A black window will open
+
+Step 2: Run ipconfig command
+1. Type: ipconfig /all
+2. Press Enter
+3. Look for information about your network adapter
+
+Step 3: Check Your IP Address
+Look for a section that says "Ethernet adapter" or "Wireless LAN adapter"
+
+Find these values:
+- IPv4 Address: Should look like 192.168.X.X or 10.X.X.X
+- Subnet Mask: Should be 255.255.255.0
+- Default Gateway: Should look like 192.168.1.1 or 10.0.0.1
+- DHCP Enabled: Should say "Yes"
+
+What the values mean:
+
+✓ IPv4 Address starting with 192.168 or 10:
+  → You have a valid private IP address (GOOD)
+
+✗ IPv4 Address is 0.0.0.0:
+  → Your device didn't get an IP address
+  → Go to STEP 11 (Fix IP Address Issues)
+
+✗ IPv4 Address is 169.254.X.X:
+  → Your device couldn't reach the DHCP server
+  → Go to STEP 11 (Fix IP Address Issues)
+
+FOR MAC:
+
+Step 1: Open Terminal
+1. Click Spotlight (magnifying glass, top right)
+2. Type "Terminal"
+3. Click Terminal in the results
+
+Step 2: Run ifconfig command
+1. Type: ifconfig
+2. Press Enter
+
+Step 3: Check Your IP Address
+Look for "inet" (not "inet6")
+
+Find these values:
+- inet: Should look like 192.168.X.X or 10.X.X.X
+- netmask: Should show 0xffffff00
+- broadcast: Should look like 192.168.X.255
+
+✓ inet address starting with 192.168 or 10:
+  → You have a valid IP address (GOOD)
+
+✗ inet address is 169.254.X.X:
+  → Your device couldn't reach the DHCP server
+  → Go to STEP 11
+
+Expected Result:
+✓ You have a valid IP address
+✓ IP address starts with 192.168 or 10
+✓ DHCP is enabled
+
+If Still Not Working: Continue to STEP 11
+
+
+
+STEP 11: FIX IP ADDRESS ISSUES
+
+
+Why: If your device has an invalid IP address (0.0.0.0 or 169.254.X.X), it 
+can't connect to the internet. Releasing and renewing the IP address often fixes this.
+
+FOR WINDOWS:
+
+Step 1: Open Command Prompt (as Administrator)
+1. Click Start menu
+2. Type "cmd"
+3. Right-click "Command Prompt"
+4. Click "Run as Administrator"
+5. Click "Yes" if prompted
+
+Step 2: Release Your IP Address
+1. Type: ipconfig /release
+2. Press Enter
+3. Wait for the command to complete
+4. You should see "Successfully released IP address"
+
+Step 3: Renew Your IP Address
+1. Type: ipconfig /renew
+2. Press Enter
+3. Wait for the command to complete
+4. You should see "Successfully renewed IP address"
+5. Note the new IPv4 address shown
+
+Step 4: Verify the New IP Address
+1. Type: ipconfig
+2. Press Enter
+3. Check that IPv4 Address is no longer 0.0.0.0 or 169.254.X.X
+4. It should start with 192.168 or 10
+
+Step 5: Test Your Connection
+1. Close Command Prompt
+2. Try to open a website
+3. If it works, you're done!
+
+FOR MAC:
+
+Step 1: Open System Settings
+1. Click Apple menu (top left)
+2. Click "System Settings" or "System Preferences"
+
+Step 2: Go to Network Settings
+1. Click "Network" in the left menu
+2. Select your connection (WiFi or Ethernet)
+3. Click "Advanced"
+
+Step 3: Renew Your IP Address
+1. Click the "TCP/IP" tab
+2. Click "Renew DHCP Lease" button
+3. Wait for it to complete
+4. Click "OK"
+
+Step 4: Test Your Connection
+1. Close System Settings
+2. Try to open a website
+3. If it works, you're done!
+
+Expected Result:
+✓ IPv4 Address is now valid (192.168.X.X or 10.X.X.X)
+✓ Internet connection works
+✓ Websites load normally
+
+If Still Not Working: Continue to STEP 12
+
+
+
+STEP 12: FLUSH YOUR DNS CACHE
+
+
+Why: DNS is the service that translates website names (google.com) into IP 
+addresses. If the DNS cache gets corrupted, websites won't load even though 
+you have internet.
+
+Symptoms of DNS problems:
+- Websites won't load, but you have internet
+- Some websites work, others don't
+- You can't access websites by name, but can access by IP address
+- Getting "Cannot find server" errors
+
+FOR WINDOWS:
+
+Step 1: Open Command Prompt (as Administrator)
+1. Click Start menu
+2. Type "cmd"
+3. Right-click "Command Prompt"
+4. Click "Run as Administrator"
+5. Click "Yes" if prompted
+
+Step 2: Flush DNS Cache
+1. Type: ipconfig /flushdns
+2. Press Enter
+3. Wait for completion
+4. You should see "Successfully flushed the DNS Resolver Cache"
+
+Step 3: Test Your Connection
+1. Close Command Prompt
+2. Try to open a website
+3. If websites load, you're done!
+
+FOR MAC:
+
+Step 1: Open Terminal
+1. Click Spotlight (magnifying glass, top right)
+2. Type "Terminal"
+3. Click Terminal in the results
+
+Step 2: Flush DNS Cache
+The command varies by macOS version:
+
+For macOS 10.15 and newer:
+1. Type: sudo dscacheutil -flushcache
+2. Press Enter
+3. Type your password (you won't see it as you type)
+4. Press Enter
+5. Wait for completion
+
+For older macOS:
+1. Type: sudo killall -HUP mDNSResponder
+2. Press Enter
+3. Type your password
+4. Press Enter
+
+Step 3: Test Your Connection
+1. Close Terminal
+2. Try to open a website
+3. If websites load, you're done!
+
+Expected Result:
+✓ DNS cache is flushed
+✓ Websites load normally
+✓ No more "Cannot find server" errors
+
+If Still Not Working: Continue to STEP 13
+
+
+
+STEP 13: CHANGE YOUR DNS SERVER
+
+Why: Sometimes your ISP's DNS servers are slow or have issues. Using a public 
+DNS server can improve performance and reliability.
+
+Popular Public DNS Servers:
+- Google DNS: 8.8.8.8 and 8.8.4.4
+- Cloudflare DNS: 1.1.1.1 and 1.0.0.1
+- Quad9 DNS: 9.9.9.9 and 149.112.112.112
+
+FOR WINDOWS:
+
+Step 1: Open Settings
+1. Click Start menu
+2. Click "Settings" (gear icon)
+3. Click "Network & Internet"
+
+Step 2: Go to Network Settings
+1. Click "WiFi" or "Ethernet" (depending on your connection type)
+2. Click "Manage known networks" or "Advanced options"
+3. Scroll down and click "Edit" next to your network
+4. Look for "DNS server assignment"
+5. Click "Edit"
+
+Step 3: Change DNS Server
+1. Select "Manual"
+2. Toggle "IPv4" ON
+3. Delete any existing DNS addresses
+4. Enter these two DNS addresses:
+   - Primary: 8.8.8.8
+   - Secondary: 8.8.4.4
+5. Click "Save"
+
+Step 4: Test Your Connection
+1. Close Settings
+2. Try to open a website
+3. If websites load faster, you're done!
+
+Alternative Method (via Router):
+For a more permanent solution, change DNS in your router settings:
+
+1. Open a web browser
+2. Type: 192.168.1.1 or 192.168.0.1
+3. Log in with your router username/password
+   (Default is often admin/admin, check your router manual)
+4. Look for "DNS Settings" or "DHCP Settings"
+5. Change the DNS servers to 8.8.8.8 and 8.8.4.4
+6. Save and restart the router
+
+FOR MAC:
+
+Step 1: Open System Settings
+1. Click Apple menu
+2. Click "System Settings" or "System Preferences"
+3. Click "Network"
+
+Step 2: Select Your Connection
+1. Click "WiFi" or "Ethernet" (depending on your connection type)
+2. Click "Advanced"
+
+Step 3: Go to DNS Tab
+1. Click the "DNS" tab
+2. Look at "DNS Servers"
+
+Step 4: Change DNS Server
+1. Click the "+" button to add a new DNS server
+2. Type: 8.8.8.8
+3. Click the "+" button again
+4. Type: 8.8.4.4
+5. Click "OK"
+6. Close System Settings
+
+Step 5: Test Your Connection
+1. Try to open a website
+2. If websites load faster, you're done!
+
+Expected Result:
+✓ Websites load faster
+✓ More reliable connections
+✓ No more DNS timeout errors
+
+If Still Not Working: Continue to STEP 14
+
+
+
+STEP 14: SCAN FOR VIRUSES AND MALWARE
+
+Why: Malware and viruses can consume bandwidth, block connections, or 
+interfere with network settings.
+
+Symptoms of malware:
+- Internet is very slow
+- Can't connect to certain websites
+- Unexpected network activity
+- Excessive data usage
+- Computer is running slowly in general
+
+How to Scan:
+
+Step 1: Download an Antivirus Program
+Recommended free options:
+- Windows Defender (built-in to Windows)
+- Malwarebytes (free version)
+- Norton LifeLock (free trial)
+- Bitdefender (free trial)
+
+Step 2: Run a Full System Scan
+For Windows Defender:
+1. Click Start menu
+2. Type "Windows Security"
+3. Click "Windows Security"
+4. Click "Virus & threat protection"
+5. Click "Scan options"
+6. Select "Full scan"
+7. Click "Scan now"
+8. Wait for scan to complete (may take 1+ hour)
+
+For Malwarebytes:
+1. Download from Malwarebytes.com
+2. Install the program
+3. Open Malwarebytes
+4. Click "Scan"
+5. Select "Full Scan"
+6. Click "Start Scan"
+7. Wait for scan to complete
+
+Step 3: Remove Any Threats Found
+1. Follow the program's instructions
+2. Quarantine or remove any detected threats
+3. Restart your computer
+
+Step 4: Test Your Connection
+1. Try to open a website
+2. Run a speed test
+3. Check if internet speed improved
+
+Expected Result:
+✓ No malware detected
+✓ Internet speed returns to normal
+✓ No more unexpected slowdowns
+
+If Still Not Working: Continue to SECTION 6
+
+
+SECTION 6: DEVICE-SPECIFIC FIXES
+
+
+PROBLEM: Only certain devices can't connect
+
+This section covers issues where some devices work fine but others can't 
+connect to the internet.
+
+STEP 15: TEST MULTIPLE DEVICES
+
+
+First, confirm that other devices can connect:
+
+1. Try connecting a different computer/phone/tablet
+2. Try connecting via WiFi and via Ethernet (if possible)
+3. Try connecting to a different WiFi network (if available)
+
+If other devices work fine:
+→ The problem is with that specific device, not your internet
+→ Continue to STEP 16
+
+If all devices have the same problem:
+→ The problem is with your internet connection
+→ Go back to SECTION 3 or 4
+
+
+
+STEP 16: FORGET AND RECONNECT TO NETWORK (WIFI)
+
+
+Why: Sometimes a device stores incorrect network settings. Forgetting and 
+reconnecting refreshes these settings.
+
+FOR WINDOWS:
+
+Step 1: Open Settings
+1. Click Start menu
+2. Click "Settings" (gear icon)
+3. Click "Network & Internet"
+4. Click "WiFi"
+
+Step 2: Manage Known Networks
+1. Scroll down and click "Manage known networks"
+2. Find your WiFi network in the list
+3. Click on it
+4. Click "Forget"
+
+Step 3: Reconnect to the Network
+1. Click the WiFi icon in the taskbar
+2. Find your network in the list
+3. Click on it
+4. Click "Connect"
+5. Enter your WiFi password
+6. Wait for connection
+
+Step 4: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+FOR MAC:
+
+Step 1: Open System Settings
+1. Click Apple menu
+2. Click "System Settings" or "System Preferences"
+3. Click "Network"
+
+Step 2: Forget the Network
+1. Click "WiFi"
+2. Click "Details" or "Advanced"
+3. Look for your network in the "Preferred Networks" list
+4. Click the "-" button next to it
+5. Click "Remove"
+
+Step 3: Reconnect to the Network
+1. Click "WiFi"
+2. Click "Other Networks..." or your network name
+3. Select your network
+4. Enter your WiFi password
+5. Click "Join"
+6. Wait for connection
+
+Step 4: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+FOR SMARTPHONES/TABLETS:
+
+Android:
+1. Go to Settings
+2. Click "WiFi"
+3. Long-press your network name
+4. Click "Forget"
+5. Click on your network again
+6. Enter your password
+7. Click "Connect"
+
+iPhone/iPad:
+1. Go to Settings
+2. Click "WiFi"
+3. Click the "i" icon next to your network
+4. Click "Forget This Network"
+5. Click on your network again
+6. Enter your password
+7. Click "Join"
+
+Expected Result:
+✓ Device successfully reconnects to WiFi
+✓ Internet connection works
+✓ Websites load normally
+
+If Still Not Working: Continue to STEP 17
+
+
+
+STEP 17: UPDATE NETWORK DRIVERS (WINDOWS)
+
+
+Why: Outdated network drivers can cause connection problems. Updating them 
+often fixes issues.
+
+Step 1: Open Device Manager
+1. Click Start menu
+2. Type "Device Manager"
+3. Click "Device Manager" in the results
+
+Step 2: Find Network Adapters
+1. Look for "Network adapters" in the list
+2. Click the arrow next to it to expand
+
+Step 3: Identify Your Network Adapter
+You'll see one or more adapters:
+- "WiFi Adapter" or "Wireless Adapter" (for WiFi)
+- "Ethernet Adapter" (for wired connection)
+- Or a specific brand name (Intel, Realtek, Broadcom, etc.)
+
+Step 4: Update the Driver
+1. Right-click on your network adapter
+2. Click "Update driver"
+3. Click "Search automatically for updated driver software"
+4. Windows will search for and install the latest driver
+5. If a newer version is found, it will install automatically
+6. Restart your computer when prompted
+
+Step 5: Alternative - Manual Update
+If automatic update doesn't find a newer driver:
+1. Right-click on your network adapter
+2. Click "Properties"
+3. Click "Driver" tab
+4. Note the "Driver Provider" (e.g., Intel, Realtek)
+5. Visit the manufacturer's website
+6. Download the latest driver for your adapter
+7. Install the driver
+8. Restart your computer
+
+Step 6: Test the Connection
+1. After restart, try to connect to internet
+2. If it works, you're done!
+
+Expected Result:
+✓ Network drivers are up to date
+✓ Device connects to internet
+✓ Connection is stable
+
+If Still Not Working: Continue to STEP 18
+
+
+
+STEP 18: RUN WINDOWS NETWORK TROUBLESHOOTER
+
+
+Why: Windows has a built-in troubleshooter that can automatically diagnose 
+and fix many network problems.
+
+FOR WINDOWS 10:
+
+Step 1: Right-click the Network Icon
+1. Look at the taskbar (bottom right)
+2. Find the network icon (looks like bars or a WiFi symbol)
+3. Right-click on it
+
+Step 2: Run Troubleshooter
+1. Click "Troubleshoot problems"
+2. Windows will automatically run diagnostics
+3. Wait for it to complete
+
+Step 3: Follow Recommendations
+1. If problems are found, Windows will suggest fixes
+2. Click "Apply this fix" to accept recommendations
+3. Windows may restart your network adapter
+4. You may need to reconnect to WiFi
+
+Step 4: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+FOR WINDOWS 11:
+
+Step 1: Right-click the Network Icon
+1. Look at the taskbar (bottom right)
+2. Find the network icon
+3. Right-click on it
+
+Step 2: Run Troubleshooter
+1. Click "Diagnose network problem"
+2. Windows will automatically run diagnostics
+3. Wait for it to complete
+
+Step 3: Follow Recommendations
+1. If problems are found, Windows will suggest fixes
+2. Accept the fixes when prompted
+3. You may need to reconnect to WiFi
+
+Step 4: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+Expected Result:
+✓ Network troubleshooter completes
+✓ Problems are identified and fixed
+✓ Device connects to internet
+
+If Still Not Working: Continue to STEP 19
+
+
+STEP 19: RESET NETWORK SETTINGS
+
+
+Why: A network reset clears all network settings and restores them to defaults. 
+This is a more aggressive fix but often works when nothing else does.
+
+⚠️ WARNING: This will:
+- Remove all saved WiFi networks and passwords
+- Reset network adapter settings
+- Remove VPN configurations
+- You'll need to reconnect to WiFi and re-enter passwords
+
+FOR WINDOWS 10:
+
+Step 1: Open Settings
+1. Click Start menu
+2. Click "Settings"
+3. Click "Network & Internet"
+4. Scroll down and click "Status"
+
+Step 2: Find Network Reset
+1. Scroll down to "Network reset"
+2. Click "Network reset"
+
+Step 3: Reset Network Settings
+1. Read the warning
+2. Click "Reset now"
+3. Windows will restart
+
+Step 4: After Restart
+1. Your computer will restart
+2. All network settings will be reset to default
+3. You'll need to reconnect to WiFi
+
+Step 5: Reconnect to WiFi
+1. Click the WiFi icon in taskbar
+2. Find your network
+3. Click "Connect"
+4. Enter your WiFi password
+5. Click "Next"
+
+Step 6: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+FOR WINDOWS 11:
+
+Step 1: Open Settings
+1. Click Start menu
+2. Click "Settings"
+3. Click "System"
+4. Scroll down and click "Troubleshoot"
+5. Click "Other troubleshooters"
+
+Step 2: Find Network Reset
+1. Look for "Network reset"
+2. Click the "Run" button next to it
+
+Step 3: Follow the Steps
+1. Windows will guide you through the reset
+2. Click "Yes" to confirm
+3. Windows will restart
+
+Step 4-6: Same as Windows 10 above
+
+FOR MAC:
+
+Step 1: Open System Settings
+1. Click Apple menu
+2. Click "System Settings"
+3. Click "Network"
+
+Step 2: Remove All Networks
+1. Click "WiFi"
+2. Click "Details" or "Advanced"
+3. Remove all networks from the "Preferred Networks" list
+4. Click "Remove" for each network
+
+Step 3: Reconnect to WiFi
+1. Click "WiFi"
+2. Click your network name
+3. Enter your password
+4. Click "Join"
+
+Step 4: Test the Connection
+1. Try to open a website
+2. If it works, you're done!
+
+Expected Result:
+✓ Network settings are reset to default
+✓ Device connects to internet
+✓ Connection is stable
+
+If Still Not Working: This may require professional help. 
+Go to SECTION 10 (When to Contact Your ISP)
+
+
+SECTION 7: WIFI-SPECIFIC ISSUES
+
+
+PROBLEM: WiFi won't connect or is very slow
+
+Use this section if your problem is specific to WiFi (wired connections work fine).
+
+STEP 20: VERIFY WIFI IS ENABLED
+
+
+Why: Sometimes WiFi is accidentally turned off. This is the simplest check.
+
+FOR WINDOWS:
+
+Method 1: Keyboard Shortcut
+1. Look for a WiFi symbol on your keyboard
+2. Hold Fn key and press the WiFi key (usually has a wireless symbol)
+3. Look at the WiFi icon in taskbar
+4. It should show "WiFi: On" or similar
+
+Method 2: Settings
+1. Click Start menu
+2. Click "Settings"
+3. Click "Network & Internet"
+4. Click "WiFi"
+5. Toggle "WiFi" to "On"
+
+Method 3: Router
+1. Look at your router for a WiFi button
+2. It may have a WiFi symbol or say "WiFi"
+3. Press and hold it for 3 seconds
+4. WiFi lights on the router should turn on
+
+FOR MAC:
+
+Method 1: Menu Bar
+1. Look at the top right corner
+2. Click the WiFi icon (looks like a fan)
+3. Make sure "WiFi" is checked
+4. Click your network name to connect
+
+Method 2: System Settings
+1. Click Apple menu
+2. Click "System Settings"
+3. Click "WiFi"
+4. Toggle "WiFi" to "On"
+
+FOR SMARTPHONES/TABLETS:
+
+Android:
+1. Swipe down from the top twice to open Quick Settings
+2. Tap "WiFi" to turn it on
+3. Tap again to see available networks
+
+iPhone/iPad:
+1. Swipe down from top right to open Control Center
+2. Tap the WiFi icon to turn it on
+3. Go to Settings > WiFi to see available networks
+
+Expected Result:
+✓ WiFi is turned on
+✓ WiFi icon shows as active
+✓ WiFi networks are visible
+
+If Still Not Working: Continue to STEP 21
+
+
+
+STEP 21: SCAN FOR AVAILABLE NETWORKS
+
+
+Why: You need to see your WiFi network in the available networks list before 
+you can connect to it.
+
+FOR WINDOWS:
+
+Step 1: Click WiFi Icon
+1. Click the WiFi icon in taskbar (bottom right)
+2. A list of available networks will appear
+
+Step 2: Look for Your Network
+1. Your network name (SSID) should appear in the list
+2. It may look like "MyNetwork" or "NETGEAR-5G" or similar
+3. If you don't know your network name, check your router
+
+What to Look For:
+✓ Your network name appears in the list
+✓ Signal strength shows at least 2-3 bars
+✓ Network shows as "Secured" (locked icon)
+
+If Your Network Doesn't Appear:
+- Check if your router is turned on (check power light)
+- Check if WiFi is enabled on the router
+- Move closer to the router
+- Wait 30 seconds and refresh the list
+- Restart the router
+
+FOR MAC:
+
+Step 1: Click WiFi Icon
+1. Click the WiFi icon (looks like a fan) in top right corner
+2. A dropdown menu will appear
+3. Your network should be listed
+
+Step 2: Look for Your Network
+1. Your network name should appear in the list
+2. It may have a checkmark if you're already connected
+3. Signal strength shows as dots or bars
+
+If Your Network Doesn't Appear:
+- Check if your router is turned on
+- Check if WiFi is enabled on the router
+- Move closer to the router
+- Wait 30 seconds and try again
+- Restart the router
+
+FOR SMARTPHONES/TABLETS:
+
+Android:
+1. Go to Settings
+2. Click "WiFi"
+3. Wait for the list of networks to appear
+4. Your network should be in the list
+
+iPhone/iPad:
+1. Go to Settings
+2. Click "WiFi"
+3. Wait for networks to appear
+4. Your network should be in the list
+
+If Your Network Doesn't Appear:
+- Check if router is on
+- Move closer to the router
+- Restart the router
+
+Expected Result:
+✓ Your network name appears in the available networks list
+✓ Signal strength is at least 2-3 bars
+✓ Network is marked as "Secured"
+
+If Still Not Working: Continue to STEP 22
+
+
+
+STEP 22: CONNECT TO WIFI NETWORK
+
+
+Why: Connecting requires entering your WiFi password. Make sure you have the 
+correct password.
+
+FINDING YOUR WIFI PASSWORD:
+
+If you don't know your WiFi password:
+1. Check your router - password may be on a sticker
+2. Check your ISP bill or welcome letter
+3. Check your router's manual
+4. Log into your router settings (see STEP 23)
+5. Look in the WiFi settings for the password
+
+FOR WINDOWS:
+
+Step 1: Click WiFi Icon
+1. Click the WiFi icon in taskbar
+2. Find your network name in the list
+
+Step 2: Click Your Network
+1. Click on your network name
+2. Check the box "Connect automatically" (optional)
+3. Click "Connect"
+
+Step 3: Enter Password
+1. A dialog box will appear asking for password
+2. Type your WiFi password carefully
+3. Make sure CAPS LOCK is not on (unless your password has capitals)
+4. Click "Next" or "Connect"
+
+Step 4: Wait for Connection
+1. The connection icon will change
+2. After a few seconds, it should say "Connected"
+3. Once connected, you can open websites
+
+FOR MAC:
+
+Step 1: Click WiFi Icon
+1. Click the WiFi icon (fan symbol) in top right
+2. Your network should appear in the dropdown
+
+Step 2: Select Your Network
+1. Click on your network name
+2. A password dialog will appear
+
+Step 3: Enter Password
+1. Type your WiFi password carefully
+2. Make sure CAPS LOCK is correct
+3. Click "Join"
+
+Step 4: Wait for Connection
+1. The WiFi icon will fill in
+2. You should see "WiFi: Connected" when you hover over it
+3. Once connected, you can open websites
+
+FOR SMARTPHONES/TABLETS:
+
+Android:
+Step 1: Open WiFi Settings
+1. Go to Settings
+2. Click "WiFi"
+3. Find your network in the list
+
+Step 2: Connect to Network
+1. Tap your network name
+2. Enter your WiFi password
+3. Tap "Connect"
+4. Wait for connection confirmation
+
+iPhone/iPad:
+Step 1: Open WiFi Settings
+1. Go to Settings
+2. Click "WiFi"
+3. Find your network in the list
+
+Step 2: Connect to Network
+1. Tap your network name
+2. Enter your WiFi password
+3. Tap "Join"
+4. Wait for checkmark to appear next to network name
+
+TROUBLESHOOTING PASSWORD ERRORS:
+
+If you get "Incorrect password" error:
+1. Double-check your password (case-sensitive)
+2. Make sure CAPS LOCK is off (unless password has capitals)
+3. Look for the password on your router
+4. Try the default password if you changed it
+5. Reset the router and try default password
+
+If You Forgot Your Password:
+1. Access your router settings (see STEP 23)
+2. Look in WiFi settings
+3. Or reset the router to factory defaults
+4. Then set up a new WiFi password
+
+Expected Result:
+✓ Device successfully connects to WiFi
+✓ WiFi icon shows as connected
+✓ You can open websites
+
+If Still Not Working: Continue to STEP 23
+
+
+
+STEP 23: ACCESS YOUR ROUTER SETTINGS
+
+
+Why: Router settings let you troubleshoot WiFi problems, change the WiFi 
+channel, update firmware, and view connected devices.
+
+FINDING YOUR ROUTER'S IP ADDRESS:
+
+Common router IP addresses:
+- 192.168.1.1 (most common)
+- 192.168.0.1
+- 10.0.0.1
+- Check your router manual or the bottom of the router
+
+FINDING YOUR ROUTER LOGIN:
+
+Default login information:
+- Username: admin
+- Password: admin or password
+- Check your router manual or the sticker on the router
+
+FOR WINDOWS:
+
+Step 1: Open Web Browser
+1. Open Internet Explorer, Chrome, Firefox, or Edge
+2. Make sure you're connected to your WiFi
+
+Step 2: Go to Router Address
+1. Click on the address bar
+2. Type: 192.168.1.1
+3. Press Enter
+4. If that doesn't work, try 192.168.0.1
+
+Step 3: Log In
+1. Enter your username (usually "admin")
+2. Enter your password
+3. Click "Login" or "Submit"
+
+Step 4: Explore Router Settings
+Once logged in, you can:
+- View connected devices
+- Change WiFi password
+- Change WiFi channel
+- Update router firmware
+- Restart the router
+- View internet connection status
+
+FOR MAC:
+
+Same steps as Windows - use Safari, Chrome, or Firefox
+
+FOR SMARTPHONES/TABLETS:
+
+Step 1: Open Browser
+1. Open Safari (iPhone/iPad) or Chrome (Android)
+2. Make sure you're connected to your WiFi
+
+Step 2: Go to Router Address
+1. Type in address bar: 192.168.1.1
+2. Tap "Go"
+
+Step 3: Log In
+1. Enter username and password
+2. Tap "Login"
+
+Step 4: View Settings
+You can now see your router settings
+
+Expected Result:
+✓ Successfully logged into router
+✓ Can see router status and settings
+✓ Can access WiFi configuration
+
+If Still Not Working: Continue to STEP 24
+
+
+
+STEP 24: CHANGE WIFI CHANNEL
+
+
+Why: WiFi channels can have interference from neighboring networks. Changing 
+to a less congested channel can improve performance.
+
+UNDERSTANDING WIFI CHANNELS:
+
+2.4 GHz WiFi (most common):
+- Channels: 1, 6, 11 (non-overlapping channels)
+- Many devices use this frequency
+- More interference possible
+
+5 GHz WiFi (faster, less congestion):
+- Many more channels available
+- Less interference
+- Shorter range than 2.4 GHz
+
+RECOMMENDED CHANNELS:
+- 2.4 GHz: Channel 1, 6, or 11
+- 5 GHz: Channel 36, 40, 44, 48, or higher (depends on your location)
+
+How to Change Channel:
+
+Step 1: Log Into Router
+1. Open web browser
+2. Go to 192.168.1.1 (or your router IP)
+3. Log in with admin/password
+
+Step 2: Find WiFi Settings
+1. Look for "Wireless" or "WiFi" settings
+2. Look for "2.4 GHz" or "5 GHz" section
+3. Find "Channel" setting
+
+Step 3: Select New Channel
+For 2.4 GHz:
+1. Try Channel 1, 6, or 11
+2. Avoid channels 2-5, 7-10, 12-13 (overlapping)
+
+For 5 GHz:
+1. Try Channel 36, 40, 44, or 48
+2. Or let router auto-select
+
+Step 4: Save Changes
+1. Click "Save" or "Apply"
+2. Router may restart
+3. Wait 1-2 minutes for changes to take effect
+
+Step 5: Reconnect Devices
+1. Your devices may disconnect temporarily
+2. Reconnect to WiFi
+3. Wait for connection to stabilize
+
+Step 6: Test Speed
+1. Wait 2 minutes after change
+2. Run a speed test
+3. If faster, keep the new channel
+4. If slower, try a different channel
+
+Expected Result:
+✓ WiFi channel changed successfully
+✓ Internet speed may improve
+✓ Less interference and interference from neighboring networks
+
+If Still Not Working: Continue to STEP 25
+
+
+
+STEP 25: RESTART ROUTER FROM SETTINGS
+
+
+Why: Restarting the router from settings is more controlled than unplugging it.
+
+How to Restart from Router Settings:
+
+Step 1: Log Into Router
+1. Open web browser
+2. Go to 192.168.1.1 (or your router IP)
+3. Log in with admin/password
+
+Step 2: Find Restart Option
+1. Look for "System Tools" or "Administration"
+2. Look for "Restart" or "Reboot" button
+3. Click the button
+
+Step 3: Confirm Restart
+1. A dialog may ask for confirmation
+2. Click "Yes" or "Confirm"
+3. Router will restart
+
+Step 4: Wait for Restart
+1. Router lights will go out briefly
+2. Wait 2-3 minutes for full restart
+3. All lights should come back on
+
+Step 5: Reconnect Devices
+1. Devices may disconnect temporarily
+2. Reconnect to WiFi
+3. Wait for connection to stabilize
+
+Expected Result:
+✓ Router restarts successfully
+✓ Internet connection is restored
+✓ All devices reconnect to WiFi
+
+If Still Not Working: Continue to STEP 26
+
+
+
+STEP 26: UPDATE ROUTER FIRMWARE
+
+
+Why: Router firmware updates fix bugs and improve performance. Outdated 
+firmware can cause WiFi issues.
+
+How to Update:
+
+Step 1: Log Into Router
+1. Open web browser
+2. Go to 192.168.1.1 (or your router IP)
+3. Log in with admin/password
+
+Step 2: Find Firmware Update
+1. Look for "Administration" or "System Tools"
+2. Look for "Firmware Update" or "Software Update"
+3. Click the option
+
+Step 3: Check for Updates
+1. Router will check for available updates
+2. If update is available, click "Download" or "Update"
+3. Wait for download to complete
+
+Step 4: Install Update
+1. Router will automatically install the update
+2. This may take 5-10 minutes
+3. DO NOT unplug the router during update
+4. Router will restart automatically
+
+Step 5: Wait for Restart
+1. Router will restart after update
+2. All lights will turn off briefly
+3. Wait 2-3 minutes for full restart
+
+Step 6: Test Connection
+1. Reconnect devices to WiFi
+2. Test internet speed
+3. Check if issues are resolved
+
+Expected Result:
+✓ Router firmware is up to date
+✓ WiFi performance may improve
+✓ Bug fixes applied
+
+If Still Not Working: Continue to SECTION 8
+
+
+SECTION 8: ETHERNET-SPECIFIC ISSUES
+
+
+PROBLEM: Wired Ethernet connection not working
+
+Use this section if your WiFi works but your wired connection doesn't.
+
+STEP 27: CHECK ETHERNET CABLE CONNECTION
+
+
+Why: The most common cause of Ethernet problems is loose or incorrect 
+connections.
+
+Step 1: Check Cable Connections
+1. Locate the Ethernet cable on your device
+2. Verify it's plugged into the Ethernet port (not USB)
+3. Verify the other end is plugged into a LAN port on the router
+4. Make sure it's not plugged into the WAN/Internet port
+
+Step 2: Verify Cable is Secure
+1. Listen for a "click" sound when inserting the cable
+2. Gently tug on the cable to make sure it's secure
+3. Look for the connector clip - it should be in place
+
+Step 3: Check Router Port
+1. Make sure you're using a LAN port, not WAN
+2. LAN ports are usually numbered 1, 2, 3, 4
+3. WAN port is usually a different color or labeled differently
+4. Try a different LAN port if the first one doesn't work
+
+Step 4: Check for Link Light
+1. Look at the Ethernet port on your device
+2. There should be a small light next to the port
+3. Green light = connection established (GOOD)
+4. No light = no connection (check cable)
+5. Orange/amber light = connection but slower speed
+
+Expected Result:
+✓ Ethernet cable is securely connected
+✓ Cable is in correct port (LAN, not WAN)
+✓ Link light is green
+
+If Still Not Working: Continue to STEP 28
+
+
+STEP 28: INSPECT ETHERNET CABLE FOR DAMAGE

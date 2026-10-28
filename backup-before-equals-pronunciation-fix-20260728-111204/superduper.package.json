@@ -1,0 +1,16 @@
+{
+  "application_id": "com.superduper.network-condition-studio",
+  "schema_version": 1,
+  "package_version": "0.1.0",
+  "windivert_version": "2.2.2",
+  "required_files": {
+    "WinDivert.dll": "c1e060ee19444a259b2162f8af0f3fe8c4428a1c6f694dce20de194ac8d7d9a2",
+    "WinDivert64.sys": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+    "WinDivert-LICENSE.txt": "14a0cb5214d536e4fdae6aa3f5696f981eeda106cd026e9794bba489ee79d628"
+  },
+  "application_markers": {
+    "SuperDuper.py": "77da58cac4579109a6593efb05305656a6d6a519fe98dc5fa9d6e4422b9ddd1a",
+    "windivert_backend.py": "1f84913c91484d109cd4e032d5fc94828471be7cf7e7f552dbaf8e86824976d3",
+    "SuperDuper.ico": "afba0b42a49b57a83f44b013b9a98f33273b72250e41ce83b376b99ed60b3227"
+  }
+}

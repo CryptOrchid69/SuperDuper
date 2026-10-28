@@ -1,0 +1,930 @@
+﻿================================================================================
+                         PYCHARM SETUP INSTRUCTIONS
+        How To Set Up PyCharm For Building Python Desktop Applications
+================================================================================
+
+This guide explains, in simple step-by-step words, how to set up PyCharm so you
+can create Python desktop apps, run them, install packages, and turn your Python
+scripts into Windows .exe apps.
+
+This guide is written for Windows users.
+
+================================================================================
+1. WHAT PYCHARM IS AND WHAT PYTHON IS
+================================================================================
+
+PyCharm is the program you use to write and organize Python code.
+
+Python is the actual programming language engine that runs your scripts.
+
+This is important:
+
+    PyCharm does NOT replace Python.
+
+You need BOTH:
+
+    1. PyCharm
+       This is the editor / IDE.
+
+    2. Python
+       This is the interpreter that runs your .py files.
+
+If PyCharm is installed but Python is missing, you can write code, but your apps
+will not run properly.
+
+================================================================================
+2. BASIC THINGS YOU NEED INSTALLED
+================================================================================
+
+For building normal Python desktop apps, you should have these installed:
+
+    1. PyCharm
+    2. Python
+    3. pip
+    4. Useful Python packages
+    5. PyInstaller, if you want to build .exe apps
+
+On this PC, the Python interpreter is:
+
+    C:\Python314\python.exe
+
+That means Python 3.14 is installed in:
+
+    C:\Python314
+
+The most important Python folders are:
+
+    C:\Python314
+    C:\Python314\Scripts
+    C:\Users\clust\AppData\Roaming\Python\Python314\Scripts
+
+================================================================================
+3. WHAT EACH IMPORTANT TOOL DOES
+================================================================================
+
+Python:
+
+    Runs your .py scripts.
+
+pip:
+
+    Installs extra Python packages.
+
+    Example:
+
+        pip install requests
+
+PyInstaller:
+
+    Turns a Python script into a Windows .exe app.
+
+    Example:
+
+        pyinstaller --onefile myapp.py
+
+Tkinter:
+
+    Built into Python. Used for simple desktop app windows, buttons, labels,
+    text boxes, menus, and other basic controls.
+
+psutil:
+
+    Used for checking CPU, RAM, disks, processes, and system information.
+
+Pillow:
+
+    Used for images, icons, and image processing.
+
+requests:
+
+    Used when your app needs to contact websites or APIs.
+
+pywin32:
+
+    Used for deeper Windows features.
+
+customtkinter:
+
+    Used for modern-looking desktop apps.
+
+ttkbootstrap:
+
+    Used for nicer Tkinter themes.
+
+pytest:
+
+    Used for testing your code.
+
+black:
+
+    Used for formatting Python code neatly.
+
+================================================================================
+4. CHECK IF PYTHON IS WORKING
+================================================================================
+
+Open PowerShell or Command Prompt.
+
+Type:
+
+    python --version
+
+You should see something like:
+
+    Python 3.14.4
+
+If that works, Python is on your Windows PATH.
+
+If it does not work, use the full Python path:
+
+    C:\Python314\python.exe --version
+
+If the full path works but plain "python" does not, then your PATH needs to be
+fixed.
+
+================================================================================
+5. CHECK IF pip IS WORKING
+================================================================================
+
+Open PowerShell or Command Prompt.
+
+Type:
+
+    pip --version
+
+You should see a version number.
+
+If that does not work, use:
+
+    C:\Python314\python.exe -m pip --version
+
+The safe command is always:
+
+    C:\Python314\python.exe -m pip
+
+That command uses pip from the correct Python installation.
+
+================================================================================
+6. CHECK IF PYINSTALLER IS WORKING
+================================================================================
+
+Open PowerShell or Command Prompt.
+
+Type:
+
+    pyinstaller --version
+
+You should see a version number.
+
+If that does not work, use:
+
+    C:\Python314\python.exe -m PyInstaller --version
+
+The safe command is always:
+
+    C:\Python314\python.exe -m PyInstaller
+
+================================================================================
+7. ADD PYTHON, pip, AND PYINSTALLER TO WINDOWS PATH
+================================================================================
+
+PATH is a Windows setting that tells the computer where to look for commands.
+
+If Python is on PATH, you can type:
+
+    python
+
+instead of typing:
+
+    C:\Python314\python.exe
+
+The User PATH should include these folders:
+
+    C:\Python314
+    C:\Python314\Scripts
+    C:\Users\clust\AppData\Roaming\Python\Python314\Scripts
+
+To add them manually:
+
+    1. Press the Windows key.
+    2. Search for:
+
+           environment variables
+
+    3. Open:
+
+           Edit environment variables for your account
+
+    4. If a System Properties window opens, click:
+
+           Environment Variables...
+
+       This button is usually near the bottom of the Advanced tab.
+
+    5. In the User variables section, click Path.
+    6. Click Edit.
+    7. Click New.
+    8. Add:
+
+           C:\Python314
+
+    9. Click New again.
+    10. Add:
+
+           C:\Python314\Scripts
+
+    11. Click New again.
+    12. Add:
+
+           C:\Users\clust\AppData\Roaming\Python\Python314\Scripts
+
+    13. Click OK on every window.
+    14. Close and reopen PowerShell, Command Prompt, and PyCharm.
+
+Then test:
+
+    python --version
+    pip --version
+    pyinstaller --version
+
+================================================================================
+8. SET UP PYCHARM TO USE THE CORRECT PYTHON
+================================================================================
+
+PyCharm needs to know which Python interpreter to use.
+
+To set it:
+
+    1. Open PyCharm.
+    2. Open your project folder.
+    3. Click File.
+    4. Click Settings.
+    5. Go to:
+
+           Project: Your Project Name
+           Python Interpreter
+
+    6. Click Add Interpreter or the gear icon.
+    7. Choose Existing Interpreter.
+    8. Select:
+
+           C:\Python314\python.exe
+
+    9. Click OK or Apply.
+
+Now PyCharm will run scripts using Python 3.14.
+
+================================================================================
+9. HOW TO CREATE A NEW PYTHON APP PROJECT
+================================================================================
+
+To create a new desktop app project:
+
+    1. Open PyCharm.
+    2. Click New Project.
+    3. Choose a folder name.
+
+       Example:
+
+           C:\Users\clust\Desktop\MyNewApp
+
+    4. Choose the Python interpreter:
+
+           C:\Python314\python.exe
+
+    5. Create a new Python file.
+
+       Example:
+
+           main.py
+
+    6. Write your code in main.py.
+    7. Right-click main.py.
+    8. Click Run.
+
+================================================================================
+10. SIMPLE TEST APP
+================================================================================
+
+Create a file called:
+
+    main.py
+
+Put this inside it:
+
+    import tkinter as tk
+
+    root = tk.Tk()
+    root.title("My First Python App")
+    root.geometry("400x250")
+
+    label = tk.Label(root, text="Hello! My app is working.", font=("Segoe UI", 14))
+    label.pack(pady=40)
+
+    button = tk.Button(root, text="Close", command=root.destroy)
+    button.pack()
+
+    root.mainloop()
+
+Run it.
+
+If a window opens, your Python desktop app setup is working.
+
+================================================================================
+11. INSTALLING PACKAGES IN PYCHARM
+================================================================================
+
+Packages are extra tools your app can use.
+
+Example packages:
+
+    requests
+    psutil
+    pillow
+    pywin32
+    customtkinter
+    ttkbootstrap
+    pyinstaller
+
+To install packages from PyCharm:
+
+    1. Open Settings.
+    2. Go to Python Interpreter.
+    3. Click the plus button.
+    4. Search for the package name.
+    5. Click Install Package.
+
+To install packages from PowerShell:
+
+    python -m pip install package_name
+
+Example:
+
+    python -m pip install requests
+
+Safest version:
+
+    C:\Python314\python.exe -m pip install requests
+
+================================================================================
+12. PACKAGES THAT ARE USEFUL FOR DESKTOP APP DEVELOPMENT
+================================================================================
+
+Recommended basic package set:
+
+    pyinstaller
+    psutil
+    pillow
+    requests
+    pywin32
+    customtkinter
+    ttkbootstrap
+    cryptography
+    pytest
+    black
+
+Install them with:
+
+    python -m pip install pyinstaller psutil pillow requests pywin32 customtkinter ttkbootstrap cryptography pytest black
+
+Or use the full path:
+
+    C:\Python314\python.exe -m pip install pyinstaller psutil pillow requests pywin32 customtkinter ttkbootstrap cryptography pytest black
+
+================================================================================
+13. USING VIRTUAL ENVIRONMENTS
+================================================================================
+
+A virtual environment is a private Python setup for one project.
+
+It helps keep packages separated between projects.
+
+Example:
+
+    Project A can use one package version.
+    Project B can use a different package version.
+
+To create a virtual environment:
+
+    1. Open a terminal inside your project folder.
+    2. Run:
+
+           python -m venv .venv
+
+    3. Activate it:
+
+           .venv\Scripts\activate
+
+    4. Install packages:
+
+           pip install pyinstaller psutil pillow requests
+
+In PyCharm, you can also create a virtual environment when creating a new
+project.
+
+For beginners, using the main interpreter is simpler.
+
+For larger projects, virtual environments are better.
+
+================================================================================
+14. HOW TO RUN A PYTHON SCRIPT IN PYCHARM
+================================================================================
+
+To run a script:
+
+    1. Open the .py file.
+    2. Right-click inside the code editor.
+    3. Click Run.
+
+Or:
+
+    1. Click the green play button.
+    2. Choose the script to run.
+
+If the app needs administrator permissions:
+
+    1. Close PyCharm.
+    2. Right-click PyCharm.
+    3. Click Run as administrator.
+    4. Run the script again.
+
+This matters for apps that repair Windows, modify services, scan system folders,
+change network settings, or build tools that need elevated permissions.
+
+================================================================================
+15. HOW TO BUILD A .exe APP WITH PYINSTALLER
+================================================================================
+
+PyInstaller turns your Python script into a Windows executable.
+
+Basic command:
+
+    python -m PyInstaller --onefile main.py
+
+This creates folders:
+
+    build
+    dist
+
+Your app will be inside:
+
+    dist
+
+Example:
+
+    dist\main.exe
+
+================================================================================
+16. BUILD A WINDOWED DESKTOP APP
+================================================================================
+
+For GUI apps, you usually do not want a black console window behind the app.
+
+Use:
+
+    python -m PyInstaller --onefile --windowed main.py
+
+If your app needs a custom icon:
+
+    python -m PyInstaller --onefile --windowed --icon MyIcon.ico main.py
+
+If you want the .exe to have a custom name:
+
+    python -m PyInstaller --onefile --windowed --name "My App" main.py
+
+Full example:
+
+    python -m PyInstaller --noconfirm --clean --onefile --windowed --icon MyIcon.ico --name "My App" main.py
+
+================================================================================
+17. WHAT THE PYINSTALLER OPTIONS MEAN
+================================================================================
+
+--onefile
+
+    Makes one single .exe file.
+
+--windowed
+
+    Hides the black console window for GUI apps.
+
+--icon MyIcon.ico
+
+    Gives your app a custom icon.
+
+--name "My App"
+
+    Sets the output app name.
+
+--clean
+
+    Cleans old temporary build files.
+
+--noconfirm
+
+    Allows PyInstaller to overwrite old build files without asking.
+
+================================================================================
+18. WHERE YOUR FINISHED .exe WILL BE
+================================================================================
+
+After building, look inside your project folder.
+
+You will usually see:
+
+    build
+    dist
+    main.spec
+
+The finished app is usually here:
+
+    dist\main.exe
+
+or, if you used --name:
+
+    dist\My App.exe
+
+================================================================================
+19. WHAT A .spec FILE IS
+================================================================================
+
+When PyInstaller builds an app, it may create a .spec file.
+
+Example:
+
+    main.spec
+
+This file stores build instructions.
+
+If you build simple apps, you usually do not need to edit it.
+
+If your app has extra files, images, icons, databases, or folders, you may need
+to edit the .spec file later.
+
+================================================================================
+20. ADDING ICONS AND IMAGES TO YOUR APP
+================================================================================
+
+For Tkinter icons, use .ico files on Windows.
+
+Example:
+
+    root.iconbitmap("MyIcon.ico")
+
+For PyInstaller:
+
+    python -m PyInstaller --onefile --windowed --icon MyIcon.ico main.py
+
+If your app uses image files, keep them in the project folder and make sure
+PyInstaller includes them.
+
+Simple beginner rule:
+
+    Keep your .py file, .ico file, and images in the same project folder.
+
+================================================================================
+21. IMPORTANT WINDOWS APP PERMISSIONS
+================================================================================
+
+Some apps need administrator permission.
+
+Examples:
+
+    Registry repair apps
+    System repair apps
+    Antivirus/scan helper apps
+    Network repair apps
+    VPN apps
+    Service control apps
+    Apps that write to protected Windows folders
+
+If your script works in PyCharm only when PyCharm is run as administrator, then
+the final .exe may also need to be run as administrator.
+
+================================================================================
+22. COMMON APP TYPES YOU CAN BUILD WITH PYTHON
+================================================================================
+
+With Python and PyCharm, you can build:
+
+    Desktop tools
+    Repair utilities
+    Diagnostic apps
+    File organizers
+    Image tools
+    VPN helper apps
+    Network tools
+    Small business apps
+    Data tools
+    Automation tools
+    Security helper tools
+    Launchers
+    Installers
+    Simple games
+
+For simple desktop windows, use:
+
+    tkinter
+    ttkbootstrap
+    customtkinter
+
+For Windows features, use:
+
+    subprocess
+    ctypes
+    pywin32
+
+For system information, use:
+
+    psutil
+
+For web/API access, use:
+
+    requests
+
+For images, use:
+
+    pillow
+
+For .exe building, use:
+
+    pyinstaller
+
+================================================================================
+23. BASIC PROJECT FOLDER LAYOUT
+================================================================================
+
+A simple project can look like this:
+
+    MyApp
+    ├── main.py
+    ├── MyIcon.ico
+    ├── README.txt
+    └── assets
+        └── image.png
+
+A larger project can look like this:
+
+    MyApp
+    ├── main.py
+    ├── app
+    │   ├── __init__.py
+    │   ├── ui.py
+    │   ├── scanner.py
+    │   └── repair.py
+    ├── assets
+    │   └── MyIcon.ico
+    ├── requirements.txt
+    └── README.txt
+
+================================================================================
+24. USING requirements.txt
+================================================================================
+
+A requirements.txt file lists the packages your app needs.
+
+Example requirements.txt:
+
+    pyinstaller
+    psutil
+    pillow
+    requests
+    pywin32
+    customtkinter
+    ttkbootstrap
+
+To install everything from it:
+
+    python -m pip install -r requirements.txt
+
+This is useful when moving a project to another PC.
+
+================================================================================
+25. HOW TO MAKE A requirements.txt FILE
+================================================================================
+
+Inside your project folder, run:
+
+    python -m pip freeze > requirements.txt
+
+This writes installed package versions into requirements.txt.
+
+Note:
+
+    This may include more packages than your app actually needs.
+
+For small beginner projects, it is often better to manually write only the
+packages your app uses.
+
+================================================================================
+26. TESTING YOUR APP BEFORE BUILDING .exe
+================================================================================
+
+Before building an .exe, always test the .py file first.
+
+Run:
+
+    python main.py
+
+Or in PyCharm:
+
+    Right-click main.py
+    Click Run
+
+Only build the .exe after the script works correctly.
+
+This saves time and confusion.
+
+================================================================================
+27. TESTING YOUR .exe AFTER BUILDING
+================================================================================
+
+After PyInstaller builds your app:
+
+    1. Open the dist folder.
+    2. Double-click the .exe.
+    3. Test every button.
+    4. Test error messages.
+    5. Test admin features if needed.
+    6. Test on another folder or another PC if possible.
+
+If the .exe opens and closes instantly, rebuild without --windowed so you can see
+error messages:
+
+    python -m PyInstaller --onefile main.py
+
+Then run the .exe from PowerShell to read the error.
+
+================================================================================
+28. COMMON PROBLEMS AND FIXES
+================================================================================
+
+Problem:
+
+    python is not recognized
+
+Fix:
+
+    Add C:\Python314 to PATH.
+
+Problem:
+
+    pip is not recognized
+
+Fix:
+
+    Add C:\Python314\Scripts to PATH.
+
+Problem:
+
+    pyinstaller is not recognized
+
+Fix:
+
+    Add C:\Users\clust\AppData\Roaming\Python\Python314\Scripts to PATH.
+
+Problem:
+
+    PyCharm says no interpreter
+
+Fix:
+
+    Set the interpreter to C:\Python314\python.exe.
+
+Problem:
+
+    ModuleNotFoundError
+
+Fix:
+
+    Install the missing package.
+
+Example:
+
+    python -m pip install package_name
+
+Problem:
+
+    App needs admin rights
+
+Fix:
+
+    Run PyCharm or the .exe as administrator.
+
+Problem:
+
+    The .exe is huge
+
+Fix:
+
+    This is normal for PyInstaller onefile apps because Python is bundled inside.
+
+Problem:
+
+    Antivirus warns about the .exe
+
+Fix:
+
+    Unsigned PyInstaller apps can look suspicious to antivirus tools. Build from
+    clean source, avoid suspicious behavior, and consider code signing if you
+    distribute the app.
+
+================================================================================
+29. SAFE COMMANDS TO REMEMBER
+================================================================================
+
+Check Python:
+
+    python --version
+
+Check pip:
+
+    pip --version
+
+Install a package:
+
+    python -m pip install package_name
+
+Install app-building packages:
+
+    python -m pip install pyinstaller psutil pillow requests pywin32 customtkinter ttkbootstrap cryptography pytest black
+
+Run a script:
+
+    python main.py
+
+Build an .exe:
+
+    python -m PyInstaller --onefile --windowed main.py
+
+Build an .exe with icon and name:
+
+    python -m PyInstaller --noconfirm --clean --onefile --windowed --icon MyIcon.ico --name "My App" main.py
+
+================================================================================
+30. RECOMMENDED BEGINNER WORKFLOW
+================================================================================
+
+Use this workflow every time:
+
+    1. Create a project folder.
+    2. Create main.py.
+    3. Write a small test window first.
+    4. Run the script in PyCharm.
+    5. Fix errors.
+    6. Add features one at a time.
+    7. Test after every feature.
+    8. Install needed packages with pip.
+    9. When the script works, build the .exe with PyInstaller.
+    10. Test the .exe.
+    11. Keep your source .py file safe.
+
+================================================================================
+31. IMPORTANT SAFETY NOTES FOR SYSTEM UTILITY APPS
+================================================================================
+
+If you build apps that repair Windows, scan for issues, edit registry settings,
+fix internet problems, or restart services, be careful.
+
+Good safety rules:
+
+    1. Always show the user what the app is about to do.
+    2. Do not delete important files without confirmation.
+    3. Do not run PC reset commands.
+    4. If a restart is needed, clearly say restart, not reset.
+    5. Keep logs so the user can see what happened.
+    6. Use Windows built-in repair tools when possible.
+    7. Test commands manually before putting them in an app.
+
+A normal restart command is different from resetting the PC.
+
+Normal restart:
+
+    shutdown /r /t 10
+
+This restarts Windows.
+
+Do NOT use Windows reset commands unless you truly intend to reset/reinstall the
+PC.
+
+================================================================================
+32. FINAL CHECKLIST
+================================================================================
+
+Before designing Python desktop apps, make sure:
+
+    [ ] PyCharm opens correctly.
+    [ ] Python is installed.
+    [ ] PyCharm interpreter is set to C:\Python314\python.exe.
+    [ ] python --version works.
+    [ ] pip --version works.
+    [ ] pyinstaller --version works.
+    [ ] Common packages are installed.
+    [ ] You can run a simple Tkinter window.
+    [ ] You can build a simple .exe with PyInstaller.
+
+If all of those are true, your PC is ready to build Python desktop apps.
+
+================================================================================
+END OF GUIDE
+================================================================================

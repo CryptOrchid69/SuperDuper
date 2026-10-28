@@ -1,0 +1,338 @@
+THE TraceX HWID SPOOFER IS VERY EASY AND SIMPLE TO USE. 
+
+AS YOU CONTINUE TO OPEN THE TraceX Final FOLDER, YOU WILL FIND ANOTHER READ ME.txt.
+
+SLOTHY WILL ADVISE YOU TO USE NORD VPN TO CHANGE YOUR Public IPv4 ADDRESS, WHICH IS GOOD ADVICE. 
+
+BUT YOU DON'T NECESSARILY HAVE TO DO USE NORD VPN, AS THERE ARE OTHER WAYS TO CHANGE YOUR Public IPv4 NUMBER.
+
+CHANGING YOUR Public IPv4 ADDRESS/NUMBER IS ABSOLUTELY CRUCIAL IF YOU ARE GOING TO GIVE THE ANTI-CHEAT THE SLIP.
+BattlEye, Javelin, Easy Anti Cheat, Bethesda, etc.,
+
+https://chatgpt.com/c/6a10d262-c618-83ea-aff0-7a77eb5970b9
+
+I WILL DESCRIBE WITH AS MUCH DETAIL THE DIFFERENT AND SIMPLE METHODS OF THIS BELOW. 
+---------------------------------------------------------------------------------------------------------------
+FIRST, GO TO YOUR SEARCH BROWSER AND TYPE THIS IN THE SEARCH BAR: "WHAT IS MY Public IPv4 ADDRESS?" WHEN YOU GET 
+TO THE WEBSITE THAT DISPLAYS YOUR Public IPv4 ADDRESS (NOT YOUR PRIVATE IPv4 ADDRESS) TAKE A SCREENSHOT OF IT.
+---------------------------------------------------------------------------------------------------------------
+OPTION #1: I VERY SERIOUSLY ADVISE DOING THIS OPTION FIRST, AS IT PROVES TO BE VERY EFFECTIVE 95% OF THE TIME.
+
+SIMPLY UNPLUG YOUR MODEM/ROUTER FROM THE WALL SOCKET IN YOUR HOME FOR AT LEAST 24 HOURS. IN MY CASE, 
+I DECIDED TO UNPLUG MY MODEM/ROUTER FROM THE WALL SOCKET FOR 36, JUST TO MAKE THE JOB GETS DONE. WHEN YOU UNPLUG 
+YOUR MODEM/ROUTER FROM THE WALL SOCKET FOR SUCH A LONG DURATION OF TIME, YOUR ISP (INTERNET SERVICE PROVIDER) WILL
+THEN ASSIGN A NEW Public IPv4 ADDRESS TO YOU, MOST ISP'S WILL DO THAT. 
+
+OF COURSE, THIS MAY NOT BE SO EASY TO DO IF YOU HAVE OTHER'S LIVING IN YOUR HOME. THEY MIGHT BITCH AT YOU WHEN YOU 
+DISCONNECT THE WIFI.
+------------------------------------------------------------------------------------------------------------------------
+OPTION #2: 
+
+Restarting the Modem/Router (Dynamic IP Renewal)
+
+This is the most common method for home internet users with a dynamic IP.
+
+How it works
+
+Many ISPs assign IP addresses using DHCP leases. When the modem reconnects, the ISP may:
+
+give the same IP back,
+or assign a new one.
+Steps
+Save any work using the internet.
+Turn off:
+modem,
+router,
+or modem/router combo.
+Unplug power from the wall.
+Wait:
+sometimes 5–10 minutes,
+sometimes several hours if the ISP uses long leases.
+Plug the modem back in.
+Wait for internet lights to stabilize.
+Reconnect your router if separate.
+Check your new public IP.
+
+Useful IP checker sites:
+
+WhatIsMyIP.com
+IPChicken
+Notes
+Some ISPs almost always reassign the same IP.
+Others rotate frequently.
+Fiber ISPs often keep addresses longer.
+---------------------------------------------------------------------------------------------------------------------------------
+OPTION #3: 
+
+Releasing and Renewing the WAN DHCP Lease
+
+Some routers allow manual WAN DHCP renewal.
+
+How it works
+
+The router asks the ISP for a fresh lease.
+
+Steps
+Open router admin page.
+Common addresses:
+192.168.0.1
+192.168.1.1
+Log in.
+Find:
+Internet,
+WAN,
+Status,
+or DHCP section.
+Click:
+“Release”
+then “Renew”.
+Wait for reconnection.
+Check public IP again.
+Notes
+Some ISPs return the same IP immediately.
+Others assign a different one.
+-----------------------------------------------------------------------------------------------------------------------------------------
+OPTION #4:
+
+Changing/Cloning the Router WAN MAC Address
+
+This only works with some ISPs.
+
+How it works
+
+The ISP sees a “different” router identity and may issue a different DHCP lease.
+
+Steps
+Log into the router admin page.
+Find:
+MAC Clone,
+WAN MAC,
+Internet MAC.
+Enter a different valid MAC address.
+Save settings.
+Reboot modem/router.
+Reconnect to ISP.
+Check public IP.
+Important
+Many ISPs track modem serial numbers instead.
+DOCSIS cable systems often prioritize modem identity over router MAC.
+Some ISPs completely ignore MAC changeS
+-------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #5: SOME PC's ACTUALLY HAVE MOBILE DATA CAPABILITY
+
+Using Mobile Data / Cellular Networks
+
+Mobile carriers frequently rotate public IPs.
+
+How it works
+
+Your device uses the carrier network instead of your home ISP.
+
+Steps
+Turn off Wi-Fi.
+Enable mobile data.
+Optionally toggle airplane mode for 15–30 seconds.
+Reconnect.
+Check public IP.
+Notes
+Many carriers use CGNAT (Carrier Grade NAT).
+Public IPs may change very frequently.
+----------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #6: 
+
+Switching Networks Entirely
+
+Different networks have different public IPs.
+
+Examples
+Home Wi-Fi
+Mobile hotspot
+Coffee shop Wi-Fi
+Work network
+Steps
+Disconnect from current network.
+Connect to another network.
+Verify IP changed.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #7:
+
+Requesting a New IP from Your ISP
+
+Some ISPs will manually change it.
+
+Steps
+Contact ISP support.
+Ask whether:
+your IP is static or dynamic,
+they can refresh/reset your DHCP lease,
+or assign a new IP.
+Reboot equipment if instructed.
+Notes
+Easier with business accounts.
+Some residential ISPs refuse requests.
+---------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #8: 
+
+Upgrading or Downgrading Internet Service
+
+Sometimes changing service plans changes network assignments.
+
+Examples
+Residential → business service
+DOCSIS → fiber
+New modem activation
+
+This may result in a different public IPv4 address block.
+----------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #9: 
+
+Replacing the Modem
+
+Some ISPs identify the modem itself.
+
+How it works
+
+A new modem has:
+
+different serial numbers,
+different hardware identifiers,
+different DOCSIS registration info.
+Steps
+Install new compatible modem.
+Activate with ISP.
+Reconnect router/network.
+Check new public IP.
+------------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #10:
+
+Using Tor
+
+Tor routes traffic through relay nodes.
+
+How it works
+
+Websites see the Tor exit node IP.
+
+Steps
+Download:
+Tor Browser
+Install it.
+Open browser.
+Connect to Tor network.
+Browse through Tor exit IP.
+Notes
+Slower than VPNs.
+Mainly privacy/anonymity focused.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #11:
+
+Cloud Servers / Remote Systems
+
+You can route activity through remote servers.
+
+Examples
+VPS
+Remote desktop
+Cloud VM
+
+Providers:
+
+DigitalOcean
+Linode
+Amazon Web Services
+
+Websites then see the server’s public IP.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #12: IN A WORSE CASE SCENARIO IF YOU'RE DESPERATE
+
+Using a VPN
+
+A VPN changes the public IP websites see.
+
+How it works
+
+Traffic routes through a VPN provider’s server.
+
+Your ISP-assigned IP still exists technically, but external sites see the VPN IP instead.
+
+Steps
+Choose a VPN provider.
+Install VPN software/app.
+Log in.
+Select a server location.
+Connect.
+Verify the visible public IP changed.
+
+Popular providers:
+
+Proton VPN
+Mullvad VPN
+NordVPN
+Notes
+Fastest/easiest method.
+Does not permanently alter ISP-assigned IP.
+Commonly used for privacy and travel.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+OPTION #13: THE SWITCH OUT METHOD
+
+YOU CAN GO ONLINE AND PURCHASE A ROUTER/MODEM FOR A CHEAP AND AFFORDABLE PRICE (PREFERABLY ONE THAT IS CLONEABLE).
+
+SIMPLY UNPLUG THE ROUTER/MODEM YOU ARE CURRENTLY USING WITH THE NEW ROUTER/MODEM
+
+THEN, YOU WILL IMMEDIATELY HAVE A NEW Public IPv4 ADDRESS/NUMBER
+
+IF YOU EVER GET BANNED AGAIN BY THE ANTI-CHEAT, YOU CAN THEN DISCONNECT YOUR ROUTER/MODEM FROM YOUR PC AND HOOK UP YOUR OLD ONE. 
+
+WHEN YOU HOOK UP YOUR OLDER ROUTER/MODEM TO YOUR PC, THE ISP (INTERNET SERVICE PROVIDER) WILL IMMEDIATELY ASSIGN YOUR OLDER ROUTER/MODEM
+WITH A NEW Public IPv4 ADDRESS/NUMBER. THIS WOULD HAPPEN BECAUSE THE OLDER ROUTER HAD BEEN DISCONNECTED FROM YOUR PC FOR SUCH A LONG PERIOD OF TIME.
+
+YOU CAN REPEAT THIS PROCESS OVER AND OVER REPEATEDLY NO MATTER HOW MANY TIMES YOU GET BANNED BY THE ANTI CHEAT. LOL
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+AND THE BEST PART ABOUT THIS, IS THAT 
+Understanding the Different Types of “IP Change”
+Type	What Changes
+Router reboot	ISP-assigned IPv4 may change
+VPN	Visible internet IP changes
+Tor	Exit-node IP changes
+Switching Wi-Fi	Entire network identity changes
+Mobile data	Carrier-assigned IP changes
+MAC clone	May trigger DHCP reassignment
+New modem	Hardware identity changes
+Important Technical Concepts
+Dynamic IP
+
+Changes periodically or after reconnecting.
+
+Static IP
+
+Manually assigned and usually does not change.
+
+CGNAT
+
+Many users share one public IP.
+
+DHCP Lease
+
+Temporary assignment of an IP address.
+
+WAN vs LAN
+WAN = internet-facing public IP.
+LAN = local/private network addresses.
+Important Caution
+
+Changing a public IP:
+
+does not make a device anonymous,
+does not erase online accounts,
+does not remove browser fingerprints,
+and does not bypass authentication systems.
+
+Modern systems can still identify connections using:
+
+cookies,
+accounts,
+browser fingerprints,
+device certificates,
+behavioral analysis,
+and many other methods.

@@ -1,0 +1,952 @@
+SUPERDUPER SIMPLE PRIVATE GAME TESTING GUIDE
+============================================
+
+WHAT THIS GUIDE IS FOR
+----------------------
+
+SuperDuper lets you deliberately make a private test connection behave badly.
+This helps you see how your own game reacts to slow, unstable, duplicated,
+reordered, restricted, or damaged network traffic.
+
+Use this guide only with games, servers, accounts, and networks you own or have
+clear permission to test. Do not use it against public games, other players, or
+someone else's server.
+
+
+THE MOST IMPORTANT IDEA
+-----------------------
+
+SuperDuper changes network packets. It does not directly create game items,
+force a character to teleport, or command a game to disconnect.
+
+Instead, it creates difficult network conditions. If the game contains a bug,
+those conditions may reveal it.
+
+Example:
+
+    SuperDuper duplicates an inventory-request packet.
+    A secure server recognizes the repeated request and processes it once.
+    A faulty server might process it twice and create a persistent duplicate.
+
+A result is only a genuine server-side defect if it remains in the server or
+database after reconnecting. An item that disappears after reconnecting was
+probably only a temporary client display or synchronization error.
+
+
+BEFORE YOU BEGIN
+----------------
+
+1. Back up the private server and its database.
+2. Use disposable test accounts, currency, and items.
+3. Turn on client, server, authentication, and database logs.
+4. Write down the test account, character, item, server, and game-build IDs.
+5. Enter the private server IP address or game port in SuperDuper.
+6. Keep Process set to Any process. Process-specific filtering is not active.
+7. Avoid All Traffic whenever an IP or port can be used.
+
+STANDALONE DESKTOP LAUNCH
+
+SuperDuper.exe is a standalone one-file Windows desktop application. It may be
+launched from the Desktop separately from the SuperDuper-Enhanced package
+folder. It searches beneath Windows' configured Desktop, including a redirected
+Desktop, and accepts only a package with the official identity, schema and
+version values, complete required-file list, and matching SHA-256 hashes for
+WinDivert and SuperDuper application markers.
+8. Start with one effect at a time.
+9. Keep the first session short: two to five minutes.
+10. Remember the emergency Stop shortcut: Ctrl + Numpad *.
+
+
+HOW TO START AND STOP A TEST
+----------------------------
+
+1. Open SuperDuper.
+2. Choose the Direction and Protocol.
+3. Enter the private server IP/CIDR or game port.
+4. Adjust the desired effects.
+5. Press APPLY SETTINGS only if you want those values remembered later.
+6. Press START or the dedicated Numpad * key to activate the visible settings.
+7. Perform the test action inside the game.
+8. Press Numpad * again to toggle the engine off.
+9. Press Ctrl + Numpad * whenever you need a guaranteed Stop-only command.
+
+Numpad * means the dedicated Multiply key above Numpad 9. It is not Shift + 8.
+
+SuperDuper does not automatically discover the DayZ server when the character
+joins it. The tester must enter the private server's numeric IP address and
+gameplay port in the Targeting tab. Keep Process set to Any process.
+
+
+PLAIN-LANGUAGE EXPLANATION OF EVERY FEATURE
+-------------------------------------------
+
+DIRECTION
+
+Both:
+    Changes matching traffic traveling to and from the computer.
+
+Outbound:
+    Changes requests leaving the computer. Examples include movement input,
+    inventory actions, purchases, attacks, chat, and login requests.
+
+Inbound:
+    Changes information arriving from the server. Examples include world state,
+    remote-player movement, damage results, inventory updates, and rewards.
+
+
+PROTOCOL
+
+All traffic:
+    Allows any supported IP traffic that also matches the other filters.
+
+TCP:
+    A reliable protocol that retries missing information and normally preserves
+    order. It is often used for login, chat, inventory, and transactions.
+
+UDP:
+    A fast protocol commonly used for movement, voice, combat updates, and other
+    real-time data. Delivery and ordering are not guaranteed by UDP itself.
+
+IPv4:
+    Selects Internet Protocol version 4 traffic.
+
+IPv6:
+    Selects Internet Protocol version 6 traffic.
+
+
+IP / CIDR
+
+An IP address identifies the private server or another network endpoint.
+
+Example:
+
+    192.168.1.50
+
+A CIDR value selects a network range.
+
+Example:
+
+    192.168.1.0/24
+
+Using an IP or CIDR prevents unrelated traffic from being affected.
+
+The IP/CIDR field is manual. Joining a DayZ server does not automatically fill
+it in. For a LAN server, enter the LAN address assigned to the server computer,
+such as 192.168.1.50.
+
+
+PORTS
+
+A port helps identify a particular network service.
+
+Examples:
+
+    443
+    2302-2305
+    443, 2302-2305
+
+Use the port or ports assigned to the private game server whenever possible.
+This field is also manual. If the private server uses several gameplay ports,
+enter a comma-separated list such as 2302, 2303, 2304 or a range such as
+2302-2305.
+
+
+LATENCY
+
+Latency means delay. SuperDuper holds a matching packet before sending it.
+
+The large white number is editable. Click it, type an exact millisecond value,
+and press Enter. Arrow keys and slider groove clicks adjust one millisecond at
+a time. Use the slider for broad adjustment and the number field for precision.
+
+Example:
+
+    150 ms latency means a matching packet waits about 150 milliseconds.
+
+Possible game effects:
+
+    Delayed movement
+    Slow inventory actions
+    Late combat feedback
+    Delayed doors, vehicles, or abilities
+    Rubber-banding
+
+
+JITTER
+
+Jitter means that the delay keeps changing from packet to packet.
+
+The large white number may be typed directly when an exact jitter value is
+needed.
+
+Example:
+
+    Latency: 100 ms
+    Jitter: 50 ms
+
+Packets may receive approximately 50-150 ms of delay. This uneven timing often
+causes visible stuttering even when the average connection is not extremely
+slow.
+
+Possible game effects:
+
+    Jerky character movement
+    Uneven animations
+    Remote players freezing and jumping
+    Prediction and collision corrections
+    Voice that sounds broken or choppy
+
+
+PACKET LOSS
+
+Packet loss means that some matching packets are deliberately discarded.
+
+Example:
+
+    3% loss means roughly three out of every one hundred matching packets are
+    discarded over time.
+
+Possible game effects:
+
+    Missing movement updates
+    Retransmissions
+    Frozen actions
+    Timeouts
+    Disconnects
+    Failed or repeated requests
+
+One hundred percent loss blocks all matching traffic and should be used only for
+short interruption tests.
+
+
+DUPLICATION
+
+Duplication means that SuperDuper sends a second copy of selected packets.
+
+Example:
+
+    25% duplication gives each eligible packet a 25% chance of being sent twice.
+
+Possible game effects:
+
+    Repeated animations
+    Duplicate notifications
+    Repeated requests
+    Inventory or transaction replay defects
+
+Packet duplication does not guarantee item duplication. A correct server
+processes a repeated transaction only once.
+
+
+OUT-OF-ORDER CHANCE
+
+Out-of-order delivery means a later packet may arrive before an earlier packet.
+The Chance setting controls how often packets are selected for an additional
+random hold.
+
+Possible game effects:
+
+    Actions occurring in the wrong sequence
+    Movement corrections
+    TCP retransmissions
+    Stuttering
+    Timeouts or disconnects
+
+
+REORDER HOLD MAXIMUM
+
+This controls the largest additional random delay applied to a packet selected
+for reordering.
+
+The large white number accepts an exact millisecond value. This avoids trying
+to locate one precise value by dragging across the entire range.
+
+Example:
+
+    Out-of-order Chance: 10%
+    Reorder Hold Maximum: 300 ms
+
+Ten percent of eligible packets may receive an extra random hold of up to
+300 milliseconds, allowing later packets to pass them.
+
+
+BANDWIDTH LIMIT
+
+Bandwidth is the amount of network data allowed through over time.
+
+Unlimited:
+    SuperDuper does not intentionally restrict the rate.
+
+512 Kbit/s:
+    Matching traffic is released at a much lower rate.
+
+Possible game effects:
+
+    Slow login
+    Long loading screens
+    Delayed world streaming
+    Missing or late entity updates
+    Poor voice quality
+    Backlogs followed by catch-up
+
+
+PAYLOAD CORRUPTION
+
+Payload corruption changes a small number of bits inside selected TCP or UDP
+payloads. SuperDuper protects the IP, TCP, and UDP headers and recalculates
+checksums.
+
+Possible game effects:
+
+    Rejected messages
+    Broken encrypted traffic
+    Protocol errors
+    Disconnects
+    Application error handling
+
+SuperDuper refuses to start corruption without a narrow IP/CIDR or port target.
+It also asks for confirmation before every corruption session.
+
+
+BIT FLIPS PER SELECTED PACKET
+
+A bit is one of the smallest pieces of digital information. This setting chooses
+how many unique payload bits SuperDuper changes in each packet selected for
+corruption.
+
+Begin with:
+
+    Payload Corruption: 1%
+    Bit Flips: 1
+
+Even one changed bit may cause a message to be rejected. Do not use corruption
+during valuable transfers, updates, backups, or database maintenance.
+
+
+MAXIMUM DELAY QUEUE
+
+Delayed packets wait in memory. This setting limits how many may wait at once.
+If the limit is reached, SuperDuper performs a safety stop and releases queued
+packets rather than allowing memory use to grow without control.
+
+Recommended starting value:
+
+    10,000 packets
+
+
+MAXIMUM SESSION
+
+This is an automatic safety timer.
+
+Example:
+
+    5 minutes means the engine automatically stops after five minutes.
+
+Use short sessions when testing severe loss, long delay, or corruption.
+
+
+PROFILES
+
+A profile saves Conditions, Targeting, Advanced Effects, and Safety settings
+under a name. Loading a profile changes the controls but does not automatically
+start interception.
+
+Useful profile names:
+
+    Moderate Stutter
+    Severe Wi-Fi
+    Inventory Replay
+    Short Disconnect
+    Low Bandwidth
+    Corruption Lab
+
+
+LIVE COUNTERS
+
+The status area reports packets that were:
+
+    Captured
+    Sent
+    Dropped
+    Duplicated
+    Reordered
+    Bandwidth-shaped
+    Corrupted
+
+These counters help confirm which effects actually occurred during a test.
+
+
+SIMPLE EXPERIMENT 1 - PLAYER STUTTER
+------------------------------------
+
+Direction: Both
+Latency: 100 ms
+Jitter: 50 ms
+Packet Loss: 2%
+Duplication: 1%
+Out-of-order Chance: 5%
+Reorder Hold Maximum: 150 ms
+Bandwidth: Unlimited
+Corruption: 0%
+Session: 5 minutes
+
+Walk, sprint, jump, turn, interact, and observe remote players. Look for uneven
+motion, delayed input, rubber-banding, collision correction, and recovery after
+stopping SuperDuper.
+
+
+SIMPLE EXPERIMENT 2 - STRONG STUTTER
+------------------------------------
+
+Direction: Both
+Latency: 150 ms
+Jitter: 100 ms
+Packet Loss: 4%
+Duplication: 2%
+Out-of-order Chance: 10%
+Reorder Hold Maximum: 300 ms
+Bandwidth: Unlimited
+Corruption: 0%
+Session: 3 minutes
+
+Look for movement freezes, teleporting, delayed combat results, and whether the
+client eventually resynchronizes without being restarted.
+
+
+DAYZ OBSERVATION GUIDE - JITTER, STUTTER, AND RUBBER-BANDING
+------------------------------------------------------------
+
+These effects may look similar, but recording them separately makes the
+experiment more useful.
+
+Character jitter:
+    The character or camera makes many small, rapid corrections. Try moderate
+    latency with changing jitter while walking a straight marked route.
+
+Character stutter:
+    Movement briefly pauses and resumes in visible steps. Jitter, packet loss,
+    reordering, or a combination can cause this appearance.
+
+Rubber-banding:
+    The character moves forward and is then corrected backward or sideways by
+    the server. Record both the client position and the authoritative position
+    observed by another authorized test client.
+
+Remote-player stutter:
+    Another character freezes, jumps, or animates unevenly. Compare what the
+    local client sees with what that remote authorized client sees.
+
+Input delay:
+    A movement or interaction begins noticeably after the key or mouse input.
+    This differs from stutter because the action itself starts late.
+
+Catch-up burst:
+    Several delayed movements or updates appear rapidly after a pause. Check
+    whether the final location and inventory state agree with the server.
+
+Suggested controlled progression:
+
+1. Start with 100 ms latency and no other effect.
+2. Add 25 ms jitter.
+3. Increase jitter to 50 ms.
+4. Add 1% packet loss only after observing jitter by itself.
+5. Add 5% reordering only after recording the loss-only result.
+6. Stop SuperDuper and confirm smooth movement returns.
+
+Repeat the same walking route, camera turns, door interaction, item pickup, and
+vehicle entry during each run. Change only one setting between runs so the
+cause of the visible behavior remains understandable.
+
+
+SIMPLE EXPERIMENT 3 - AUTHORIZED ITEM-REPLAY TEST-DUPING
+--------------------------------------------------------------------------------
+
+Purpose:
+    Determine whether the private server incorrectly processes a repeated
+    inventory or transaction request more than once.
+
+Preparation:
+
+1. Back up the test database.
+2. Create a disposable test account and character.
+3. Use a low-value disposable item.
+4. Record the item's unique server/database ID.
+5. Target only the private game-server IP and port.
+
+Initial settings:
+
+    Direction: Outbound
+    Protocol: The protocol used for inventory traffic
+    Latency: 50 ms
+    Jitter: 20 ms
+    Packet Loss: 0%
+    Duplication: 5%
+    Out-of-order Chance: 0%
+    Bandwidth: Unlimited
+    Corruption: 0%
+    Session: 2 minutes
+
+Test one action at a time:
+
+    Pick up the item
+    Drop the item
+    Move it between inventory slots
+    Transfer it to private storage
+    Sell or purchase it with test currency
+    Craft with it
+    Consume it
+    Trade it between two authorized test accounts
+    Claim a disposable test reward
+
+If nothing unusual occurs, repeat the test at 25%, 50%, and finally 100%
+duplication. Do not combine reordering or loss until the duplication-only result
+is understood.
+
+How to interpret the result:
+
+    Item disappears after reconnecting:
+        Probably a temporary client-side ghost or display problem.
+
+    Two items remain in the authoritative database after reconnecting:
+        Persistent server-side replay or transaction defect.
+
+    Request is rejected or processed once:
+        Expected secure behavior.
+
+    Server crashes or inventory becomes invalid:
+        Availability or data-integrity defect. Stop and restore the backup.
+
+Recommended server protections:
+
+    Unique request or transaction IDs
+    Process-once/idempotent handlers
+    Atomic database transactions
+    Unique item-instance IDs
+    Replay detection
+    Server-authoritative inventory
+
+Additional DayZ item-integrity checks:
+
+    Give every disposable item a written description and record any available
+    persistent item identifier before the test.
+    Count the item from the client, server console, persistence files, and
+    database rather than trusting the inventory picture alone.
+    Reconnect the same character and restart the private server before calling
+    a duplicate persistent.
+    Check both the original location and destination container.
+    Confirm that two visible icons are not two views of one server-side item.
+    Confirm that neither copy disappears when moved, used, traded, or saved.
+    Record whether server cleanup later removes one copy.
+
+Useful result labels:
+
+    Visual ghost:
+        Two icons appear temporarily, but only one authoritative item exists.
+
+    Reconnect ghost:
+        The client remains confused until logout or reconnect, then becomes
+        correct.
+
+    Persistence duplicate:
+        Two separate authoritative item instances remain after reconnect and
+        private-server restart.
+
+    Rollback loss:
+        Neither expected item state survives because the transaction rolled
+        back incorrectly.
+
+    Ownership conflict:
+        Two containers or characters appear to own the same item identifier.
+
+The goal of this experiment is to identify and fix server transaction defects,
+not to accumulate usable items. Delete disposable results and restore the
+laboratory backup after recording the evidence.
+
+
+SIMPLE EXPERIMENT 4 - ACTION ORDER TEST
+---------------------------------------
+
+Direction: Both
+Out-of-order Chance: 10%
+Reorder Hold Maximum: 300 ms
+All other effects: 0 or Unlimited
+
+Try sequences where order matters:
+
+    Equip, then use
+    Open, then remove
+    Enter, then exit
+    Start, then cancel
+    Buy, then consume
+    Save, then disconnect
+
+The server should reject stale actions or reconcile them safely.
+
+
+SIMPLE EXPERIMENT 5 - SHORT DISCONNECT
+--------------------------------------
+
+Direction: Both
+Packet Loss: 100%
+All other effects: 0 or Unlimited
+
+Activate for only 1, 3, 5, 10, or 30 seconds, then stop. Check:
+
+    Reconnect behavior
+    Session cleanup
+    Unsaved progress
+    Character ownership
+    Whether old requests replay after recovery
+    Whether the game freezes instead of showing a clear connection state
+
+
+SIMPLE EXPERIMENT 6 - SLOW CONNECTION
+-------------------------------------
+
+Direction: Both
+Latency: 150 ms
+Jitter: 75 ms
+Packet Loss: 3%
+Bandwidth: 256 Kbit/s
+Other effects: 0%
+
+Test login, map loading, inventory synchronization, voice, world streaming, and
+whether important gameplay messages receive priority over cosmetic data.
+
+
+SIMPLE EXPERIMENT 7 - GUARDED CORRUPTION
+----------------------------------------
+
+Direction: Outbound
+IP/CIDR or Port: Narrow private server target
+Payload Corruption: 1%
+Bit Flips: 1
+All other effects: 0 or Unlimited
+Session: 1 minute
+
+Perform harmless disposable actions. Confirm that the server rejects malformed
+messages without crashing, granting unintended state, or damaging the database.
+Increase to 2% only after reviewing the first test's logs.
+
+
+MORE FUN AND USEFUL PRIVATE-LAB EXPERIMENTS
+-------------------------------------------
+
+LOGIN AND SESSION TESTS
+
+    Interrupt traffic just after submitting a login.
+    Duplicate a login request.
+    Reconnect while the old session is timing out.
+    Connect two authorized test clients to one disposable account.
+    Confirm only one session can control the character.
+
+INVENTORY AND ECONOMY TESTS
+
+    Disconnect between trade confirmation and database completion.
+    Reorder deposit and withdrawal requests.
+    Duplicate crafting, reward, sale, purchase, and currency requests.
+    Move an item while closing its container.
+    Confirm persistent state directly in the test database.
+
+SAVE AND ROLLBACK TESTS
+
+    Add latency immediately before or after saving.
+    Interrupt traffic during autosave.
+    Reorder save and logout.
+    Restart the private server during a disposable transaction.
+    Confirm incomplete changes are completed or rolled back atomically.
+
+COMBAT TESTS
+
+    Delay attacks, dodges, reloads, healing, and ability cancellation.
+    Reorder equip/use and start/cancel actions.
+    Duplicate one harmless test attack request.
+    Confirm ammunition, damage, energy, and cooldowns remain authoritative.
+    Confirm old input cannot affect a later life, round, or session.
+
+MOVEMENT AND VEHICLE TESTS
+
+    Enter and exit a vehicle during reordering.
+    Interrupt traffic during climbing, mounting, teleporting, or map transfer.
+    Observe collision recovery after severe jitter.
+    Confirm impossible positions and stale movement are rejected.
+
+WORLD-STREAMING TESTS
+
+    Limit bandwidth while entering a dense area.
+    Interrupt traffic while entities spawn or disappear.
+    Reorder create, update, and destroy information.
+    Confirm missing entities recover without duplicate spawns.
+
+MATCHMAKING AND PARTY TESTS
+
+    Duplicate join, leave, ready, cancel, and invite requests.
+    Interrupt a transfer to another private server or instance.
+    Reorder ready and cancel.
+    Confirm slots, reservations, ownership, and abandoned instances are cleaned.
+
+CHAT, VOICE, AND SOCIAL TESTS
+
+    Use voice under loss and low bandwidth.
+    Duplicate one harmless test chat message.
+    Reorder join/leave and mute/unmute actions.
+    Confirm repeated requests do not create persistent incorrect state.
+
+
+HOW TO CLASSIFY WHAT YOU FIND
+-----------------------------
+
+Visual-only problem:
+    The client briefly shows incorrect information and fixes itself.
+
+Recoverable synchronization problem:
+    The client remains wrong until reconnecting, then matches the server.
+
+Persistent server defect:
+    Incorrect items, currency, progress, ownership, or state remain in the
+    authoritative server/database after reconnecting.
+
+Availability defect:
+    The client, server, service, or database crashes, hangs, or stops accepting
+    sessions.
+
+Validation defect:
+    A stale, repeated, reordered, or malformed request changes authoritative
+    state when it should have been rejected.
+
+
+WHAT TO RECORD
+--------------
+
+For every test, record:
+
+    Test name and time
+    Tester
+    Client and server builds
+    Map or instance
+    Accounts and characters
+    Item and transaction IDs
+    Server IP and ports
+    Exact SuperDuper settings
+    Action performed
+    Expected result
+    Client-visible result
+    Server-visible result
+    Database result
+    Result after reconnecting
+    Logs and timestamps
+    Number of successful reproductions
+    Screenshots or video
+    Severity and follow-up ticket
+
+
+WHAT A PASSING SERVER SHOULD DO
+-------------------------------
+
+    Keep the server authoritative.
+    Process each transaction once.
+    Reject or safely reconcile stale and reordered actions.
+    Reject malformed payloads without crashing.
+    Update inventory and currency atomically.
+    Restore the correct state after reconnecting.
+    Clean up timed-out sessions and reservations.
+    Display a clear connection error instead of hanging.
+    Recover after SuperDuper is stopped.
+
+
+WHEN TO STOP IMMEDIATELY
+------------------------
+
+Press Ctrl + Numpad * immediately if:
+
+    An unauthorized or production system is affected.
+    An important transfer begins using the target connection.
+    The database shows persistent corruption.
+    Memory, CPU, queue size, or logs grow unexpectedly.
+    The client or server cannot recover when the impairment ends.
+
+Preserve the logs, restore the backup, and investigate before repeating the test
+with stronger settings.
+
+
+DUPE TAB - NUMPAD + CALIBRATED LOGOUT SEQUENCE
+----------------------------------------------
+
+Use this workflow only in the authorized private DayZ LAN laboratory.
+
+ORDERED NUMPAD-MINUS CALIBRATION
+
+Every press of Numpad - while DayZ is in front immediately saves the exact
+pointer position as the next step. Repeated coordinates and their order are
+preserved.
+
+Record the standard sequence in this order:
+
+    EXIT, CANCEL, EXIT, CANCEL, EXIT, CANCEL, FINAL EXIT, REJOIN
+
+Press Escape whenever needed to display EXIT. Do not record CANCEL after FINAL
+EXIT. Record REJOIN or PLAY from the lobby as the eighth and last position.
+Click CLEAR to erase the full sequence and start over.
+
+PREPARE THE DUPE SEQUENCE
+
+1. Open the DUPE tab and confirm that eight ordered positions are saved.
+2. Enter the private server IP and gameplay port manually in Targeting.
+3. Keep Process set to Any process.
+4. Set FINAL LOGOUT COMPLETION to the normal number of seconds required for the
+   real DayZ logout to finish and reach the lobby.
+5. Remember that SuperDuper adds eight more seconds after that configured time
+   before clicking Play.
+6. Press START or Numpad * and confirm that SuperDuper reports ACTIVE.
+7. Return to active DayZ gameplay with DayZ in the foreground.
+8. Press Numpad + once.
+
+WHAT NUMPAD + DOES
+
+1. Presses Escape to display the Exit menu.
+2. Clicks the saved Exit position.
+3. Waits two seconds.
+4. Clicks the saved Cancel/Continue position.
+5. Repeats that Exit, two-second wait, and Cancel process exactly three times.
+6. Opens the Exit menu and clicks Exit a fourth time.
+7. Does not cancel the fourth logout.
+8. Waits for FINAL LOGOUT COMPLETION.
+9. Waits an additional eight seconds intended for the lobby.
+10. Clicks the saved Play position.
+
+The app uses timing and saved screen coordinates. It does not visually identify
+the lobby or confirm that a particular DayZ menu is open. Keep the DayZ
+resolution, display mode, monitor, and menu layout unchanged after calibration.
+Watch the first run carefully.
+
+DUPE-SEQUENCE LABORATORY OBSERVATIONS
+
+Use one disposable item and record its authoritative state before starting.
+After the automatic logout and rejoin:
+
+    Compare the inventory before and after reconnecting.
+    Check the original world, container, or inventory location.
+    Check server and persistence logs for repeated transaction IDs.
+    Verify item count and unique IDs outside the client display.
+    Restart the private server before classifying a result as persistent.
+    Distinguish a visual ghost from two separate server-side item instances.
+    Record whether the character position rolls back or changes unexpectedly.
+    Record whether pending actions replay during login.
+
+A secure result is an unchanged authoritative item count, one valid owner for
+each item, and clean recovery after reconnecting. A duplicated-looking icon
+that disappears after reconnecting is not a persistent item duplicate.
+
+Safety behavior:
+
+    DayZ must remain the foreground window before every automated action.
+    Numpad + is ignored unless the packet engine is active.
+    A second Numpad + cannot overlap a sequence already in progress.
+    Ctrl + Numpad * cancels armed calibration and pending automated actions.
+    Ctrl + Numpad * also stops the packet engine.
+    Closing SuperDuper cancels pending automated actions.
+    Stop immediately if a non-laboratory server or valuable item is involved.
+
+VOICE CONTROL
+
+The lips in the upper-right corner are the voice mute control. SuperDuper starts
+with voice enabled so the CONDITIONS instructions work immediately.
+
+1. SuperDuper prefers a soft female Windows voice in the computer's language.
+2. Click the lips whenever you want to mute voice.
+3. Click the lips again to enable voice.
+
+Click CONDITIONS to hear the short help prompt. Click either selection bar one
+time for normal use without an explanation. Double click the DIRECTION text
+label above its bar to learn about Both, Inbound, and Outbound. Double click the
+PROTOCOL text label above its bar to learn about All traffic, TCP, UDP, IPv4,
+and IPv6. Double click the LATENCY, JITTER, or PACKET LOSS text label to hear
+its explanation. Clicking a slider or its large number box remains silent and
+lets you adjust the value normally. Click the lips while the voice is speaking
+to stop and mute it.
+
+The voice queue is prepared so later versions can add more clear experiment and
+safety announcements without freezing the app. Voice selection does not change
+packet conditions, Dupe timing, hotkeys, or the private-server experiment
+result.
+
+TARGETING VOICE HELP
+
+Click TARGETING to hear its short help prompt. Click any targeting control once
+to use it normally without narration.
+
+    Double click PRESET to learn about every built-in preset.
+    Double click IP / CIDR to learn about one-address and network-range targets.
+    Double click PORTS to learn about single ports, lists, and ranges.
+    Double click PROCESS to learn about its selector and current limitation.
+
+Double click the text label itself, not the field or selection bar below it.
+
+ADVANCED EFFECTS VOICE HELP
+
+Click ADVANCED EFFECTS to hear its prompt. Double click one of these text labels
+to hear its separate explanation:
+
+    DUPLICATION
+    OUT-OF-ORDER CHANCE
+    REORDER HOLD (MAXIMUM)
+    BANDWIDTH LIMIT
+    PAYLOAD CORRUPTION
+    BIT FLIPS PER SELECTED PACKET
+
+SAFETY AND PROFILES VOICE HELP
+
+Click SAFETY, then double click MAXIMUM DELAY QUEUE or MAXIMUM SESSION for its
+guide. Click PROFILES, then double click SAVED PROFILE to learn how profiles are
+saved, loaded, reviewed, and deleted.
+
+DUPE INFO AND CALIBRATION
+
+Click INFO to clear the DUPE information box, display the complete settings and
+calibration guide, and hear that guide when APP Voice is enabled. Numpad -
+records the pointer position immediately while DayZ is in front. CLEAR deletes
+the complete ordered calibration sequence.
+
+INFO-CENTER WINDOW
+
+Click INFO-CENTER between the SuperDuper logo and lips. A centered, matching
+burgundy popup displays an editable, scrollable folder tree.
+
+    Click a folder arrow to display its contents.
+    Nested folders can continue to any depth.
+    Right click a destination and choose New Folder or Paste.
+    Paste accepts copied folders and .txt documents from File Explorer.
+    Double click a .txt document to replace the folder tree with its text while
+    APP Voice reads it. Click the glowing left arrow to restore the folders and
+    immediately stop the narration.
+    Right click an ordinary folder and choose Delete Folder to move it to the
+    Windows Recycle Bin after confirmation.
+    Right click a visible .txt document and choose Delete Text File to move it
+    to the Windows Recycle Bin after confirmation.
+    Choose Refresh after making an external change if it is not visible yet.
+
+The top-level INFO-CENTER folder is protected: it cannot be renamed or deleted
+through SuperDuper. The app recreates it if it is missing when this window
+opens. Additional folders may be pasted beside INFO-CENTER or placed inside any
+visible folder. Internal app, build, cache, and backup folders remain hidden.
+Package-level instruction and license .txt files are also hidden. The included
+Welcome text makes INFO-CENTER expandable even before you add your own content.
+Text narration respects the lips and Numpad 0 / INS mute setting.
+
+VOICE MUTE HOTKEY
+
+Press the physical Numpad 0 / INS key at any time to switch APP Voice between
+muted and enabled. It works while DayZ is in front:
+
+    Num Lock on: the key is Numpad 0.
+    Num Lock off: the same physical key is Insert.
+
+The lips button changes with the hotkey, so both controls always show the same
+mute state.
+
+NUMPAD * VOICE CONFIRMATION
+
+When Numpad * successfully starts SuperDuper, APP Voice says, "Activated."
+When the next Numpad * press successfully stops SuperDuper, APP Voice says,
+"Deactivated." Both announcements respect the voice mute setting. Failed state
+changes remain silent.
